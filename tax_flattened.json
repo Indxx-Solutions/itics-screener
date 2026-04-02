@@ -1,0 +1,6213 @@
+{
+  "L0": [
+    {
+      "c": "10",
+      "n": "Financials",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "15",
+      "n": "Real Estate",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "20",
+      "n": "Utilities",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "25",
+      "n": "Energy",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "30",
+      "n": "Industrials",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "35",
+      "n": "Health Care",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "40",
+      "n": "Consumer Discretionary",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "45",
+      "n": "Consumer Staples",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "50",
+      "n": "Communication Services",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "55",
+      "n": "Information Technology",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "60",
+      "n": "Materials",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "65",
+      "n": "Miscellanous & Others",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    }
+  ],
+  "L1": [
+    {
+      "c": "1001",
+      "n": "Banking",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "1002",
+      "n": "Insurance",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "1003",
+      "n": "Financial Services",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "1004",
+      "n": "Fintech",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "1501",
+      "n": "Real Estate",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "2001",
+      "n": "Energy Producers",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "2002",
+      "n": "Fuelling Station and Equipment",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "2003",
+      "n": "Utilities",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "2501",
+      "n": "Upstream Energy",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "2502",
+      "n": "Midstream/Downstream Energy",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3001",
+      "n": "Business/Professional Services and Products",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3002",
+      "n": "Defence and Military",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3003",
+      "n": "Diverse/Multiple Business",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3004",
+      "n": "Electrical Equipment",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3005",
+      "n": "Energy Equipment",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3006",
+      "n": "Industrial Machinery",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3007",
+      "n": "Infrastructure Development and Related Services",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3008",
+      "n": "Royalty",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3009",
+      "n": "Supply Chain and Related Equipment Manufacturers",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3010",
+      "n": "Transportation Vehicles and Related Parts Manufacturer",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3011",
+      "n": "Transportation/ Aviation and Space Travel Related Services",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3501",
+      "n": "Healthcare Services/Products",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3502",
+      "n": "Pharmaceuticals",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3503",
+      "n": "Healthcare Engineering",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3504",
+      "n": "Healthcare Devices",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "3505",
+      "n": "Animal Healthcare",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4001",
+      "n": "Automobile and Related Parts Retail",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4002",
+      "n": "Consumer Discretionary Distributor",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4003",
+      "n": "Consumer Goods Retail",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4004",
+      "n": "Diversified Consumer Services",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4005",
+      "n": "Education Services",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4006",
+      "n": "Hospitality Services",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4007",
+      "n": "Household Discretionary",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4008",
+      "n": "Leisure and Entertainment",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4009",
+      "n": "Motor vehicle and Parts Manufacturers",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4010",
+      "n": "Online Consumer Services",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4011",
+      "n": "Sports and Recreation",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4012",
+      "n": "Textile/ Apparel and Fashion Accessories",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4501",
+      "n": "Food Products",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4502",
+      "n": "Beverages",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4503",
+      "n": "Non-Edible Crop Producer",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4504",
+      "n": "Agriculture",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "4505",
+      "n": "Tobacco",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5001",
+      "n": "Communication Service Provider",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5002",
+      "n": "Media Broadcasting and Advertisement",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5003",
+      "n": "Publishing",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5004",
+      "n": "Telecommunication & Network Hardware and Software",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5501",
+      "n": "IT Services",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5502",
+      "n": "Industry Specific Software",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5503",
+      "n": "Emerging Technologies",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5504",
+      "n": "Software",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5505",
+      "n": "Semiconductor Products",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "5506",
+      "n": "Technology Consumer Goods Manufacturer",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6001",
+      "n": "Chemical/ Plastic/ Rubber/ Gas and Paper Producers",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6002",
+      "n": "Construction and Building Material",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6003",
+      "n": "Material Distributor",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6004",
+      "n": "Metal and Mineral Product Manufacturing",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6005",
+      "n": "Non-Energy Natural Material Mining",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "6501",
+      "n": "Others",
+      "l0": "65",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    }
+  ],
+  "L2": [
+    {
+      "c": "100101",
+      "n": "Banking Services",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100102",
+      "n": "Retail Banking",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100103",
+      "n": "Corporate/Commercial Banking",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100104",
+      "n": "Investment Banking",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100105",
+      "n": "Banking and Wealth & Asset Management",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100106",
+      "n": "Banking and Insurance",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100107",
+      "n": "Investment Banking and Brokerage Services",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100108",
+      "n": "Investment and Corporate Banking",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100109",
+      "n": "Retail and corporate banking",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100110",
+      "n": "Bank Leasing",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100111",
+      "n": "IB & Asset Management",
+      "l1": "1001",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100201",
+      "n": "Other Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100202",
+      "n": "Health Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100203",
+      "n": "Life Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100204",
+      "n": "Life and Health Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100205",
+      "n": "General Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100206",
+      "n": "Commercial Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100207",
+      "n": "Automobile Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100208",
+      "n": "Insurance Broker",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100209",
+      "n": "Life and Non-Life Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100210",
+      "n": "Property & Casualty Insurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100211",
+      "n": "Reinsurance",
+      "l1": "1002",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100301",
+      "n": "Financial Services",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100302",
+      "n": "Specialty Financing",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100303",
+      "n": "Automobile Financing",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100304",
+      "n": "Trading/ Capital Markets and Brokerage Firm",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100305",
+      "n": "Forex Trading",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100306",
+      "n": "Exchange and Related Support Services",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100307",
+      "n": "Financial Data Provider",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100308",
+      "n": "Wealth and Asset Management",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100309",
+      "n": "Real Estate Asset Management and Investment",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100310",
+      "n": "Private Equity and Venture Capital",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100311",
+      "n": "Other Investment Companies",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100312",
+      "n": "Indexing Solutions",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100313",
+      "n": "Credit Analysis and Risk Management",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100314",
+      "n": "SPAC (Special Purpose Acquisition Company)",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100315",
+      "n": "Debt Collection Companies",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100316",
+      "n": "Cash Management",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100317",
+      "n": "Commodity Trading",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100318",
+      "n": "Asset/ Wealth Management and Insurance",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100319",
+      "n": "Asset Management and Brokerage Firm",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100320",
+      "n": "Credit Card",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100321",
+      "n": "Internal Treasury",
+      "l1": "1003",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100401",
+      "n": "Fintech",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100402",
+      "n": "Digital Payment Infrastructure and Services Providers",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100403",
+      "n": "P2P and Marketplace Lending",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100404",
+      "n": "Crowdfunding",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100405",
+      "n": "Decentralized Finance and Alternative Currencies",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100406",
+      "n": "Buy Now Pay Later",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "100407",
+      "n": "Financial Robo Advisor",
+      "l1": "1004",
+      "l0": "10",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150101",
+      "n": "Commercial REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150102",
+      "n": "Self-Storage REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150103",
+      "n": "Cell Tower REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150104",
+      "n": "Hotel REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150105",
+      "n": "Green Real Estate Investment Trusts (Green REITs)",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150106",
+      "n": "Residential REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150107",
+      "n": "Healthcare REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150108",
+      "n": "Data Centre REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150109",
+      "n": "Mortgage REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150110",
+      "n": "Industrial and Warehouse REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150111",
+      "n": "Other REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150112",
+      "n": "Real Estate Developer/Operators",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150113",
+      "n": "Real Estate Broker",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150114",
+      "n": "Real Estate Investment and Development",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150115",
+      "n": "Commercial and Industrial REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150116",
+      "n": "Real Estate",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150117",
+      "n": "Commercial and Residential REITs",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150118",
+      "n": "Real Estate Consulting Services",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150119",
+      "n": "Residential Real Estate Developer",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150120",
+      "n": "Commercial Real Estate Developer",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150121",
+      "n": "Industrial Real Estate Developer",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150122",
+      "n": "Commercial and Residential Real Estate Developer",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150123",
+      "n": "Commercial and Industrial Real Estate Developer",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "150124",
+      "n": "Property Rental/Sale",
+      "l1": "1501",
+      "l0": "15",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200101",
+      "n": "Energy Producers",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200102",
+      "n": "Hydro Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200103",
+      "n": "Wind Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200104",
+      "n": "Geothermal Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200105",
+      "n": "Biomass Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200106",
+      "n": "Thermal Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200107",
+      "n": "Green/ Biofuel Producers",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200108",
+      "n": "Nuclear Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200109",
+      "n": "Solar Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200110",
+      "n": "Renewable Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200111",
+      "n": "Nuclear and Other Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200112",
+      "n": "Thermal & renewable energy generation",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200113",
+      "n": "Energy Producers Services",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200114",
+      "n": "Diversified Energy",
+      "l1": "2001",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200201",
+      "n": "Ev Charging Stations",
+      "l1": "2002",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200202",
+      "n": "Petroleum Station Infrastructure",
+      "l1": "2002",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200203",
+      "n": "EV Charging Infrastructure Provider",
+      "l1": "2002",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200204",
+      "n": "Hydrogen Fuelling Station Equipments/Operators",
+      "l1": "2002",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200205",
+      "n": "Fuelling Stations Manufacturer/Operators",
+      "l1": "2002",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200301",
+      "n": "Water Infrastructure",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200302",
+      "n": "Electric Utility",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200303",
+      "n": "Electric Grids and Distribution Infrastructure",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200304",
+      "n": "Waste Management",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200305",
+      "n": "Water Utility",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200306",
+      "n": "Gas Distribution",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200307",
+      "n": "Steam and Heat Utilities",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200308",
+      "n": "Environment Friendly Solution",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200309",
+      "n": "Multi Utilities",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "200310",
+      "n": "Energy management services",
+      "l1": "2003",
+      "l0": "20",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250101",
+      "n": "Upstream Energy",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250102",
+      "n": "Oil and Gas Exploration",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250103",
+      "n": "Oil and Gas Infrastructure",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250104",
+      "n": "Oil and Gas Field Services",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250105",
+      "n": "Oil and Gas Geophysical Service",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250106",
+      "n": "Coal Mining",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250107",
+      "n": "Nuclear Fuel Mining",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250108",
+      "n": "Oil and Gas Royalty",
+      "l1": "2501",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250201",
+      "n": "Midstream/Downstream Energy",
+      "l1": "2502",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250202",
+      "n": "Oil & Gas Storage and Pipeline Services",
+      "l1": "2502",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250203",
+      "n": "Oil & Gas Storage and Tanker Services",
+      "l1": "2502",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "250204",
+      "n": "Refining/ Oil and Gas Products Distribution",
+      "l1": "2502",
+      "l0": "25",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300101",
+      "n": "Business/Professional Services and Products",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300102",
+      "n": "Business Consulting/ Auditing Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300103",
+      "n": "Testing/ Inspection and Certification Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300104",
+      "n": "Employment Services and Training",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300105",
+      "n": "Background Screening Service",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300106",
+      "n": "BPO and KPOs",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300107",
+      "n": "Legal Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300108",
+      "n": "Patent/Licensing Service",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300109",
+      "n": "Security Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300110",
+      "n": "Business Support Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300111",
+      "n": "Engineering Consultancy",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300112",
+      "n": "Tech Solution",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300113",
+      "n": "Market Research",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300114",
+      "n": "Healthcare Solutions",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300115",
+      "n": "Data/ Information Provider",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300116",
+      "n": "Event Management",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300117",
+      "n": "Contract Manufacturing",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300118",
+      "n": "Agri Support Business",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300119",
+      "n": "Maintenance and Repair Service",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300120",
+      "n": "Disaster Management and Rescue Services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300121",
+      "n": "Lead/ Information Provider",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300122",
+      "n": "Taxation services",
+      "l1": "3001",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300201",
+      "n": "Defence and Military",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300202",
+      "n": "Ground Defence",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300203",
+      "n": "Aerospace and Defence Technology",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300204",
+      "n": "Aerospace and Defence Components",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300205",
+      "n": "Firearms and Ammunition",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300206",
+      "n": "Defence Aircraft Manufacturer",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300207",
+      "n": "Military Grade Apparels",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300208",
+      "n": "Naval Defence",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300209",
+      "n": "Defence Products and Systems",
+      "l1": "3002",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300301",
+      "n": "Industrial Diversified Business",
+      "l1": "3003",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300302",
+      "n": "Consumer and Industrial Diversified Business",
+      "l1": "3003",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300303",
+      "n": "Finance and Non-Finance Business",
+      "l1": "3003",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300401",
+      "n": "Electrical Equipment and Components",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300402",
+      "n": "Wires and Cables",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300403",
+      "n": "Electrical Power Transmission Equipment",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300404",
+      "n": "Batteries and Power Equipment",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300405",
+      "n": "Li-Ion Batteries",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300406",
+      "n": "Power Generators and Motors",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300407",
+      "n": "Electrical Products and Components Distributor",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300408",
+      "n": "Electronic Component Distributor",
+      "l1": "3004",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300501",
+      "n": "Thermal Power Plant Equipment",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300502",
+      "n": "Nuclear Power Plant Equipment",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300503",
+      "n": "Energy Equipment",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300504",
+      "n": "Wind Turbine generators/ Parts",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300505",
+      "n": "Hydropower equipment",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300506",
+      "n": "Hydrogen Equipments",
+      "l1": "3005",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300601",
+      "n": "Industry Machinery/ Parts and Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300602",
+      "n": "Elevator & Escalator Manufacturer",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300603",
+      "n": "Industrial Robot",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300604",
+      "n": "Autonomous System",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300605",
+      "n": "Oil and Gas Equipment Manufacturer",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300606",
+      "n": "Testing & Measuring Equipment",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300607",
+      "n": "Plumbing and Water Pump",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300608",
+      "n": "Hydraulic & Fluid Pump and Actuator",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300609",
+      "n": "Industrial Process Furnace and Oven",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300610",
+      "n": "Vending Machine",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300611",
+      "n": "Industrial Mould",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300612",
+      "n": "Machine Tools and Hardware",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300613",
+      "n": "Industrial Wearable and Safety Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300614",
+      "n": "Heating/ Ventilating and Air Conditioning Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300615",
+      "n": "Industrial Kitchen Equipment",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300616",
+      "n": "Liquid/ Air and Gas Compressor/Equipment/Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300617",
+      "n": "Bearing and Power Transmission Product",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300618",
+      "n": "Welding Machine and Related Product",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300619",
+      "n": "Mining Tools and Equipment",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300620",
+      "n": "Equipment Leasing",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300621",
+      "n": "Industrial Wearable (Iot)",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300622",
+      "n": "Farming Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300623",
+      "n": "Industrial and Commercial Electronic Goods",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300624",
+      "n": "Industrial Product/ Material",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300625",
+      "n": "Residential and Commercial Electronic Goods",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300626",
+      "n": "Industrial Technology/IoT Solution",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300627",
+      "n": "Industrial casting & molding machine",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300628",
+      "n": "Industrial Machinery and Parts Distributor",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300629",
+      "n": "Industrial Product Distributor",
+      "l1": "3006",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300701",
+      "n": "Infrastructure Development and Related Services",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300702",
+      "n": "Construction Services",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300703",
+      "n": "Energy Infrastructure Provider",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300704",
+      "n": "Road and Related Infrastructure Operators",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300705",
+      "n": "Home Builder",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300706",
+      "n": "Speciality Contractors",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300707",
+      "n": "Railway Infrastructure and Maintenance Services",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300708",
+      "n": "Property Management Services",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300709",
+      "n": "Infrastructure Architectural Design and Solutions",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300710",
+      "n": "Industrial and Construction Vehicle Leasing",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300711",
+      "n": "Port and Road Operators",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300712",
+      "n": "Building Construction",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300713",
+      "n": "Public infrastructure",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300714",
+      "n": "Civil Engineering",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300715",
+      "n": "Plant & factory construction",
+      "l1": "3007",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300801",
+      "n": "Royalty",
+      "l1": "3008",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300901",
+      "n": "Supply chain Providers",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300902",
+      "n": "Logistics Service Provider",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300903",
+      "n": "Express Courier Services",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300904",
+      "n": "Supply Chain Management",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300905",
+      "n": "Containers and Packaging Products Makers",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300906",
+      "n": "Pressure Vessel and Storage Tanks Manufacturer",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300907",
+      "n": "Port Management",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300908",
+      "n": "Transportation Support System",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "300909",
+      "n": "Supply chain related equipment",
+      "l1": "3009",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301001",
+      "n": "Transportation Vehicles and Related Parts Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301002",
+      "n": "Locomotive and Related Parts Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301003",
+      "n": "Train and Metro Coach Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301004",
+      "n": "Rail Part Manufacturers",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301005",
+      "n": "Passenger and Cargo Aircraft Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301006",
+      "n": "Aircraft Parts Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301007",
+      "n": "Jet Engine Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301008",
+      "n": "Aircraft Parts /Maintenance Service Provider",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301009",
+      "n": "Ships and Boats Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301010",
+      "n": "Ships and Boats Parts Manufacturer",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301011",
+      "n": "Ships and Boats Parts/ Maintenance Service Provider",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301012",
+      "n": "Passenger and Defence Aircraft",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301013",
+      "n": "Ships & Boats and Parts Manufacturers/ Retail",
+      "l1": "3010",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301101",
+      "n": "Transportation/ Aviation and Space Travel Related Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301102",
+      "n": "Airline Passenger Operators",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301103",
+      "n": "Airline Cargo Operators",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301104",
+      "n": "Aircraft Leasing Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301105",
+      "n": "Airport Operation and Complimentary Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301106",
+      "n": "Satellite Operators and Equipment",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301107",
+      "n": "Space Flight Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301108",
+      "n": "Railway Operators",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301109",
+      "n": "Railway Leasing",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301110",
+      "n": "Rail Freight",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301111",
+      "n": "Road Transportation Operators",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301112",
+      "n": "Road Cargo",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301113",
+      "n": "Ship and Vessel Leasing",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301114",
+      "n": "Intermodal Cargo Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301115",
+      "n": "Water Freight",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301116",
+      "n": "Fleet Management Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301117",
+      "n": "Navigation Devices and Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301118",
+      "n": "Water Transportation Service",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301119",
+      "n": "Passenger and Cargo Airline Operators",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301120",
+      "n": "Passenger Transportation Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301121",
+      "n": "Passenger and Cargo Transportation Service",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "301122",
+      "n": "Port/Airport Operation & Complimentary Services",
+      "l1": "3011",
+      "l0": "30",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350101",
+      "n": "Healthcare Services/Products",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350102",
+      "n": "Hospitals and Nursing Homes",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350103",
+      "n": "Fertility Centres",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350104",
+      "n": "Aging Population Focused Health Care Services",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350105",
+      "n": "Cancer Immuno-Oncology Therapy",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350106",
+      "n": "Regenerative Medicine/ Stem Cell and Gene Therapy",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350107",
+      "n": "Immunotherapy",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350108",
+      "n": "Dermatology",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350109",
+      "n": "Home Medical Care Services",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350110",
+      "n": "Diagnostics Services",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350111",
+      "n": "Digital Healthcare",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350112",
+      "n": "Diagnostic and Lab Products",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350113",
+      "n": "Optical Care",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350114",
+      "n": "Healthcare Supplies",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350115",
+      "n": "Healthcare Apparels Manufacturers",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350116",
+      "n": "Healthcare Product and Pharmaceuticals",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350117",
+      "n": "Sterlization and Disinfection products/ services",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350118",
+      "n": "Oral and Dental care",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350119",
+      "n": "Healthcare cold storage solutions",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350120",
+      "n": "Kidney care therapy",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350121",
+      "n": "Non-surgical equipment",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350122",
+      "n": "Healthcare Therapy",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350123",
+      "n": "Surgical Products",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350124",
+      "n": "Healthcare Product Distributor",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350125",
+      "n": "Healthcare Royalty",
+      "l1": "3501",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350201",
+      "n": "Pharmaceuticals",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350202",
+      "n": "Rare/Orphan Drug",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350203",
+      "n": "Generic Medicines",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350204",
+      "n": "Cancer Novel Target",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350205",
+      "n": "Central Nervous System Treatment and Drugs",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350206",
+      "n": "Cannabis and Industrial Hemp",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350207",
+      "n": "Infection and Inflammation Drugs",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350208",
+      "n": "Traditional Medicine",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350209",
+      "n": "Third Party Drug Manufacturing",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350210",
+      "n": "Vaccine Manufacturer",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350211",
+      "n": "Drug Raw Material Manufacturer",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350212",
+      "n": "Medical Research and Development",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350213",
+      "n": "Pharmacy",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350214",
+      "n": "Nutritional Supplements",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350215",
+      "n": "Cancer and Other Drugs",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350216",
+      "n": "Pharmaceutical and Nutritional Supplements",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350217",
+      "n": "Gastrointestinal/Metabolism medicines",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350218",
+      "n": "Diabetes",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350219",
+      "n": "Cardiovascular",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350220",
+      "n": "Autoimmune",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350221",
+      "n": "Pharmaceutical Products Distributor",
+      "l1": "3502",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350301",
+      "n": "Biological Engineering",
+      "l1": "3503",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350302",
+      "n": "Healthcare Analytics",
+      "l1": "3503",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350303",
+      "n": "Neuroscience",
+      "l1": "3503",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350304",
+      "n": "Robotics For Healthcare",
+      "l1": "3503",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350305",
+      "n": "Med Tech",
+      "l1": "3503",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350401",
+      "n": "Speciality Medical Devices",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350402",
+      "n": "Monitoring and Testing Devices",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350403",
+      "n": "3D and Extended Reality Solutions",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350404",
+      "n": "Digital Imaging Devices",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350405",
+      "n": "Healthcare Device and Supplies",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350406",
+      "n": "Diversified Healthcare Devices",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350407",
+      "n": "Medical Device/Equipment Distributor",
+      "l1": "3504",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350501",
+      "n": "Animal Healthcare",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350502",
+      "n": "Animal Feed Producers",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350503",
+      "n": "Veterinary Drugs and Treatment",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350504",
+      "n": "Pet Stores and Petcare Grooming",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350505",
+      "n": "Animal Genetics",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "350506",
+      "n": "Animal Diagnostic product and Devices",
+      "l1": "3505",
+      "l0": "35",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400101",
+      "n": "Automobile and Related Parts Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400102",
+      "n": "Consumer Vehicle Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400103",
+      "n": "Commercial Vehicle Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400104",
+      "n": "Industrial and Construction Vehicle Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400105",
+      "n": "Preowned Cars Retailing",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400106",
+      "n": "Automobile Servicing",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400107",
+      "n": "Automobile Parts Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400108",
+      "n": "Consumer and Commercial Vehicle Retail",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400109",
+      "n": "Automobile parts and servicing",
+      "l1": "4001",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400201",
+      "n": "Consumer Electronic Products Distributor",
+      "l1": "4002",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400202",
+      "n": "Automobile Distributor",
+      "l1": "4002",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400203",
+      "n": "Automobile Parts Distributor",
+      "l1": "4002",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400204",
+      "n": "Consumer Goods Distributor",
+      "l1": "4002",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400301",
+      "n": "Consumer Goods Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400302",
+      "n": "Apparels Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400303",
+      "n": "Baby Gear and Nursery Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400304",
+      "n": "Footwear Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400305",
+      "n": "Jewellery Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400306",
+      "n": "Textile Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400307",
+      "n": "Fashion and Accessories Retail Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400308",
+      "n": "Eyewear Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400309",
+      "n": "Home Improvement Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400310",
+      "n": "Consumer Electronics Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400311",
+      "n": "Super Market",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400312",
+      "n": "Departmental and Convenience Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400313",
+      "n": "Decor and Furnishing Products Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400314",
+      "n": "Personal Care and Grooming Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400315",
+      "n": "Office Supplies",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400316",
+      "n": "Discount Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400317",
+      "n": "Internet Retail Store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400318",
+      "n": "Cash & Carry",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400319",
+      "n": "Casual wear Retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400320",
+      "n": "Women's wear retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400321",
+      "n": "Kid's wear retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400322",
+      "n": "Men's wear retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400323",
+      "n": "Intimate wear retail store",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400324",
+      "n": "Toys and games retail",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400325",
+      "n": "Merchandise Royalty",
+      "l1": "4003",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400401",
+      "n": "Diversified Consumer Services",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400402",
+      "n": "Spa and Salon",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400403",
+      "n": "Fitness and Wellness Services",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400404",
+      "n": "Funeral Services",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400405",
+      "n": "Laundry and Drycleaning Services",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400406",
+      "n": "Automotive Subscription",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400407",
+      "n": "Apparel and Accessories Subscription",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400408",
+      "n": "Auction Houses",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400409",
+      "n": "Teleshopping",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400410",
+      "n": "Pawnbroker",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400411",
+      "n": "Driving Schools",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400412",
+      "n": "Parking Facilities Operation",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400413",
+      "n": "Photography Services",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400414",
+      "n": "Rental & Leasing Services/ Products",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400415",
+      "n": "Franchise Royalty",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400416",
+      "n": "Consumer Diversified Business",
+      "l1": "4004",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400501",
+      "n": "Education Services",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400502",
+      "n": "Early Childhood Education",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400503",
+      "n": "Secondary and Higher Education",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400504",
+      "n": "Professional Education",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400505",
+      "n": "Ed-Tech Platforms",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400506",
+      "n": "Education Support Services",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400507",
+      "n": "Education Preparation Centres",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400508",
+      "n": "Schools",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400509",
+      "n": "Special Education/Care Services",
+      "l1": "4005",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400601",
+      "n": "Hospitality Services",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400602",
+      "n": "Travel and Booking Services",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400603",
+      "n": "Tourism",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400604",
+      "n": "Cruise Ship Service Providers",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400605",
+      "n": "Full-Service Restaurants",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400606",
+      "n": "Quick Service Restaurants",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400607",
+      "n": "Food Catering",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400608",
+      "n": "Cloud Kitchen",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400609",
+      "n": "Hotels / Resorts and Leisure",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400610",
+      "n": "Dormitory Operator",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400611",
+      "n": "Vacation Ownership Operators",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400612",
+      "n": "Hospitality and Leisure Royalty",
+      "l1": "4006",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400701",
+      "n": "Household Consumable",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400702",
+      "n": "Stationery Products Manufacturers",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400703",
+      "n": "Dining and Food Storage",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400704",
+      "n": "Daily Use Household Products",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400705",
+      "n": "Kitchen and Household Appliances",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400706",
+      "n": "Decor and Furnishing Products Manufacturer",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400707",
+      "n": "Personal Care and Grooming",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400708",
+      "n": "Sanitization Products and Services",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400709",
+      "n": "Personal and Baby Care Products",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400710",
+      "n": "Home Solutions",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400711",
+      "n": "Fmcg",
+      "l1": "4007",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400801",
+      "n": "Leisure and Entertainment",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400802",
+      "n": "Casino and Gambling",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400803",
+      "n": "Other Gambling",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400804",
+      "n": "Online Gambling",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400805",
+      "n": "Amusement Centres and Theme Parks",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400806",
+      "n": "Gaming and Entertainment Arenas",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400807",
+      "n": "Movie Theatres",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400808",
+      "n": "Concerts and Live Entertainment",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400809",
+      "n": "Adventure Sports Services",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400810",
+      "n": "Golf Course Operators",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400811",
+      "n": "Sports Teams & Clubs",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400812",
+      "n": "Ticket Booking Services",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400813",
+      "n": "Musical Instruments",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400814",
+      "n": "Toys and Games",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400815",
+      "n": "Casino and Gambling Gaming Equipment",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400816",
+      "n": "General Gaming Products and Services",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400817",
+      "n": "Esports",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400818",
+      "n": "Lottery games",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400819",
+      "n": "Parimutuel games",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400820",
+      "n": "Entertainment service",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400821",
+      "n": "Sports and Entertainment Stadium",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400822",
+      "n": "Karaoke",
+      "l1": "4008",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400901",
+      "n": "Motor Vehicle and Parts Manufacturers",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400902",
+      "n": "Passenger Car",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400903",
+      "n": "Green Vehicle",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400904",
+      "n": "Two-Wheeler",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400905",
+      "n": "Commercial Vehicle",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400906",
+      "n": "Recreational and Adventure Sports Vehicle",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400907",
+      "n": "Autonomous Vehicle and Drone Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400908",
+      "n": "Industrial and Construction Vehicle Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400909",
+      "n": "Motor Vehicle Oem Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400910",
+      "n": "Motor Vehicle Parts and Accessories Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400911",
+      "n": "EV Powertrains",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400912",
+      "n": "EV Parts & Accessories",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400913",
+      "n": "Tyre Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "400914",
+      "n": "Farm Machinery and Equipment Manufacturer",
+      "l1": "4009",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401001",
+      "n": "Online Match Making Platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401002",
+      "n": "Online Cab Services",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401003",
+      "n": "Online Food Delivery",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401004",
+      "n": "Online Media Streaming Platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401005",
+      "n": "Online Real Estate Services",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401006",
+      "n": "Social Networking Platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401007",
+      "n": "E-Commerce Platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401008",
+      "n": "Information Provider Sites",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401009",
+      "n": "Online automobile platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401010",
+      "n": "In application services",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401011",
+      "n": "Online agriculture platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401012",
+      "n": "Online Supermarket",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401013",
+      "n": "Online fitness platform",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401014",
+      "n": "Diversified Online Consumer Services",
+      "l1": "4010",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401101",
+      "n": "Sports and Recreation",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401102",
+      "n": "Athletic Goods and Accessories",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401103",
+      "n": "Outdoor Recreation Products",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401104",
+      "n": "Sports Apparels",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401105",
+      "n": "Sports Footwear",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401106",
+      "n": "Sports and Recreation Retail",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401107",
+      "n": "Sports Apparel/ Footwear & Accessories",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401108",
+      "n": "Bicycle and Related Parts",
+      "l1": "4011",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401201",
+      "n": "Apparels",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401202",
+      "n": "Handbags/ Backpacks and Luggage",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401203",
+      "n": "Footwear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401204",
+      "n": "Watches",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401205",
+      "n": "Fashion, Lifestyle, and Accessories",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401206",
+      "n": "Textile and Fibre",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401207",
+      "n": "Synthetic Fiber",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401208",
+      "n": "Baby Gear and Nursery",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401209",
+      "n": "Fashion and Lifestyle Distributor",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401210",
+      "n": "Casual Wear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401211",
+      "n": "Intimates & activewear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401212",
+      "n": "Men's wear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401213",
+      "n": "Formal wear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401214",
+      "n": "Women's wear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "401215",
+      "n": "Kid's wear",
+      "l1": "4012",
+      "l0": "40",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450101",
+      "n": "Food Products",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450102",
+      "n": "Processed Packaged Food Products",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450103",
+      "n": "Unprocessed Packaged Food Products",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450104",
+      "n": "Meat Processing",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450105",
+      "n": "Dairy Products",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450106",
+      "n": "Food and Beverage Retail",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450107",
+      "n": "Food Oil Producers",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450108",
+      "n": "Food Additives/ Preservatives and Colours",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450109",
+      "n": "Food Distribution",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450110",
+      "n": "Food and Beverages",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450111",
+      "n": "Food and Dairy Product",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450112",
+      "n": "Food and Nutrition",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450113",
+      "n": "Condiments",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450114",
+      "n": "Processed Food and Condiments",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450115",
+      "n": "Food and Alcoholic Beverages",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450116",
+      "n": "Processed and Unprocessed Packaged Food",
+      "l1": "4501",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450201",
+      "n": "Beverages",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450202",
+      "n": "Alcoholic Beverage",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450203",
+      "n": "Non-Alcoholic Beverage",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450204",
+      "n": "Alcohol Retail",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450205",
+      "n": "Alcohol Distribution",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450206",
+      "n": "Mixed Beverage",
+      "l1": "4502",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450301",
+      "n": "Industrial Crop producer",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450302",
+      "n": "Flower and Ornamental Crop Farming",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450303",
+      "n": "Rubber Farming",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450304",
+      "n": "Cotton Farming",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450305",
+      "n": "Bamboo Farming",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450306",
+      "n": "Jute Farming",
+      "l1": "4503",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450401",
+      "n": "Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450402",
+      "n": "Grain and Rice Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450403",
+      "n": "Fruit Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450404",
+      "n": "Nuts Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450405",
+      "n": "Vegetable Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450406",
+      "n": "Tea Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450407",
+      "n": "Coffee Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450408",
+      "n": "Oilseed Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450409",
+      "n": "Sugarcane Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450410",
+      "n": "Seed Manufacturing",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450411",
+      "n": "Agriculture Milling",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450412",
+      "n": "Animal Husbandry",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450413",
+      "n": "Animal Husbandry and Meat Processing",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450414",
+      "n": "Edible and Non-Edible Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450415",
+      "n": "Agro Waste Based Product",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450416",
+      "n": "Forestation and Related Product",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450417",
+      "n": "Horticulture",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450418",
+      "n": "Crop Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450419",
+      "n": "Fruit and Vegetables Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450420",
+      "n": "Pulses Farming",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450421",
+      "n": "Agriculture and Farm Machinery Distributor",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450422",
+      "n": "Agriculture Goods Distributor",
+      "l1": "4504",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450501",
+      "n": "Tobacco and Cigarette Product",
+      "l1": "4505",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450502",
+      "n": "Tobacco and Cigarette Product Retail",
+      "l1": "4505",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450503",
+      "n": "Tobacco Farming",
+      "l1": "4505",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "450504",
+      "n": "Tobacco and Other Farming",
+      "l1": "4505",
+      "l0": "45",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500101",
+      "n": "Telecommunication Service Provider",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500102",
+      "n": "Broadband and Internet Service Provider",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500103",
+      "n": "DTH and Cable Service Provider",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500104",
+      "n": "Telecommunication Infrastructure Provider",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500105",
+      "n": "Sale of Telecom Equipment",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500106",
+      "n": "Information and Communication Technology",
+      "l1": "5001",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500201",
+      "n": "Media Broadcasting and Advertisement",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500202",
+      "n": "Media Broadcasting",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500203",
+      "n": "Digital Ad Space",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500204",
+      "n": "Advertising & Promotion",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500205",
+      "n": "Entertainment Production and Distribution House",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500206",
+      "n": "Pr and Marketing Agencies",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500207",
+      "n": "Omnichannel Advertisements",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500208",
+      "n": "Outdoor Advertising",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500209",
+      "n": "Digital Marketing",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500210",
+      "n": "Advertising Space",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500211",
+      "n": "Media Royalty",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500212",
+      "n": "Media and Telecom",
+      "l1": "5002",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500301",
+      "n": "General Publishing",
+      "l1": "5003",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500302",
+      "n": "Newspaper and Magazine Publisher",
+      "l1": "5003",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500303",
+      "n": "Educational and Other Publisher",
+      "l1": "5003",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500304",
+      "n": "Printing Services",
+      "l1": "5003",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500305",
+      "n": "Online Publishing Services",
+      "l1": "5003",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500401",
+      "n": "Telecommunication Hardware and Software",
+      "l1": "5004",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500402",
+      "n": "Telecommunication Equipment Provider",
+      "l1": "5004",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500403",
+      "n": "Network Testing & Validation Equipment and Software",
+      "l1": "5004",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "500404",
+      "n": "Hardware Device and System",
+      "l1": "5004",
+      "l0": "50",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550101",
+      "n": "IT Services",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550102",
+      "n": "IT Consulting Services",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550103",
+      "n": "Cybersecurity Services",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550104",
+      "n": "Infrastructure as a Service (IaaS)",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550105",
+      "n": "Platform as a Service (PaaS)",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550106",
+      "n": "Software as a Service (SaaS)",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550107",
+      "n": "DbaaS (Database as a Service)",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550108",
+      "n": "Cloud Service",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550109",
+      "n": "Digital Distribution Service",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550110",
+      "n": "Data Centre",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550111",
+      "n": "Tech Royalty",
+      "l1": "5501",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550201",
+      "n": "Enterprise Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550202",
+      "n": "Finance Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550203",
+      "n": "HR Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550204",
+      "n": "Healthcare Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550205",
+      "n": "Supply Chain Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550206",
+      "n": "Industry Specific Software Solutions",
+      "l1": "5502",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550301",
+      "n": "Emerging Technologies",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550302",
+      "n": "Machine Learning and Artificial Intelligence Services",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550303",
+      "n": "Extended Reality",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550304",
+      "n": "Blockchain Technology",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550305",
+      "n": "Quantum Computing",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550306",
+      "n": "Lidar Technology Providers",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550307",
+      "n": "ADAS Technology",
+      "l1": "5503",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550401",
+      "n": "Hardware and Software Distributor",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550402",
+      "n": "Software",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550403",
+      "n": "Software Developer",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550404",
+      "n": "Cybersecurity",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550405",
+      "n": "Workplace Virtualization",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550406",
+      "n": "Collaboration Platforms",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550407",
+      "n": "Data and Analytics",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550408",
+      "n": "Gaming Software",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550409",
+      "n": "Website/Apps Developer and Hosting Services",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550410",
+      "n": "System Software",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550411",
+      "n": "Ad Management Tools",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550412",
+      "n": "Game Developer",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550413",
+      "n": "Software and Hardware",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550414",
+      "n": "Multiple Softwares",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550415",
+      "n": "Biometric Softwares",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550416",
+      "n": "Designing Software",
+      "l1": "5504",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550501",
+      "n": "Semiconductor Products Distribution",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550502",
+      "n": "Semiconductor Products",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550503",
+      "n": "Semiconductor Technology",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550504",
+      "n": "Semiconductor Testing/ Equipment/ Packaging & Supply",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550505",
+      "n": "Integrated Circuits (IC)",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550506",
+      "n": "Semi-Conductors Components",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550507",
+      "n": "Solar Cells & Panels Manufacturer and Supplier",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550508",
+      "n": "Electronic Components",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550509",
+      "n": "Electronic Material",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550510",
+      "n": "Electronic Equipment/Component and Material",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550511",
+      "n": "AI/ Data Center Integrated Circuits",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550512",
+      "n": "Graphics Integrated Circuits",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550513",
+      "n": "Semiconductor manufacturing equipment",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550514",
+      "n": "Transistor and Capacitor",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550515",
+      "n": "Sensors",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550516",
+      "n": "Connectors",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550517",
+      "n": "Audio Components",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550518",
+      "n": "Display device",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550519",
+      "n": "Resistor",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550520",
+      "n": "Optics/ Laser devices",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550521",
+      "n": "Modules",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550522",
+      "n": "Inductor",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550523",
+      "n": "Optical fibre cables",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550524",
+      "n": "Power Supplies",
+      "l1": "5505",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550601",
+      "n": "Consumer Iot",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550602",
+      "n": "Conventional Light Manufacturers",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550603",
+      "n": "Energy Efficient Advanced Products and Components",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550604",
+      "n": "Security Solutions",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550605",
+      "n": "Consumer Electronic Goods Manufacturers",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550606",
+      "n": "Computer Manufacturers",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550607",
+      "n": "Mobile Phone Manufacturers",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550608",
+      "n": "Automatic Identification System",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550609",
+      "n": "Audio Solutions",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "550610",
+      "n": "Multiple Technology Consumer Goods",
+      "l1": "5506",
+      "l0": "55",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600101",
+      "n": "Chemical/ Plastic/ Rubber/ Gas and Paper Producers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600102",
+      "n": "Resin and Polymer",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600103",
+      "n": "Carbon and Other Fibers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600104",
+      "n": "Agrochemical",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600105",
+      "n": "Additives Manufacturing",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600106",
+      "n": "Specialty Or Performance Chemicals Manufacturers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600107",
+      "n": "Industrial Gas Manufacturers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600108",
+      "n": "Pulp and Paper Manufacturers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600109",
+      "n": "Industrial and Mining Explosives Manufacturers",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600110",
+      "n": "Membrane and Catalyst",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600111",
+      "n": "Petrochemical Products",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600112",
+      "n": "Pulp; Paper and Packaging",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600113",
+      "n": "Speciality Chemical and Resin Polymer",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600114",
+      "n": "Petrochemical and Resin Polymer",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600115",
+      "n": "Biochemical",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600116",
+      "n": "Rubber Product",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600117",
+      "n": "Plastic Product",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600118",
+      "n": "Alcohol and Ethanol",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600119",
+      "n": "Agri Seeds and Chemical",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600120",
+      "n": "Speciality chemical and additive manufacturing",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600121",
+      "n": "Product Packaging Solution",
+      "l1": "6001",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600201",
+      "n": "Construction and Building Material",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600202",
+      "n": "Cement and Allied Products",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600203",
+      "n": "Asphalt",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600204",
+      "n": "Coating/ Adhesive and Paint Manufacturers",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600205",
+      "n": "Brick Manufacturer",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600206",
+      "n": "Tiles and Sanitary",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600207",
+      "n": "Glass Manufacturer",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600208",
+      "n": "Floor and Rooftop Paving Material",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600209",
+      "n": "Window/Door/Kitchen Cabinet",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600210",
+      "n": "Gardening Products",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600211",
+      "n": "Prefabricated Building",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600212",
+      "n": "Pipes and Fittings",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600213",
+      "n": "Timber and Wood Products",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600214",
+      "n": "Hardware and Building Material Retail",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600215",
+      "n": "Insulation and Related Products",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600216",
+      "n": "Architectural Hardware",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600217",
+      "n": "Pool Equipment/ Materials and Related Services",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600218",
+      "n": "Real Estate and Construction Material",
+      "l1": "6002",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600301",
+      "n": "Coal and Coal Products Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600302",
+      "n": "Construction and Building Material Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600303",
+      "n": "Precious Metal Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600304",
+      "n": "Base Metal and Alloy Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600305",
+      "n": "Chemical Products Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600306",
+      "n": "Commodity Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600307",
+      "n": "Metal Distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600308",
+      "n": "Diversified product distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600309",
+      "n": "Paper products distributor",
+      "l1": "6003",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600401",
+      "n": "Metal and Mineral Product Manufacturing",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600402",
+      "n": "Iron and Steel Products",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600403",
+      "n": "Aluminium Products",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600404",
+      "n": "Metal Products",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600405",
+      "n": "Metal Processing",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600406",
+      "n": "3-D Printing Service",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600407",
+      "n": "Coal/Coke Products",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600408",
+      "n": "Resource Recovery",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600409",
+      "n": "Metal and Compound Manufacturer",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600410",
+      "n": "Mineral Product",
+      "l1": "6004",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600501",
+      "n": "Non-Energy Natural Material Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600502",
+      "n": "Gold Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600503",
+      "n": "Silver Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600504",
+      "n": "Platinum Group Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600505",
+      "n": "Copper Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600506",
+      "n": "Aluminium Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600507",
+      "n": "Lithium Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600508",
+      "n": "Iron Ore Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600509",
+      "n": "Nickel Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600510",
+      "n": "Zinc Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600511",
+      "n": "Magnesium Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600512",
+      "n": "Molybdenum Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600513",
+      "n": "Lead Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600514",
+      "n": "Phosphorus Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600515",
+      "n": "Diamond and Gemstone Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600516",
+      "n": "Sand Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600517",
+      "n": "Limestone Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600518",
+      "n": "Precious Metal Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600519",
+      "n": "Base Metal Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600520",
+      "n": "Precious and Base Metal Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600521",
+      "n": "Mining field services",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600522",
+      "n": "Manganese Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600523",
+      "n": "Metal/ Non-metal Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600524",
+      "n": "Cobalt Mining",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "600525",
+      "n": "Mining Royalty",
+      "l1": "6005",
+      "l0": "60",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "650101",
+      "n": "Others",
+      "l1": "6501",
+      "l0": "65",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    },
+    {
+      "c": "650102",
+      "n": "Other Unallocated/ Eliminated Revenue",
+      "l1": "6501",
+      "l0": "65",
+      "addedBy": "System",
+      "modifiedBy": "System"
+    }
+  ]
+}

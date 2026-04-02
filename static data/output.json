@@ -1,0 +1,3288 @@
+[
+    {
+        "l0_code": "10",
+        "l0_name": "Financials",
+        "l1_data": [
+            {
+                "l1_code": "1001",
+                "l1_name": "Banking",
+                "l2_data": [
+                    {
+                        "l2_code": "100101",
+                        "l2_name": "Banking Services"
+                    },
+                    {
+                        "l2_code": "100102",
+                        "l2_name": "Retail Banking"
+                    },
+                    {
+                        "l2_code": "100103",
+                        "l2_name": "Corporate/Commercial Banking"
+                    },
+                    {
+                        "l2_code": "100104",
+                        "l2_name": "Investment Banking"
+                    },
+                    {
+                        "l2_code": "100105",
+                        "l2_name": "Banking and Wealth & Asset Management"
+                    },
+                    {
+                        "l2_code": "100106",
+                        "l2_name": "Banking and Insurance"
+                    },
+                    {
+                        "l2_code": "100107",
+                        "l2_name": "Investment Banking and Brokerage Services"
+                    },
+                    {
+                        "l2_code": "100108",
+                        "l2_name": "Investment and Corporate Banking"
+                    },
+                    {
+                        "l2_code": "100109",
+                        "l2_name": "Retail and corporate banking"
+                    },
+                    {
+                        "l2_code": "100110",
+                        "l2_name": "Bank Leasing"
+                    },
+                    {
+                        "l2_code": "100111",
+                        "l2_name": "IB & Asset Management"
+                    }
+                ]
+            },
+            {
+                "l1_code": "1002",
+                "l1_name": "Insurance",
+                "l2_data": [
+                    {
+                        "l2_code": "100201",
+                        "l2_name": "Other Insurance"
+                    },
+                    {
+                        "l2_code": "100202",
+                        "l2_name": "Health Insurance"
+                    },
+                    {
+                        "l2_code": "100203",
+                        "l2_name": "Life Insurance"
+                    },
+                    {
+                        "l2_code": "100204",
+                        "l2_name": "Life and Health Insurance"
+                    },
+                    {
+                        "l2_code": "100205",
+                        "l2_name": "General Insurance"
+                    },
+                    {
+                        "l2_code": "100206",
+                        "l2_name": "Commercial Insurance"
+                    },
+                    {
+                        "l2_code": "100207",
+                        "l2_name": "Automobile Insurance"
+                    },
+                    {
+                        "l2_code": "100208",
+                        "l2_name": "Insurance Broker"
+                    },
+                    {
+                        "l2_code": "100209",
+                        "l2_name": "Life and Non-Life Insurance"
+                    },
+                    {
+                        "l2_code": "100210",
+                        "l2_name": "Property & Casualty Insurance"
+                    },
+                    {
+                        "l2_code": "100211",
+                        "l2_name": "Reinsurance"
+                    }
+                ]
+            },
+            {
+                "l1_code": "1003",
+                "l1_name": "Financial Services",
+                "l2_data": [
+                    {
+                        "l2_code": "100301",
+                        "l2_name": "Financial Services"
+                    },
+                    {
+                        "l2_code": "100302",
+                        "l2_name": "Specialty Financing"
+                    },
+                    {
+                        "l2_code": "100303",
+                        "l2_name": "Automobile Financing"
+                    },
+                    {
+                        "l2_code": "100304",
+                        "l2_name": "Trading/ Capital Markets and Brokerage Firm"
+                    },
+                    {
+                        "l2_code": "100305",
+                        "l2_name": "Forex Trading"
+                    },
+                    {
+                        "l2_code": "100306",
+                        "l2_name": "Exchange and Related Support Services"
+                    },
+                    {
+                        "l2_code": "100307",
+                        "l2_name": "Financial Data Provider"
+                    },
+                    {
+                        "l2_code": "100308",
+                        "l2_name": "Wealth and Asset Management"
+                    },
+                    {
+                        "l2_code": "100309",
+                        "l2_name": "Real Estate Asset Management and Investment"
+                    },
+                    {
+                        "l2_code": "100310",
+                        "l2_name": "Private Equity and Venture Capital"
+                    },
+                    {
+                        "l2_code": "100311",
+                        "l2_name": "Other Investment Companies"
+                    },
+                    {
+                        "l2_code": "100312",
+                        "l2_name": "Indexing Solutions"
+                    },
+                    {
+                        "l2_code": "100313",
+                        "l2_name": "Credit Analysis and Risk Management"
+                    },
+                    {
+                        "l2_code": "100314",
+                        "l2_name": "SPAC (Special Purpose Acquisition Company)"
+                    },
+                    {
+                        "l2_code": "100315",
+                        "l2_name": "Debt Collection Companies"
+                    },
+                    {
+                        "l2_code": "100316",
+                        "l2_name": "Cash Management"
+                    },
+                    {
+                        "l2_code": "100317",
+                        "l2_name": "Commodity Trading"
+                    },
+                    {
+                        "l2_code": "100318",
+                        "l2_name": "Asset/ Wealth Management and Insurance"
+                    },
+                    {
+                        "l2_code": "100319",
+                        "l2_name": "Asset Management and Brokerage Firm"
+                    },
+                    {
+                        "l2_code": "100320",
+                        "l2_name": "Credit Card"
+                    },
+                    {
+                        "l2_code": "100321",
+                        "l2_name": "Internal Treasury"
+                    }
+                ]
+            },
+            {
+                "l1_code": "1004",
+                "l1_name": "Fintech",
+                "l2_data": [
+                    {
+                        "l2_code": "100401",
+                        "l2_name": "Fintech"
+                    },
+                    {
+                        "l2_code": "100402",
+                        "l2_name": "Digital Payment Infrastructure and Services Providers"
+                    },
+                    {
+                        "l2_code": "100403",
+                        "l2_name": "P2P and Marketplace Lending"
+                    },
+                    {
+                        "l2_code": "100404",
+                        "l2_name": "Crowdfunding"
+                    },
+                    {
+                        "l2_code": "100405",
+                        "l2_name": "Decentralized Finance and Alternative Currencies"
+                    },
+                    {
+                        "l2_code": "100406",
+                        "l2_name": "Buy Now Pay Later"
+                    },
+                    {
+                        "l2_code": "100407",
+                        "l2_name": "Financial Robo Advisor"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "15",
+        "l0_name": "Real Estate",
+        "l1_data": [
+            {
+                "l1_code": "1501",
+                "l1_name": "Real Estate",
+                "l2_data": [
+                    {
+                        "l2_code": "150101",
+                        "l2_name": "Commercial REITs"
+                    },
+                    {
+                        "l2_code": "150102",
+                        "l2_name": "Self-Storage REITs"
+                    },
+                    {
+                        "l2_code": "150103",
+                        "l2_name": "Cell Tower REITs"
+                    },
+                    {
+                        "l2_code": "150104",
+                        "l2_name": "Hotel REITs"
+                    },
+                    {
+                        "l2_code": "150105",
+                        "l2_name": "Green Real Estate Investment Trusts (Green REITs)"
+                    },
+                    {
+                        "l2_code": "150106",
+                        "l2_name": "Residential REITs"
+                    },
+                    {
+                        "l2_code": "150107",
+                        "l2_name": "Healthcare REITs"
+                    },
+                    {
+                        "l2_code": "150108",
+                        "l2_name": "Data Centre REITs"
+                    },
+                    {
+                        "l2_code": "150109",
+                        "l2_name": "Mortgage REITs"
+                    },
+                    {
+                        "l2_code": "150110",
+                        "l2_name": "Industrial and Warehouse REITs"
+                    },
+                    {
+                        "l2_code": "150111",
+                        "l2_name": "Other REITs"
+                    },
+                    {
+                        "l2_code": "150112",
+                        "l2_name": "Real Estate Developer/Operators"
+                    },
+                    {
+                        "l2_code": "150113",
+                        "l2_name": "Real Estate Broker"
+                    },
+                    {
+                        "l2_code": "150114",
+                        "l2_name": "Real Estate Investment and Development"
+                    },
+                    {
+                        "l2_code": "150115",
+                        "l2_name": "Commercial and Industrial REITs"
+                    },
+                    {
+                        "l2_code": "150116",
+                        "l2_name": "Real Estate"
+                    },
+                    {
+                        "l2_code": "150117",
+                        "l2_name": "Commercial and Residential REITs"
+                    },
+                    {
+                        "l2_code": "150118",
+                        "l2_name": "Real Estate Consulting Services"
+                    },
+                    {
+                        "l2_code": "150119",
+                        "l2_name": "Residential Real Estate Developer"
+                    },
+                    {
+                        "l2_code": "150120",
+                        "l2_name": "Commercial Real Estate Developer"
+                    },
+                    {
+                        "l2_code": "150121",
+                        "l2_name": "Industrial Real Estate Developer"
+                    },
+                    {
+                        "l2_code": "150122",
+                        "l2_name": "Commercial and Residential Real Estate Developer"
+                    },
+                    {
+                        "l2_code": "150123",
+                        "l2_name": "Commercial and Industrial Real Estate Developer"
+                    },
+                    {
+                        "l2_code": "150124",
+                        "l2_name": "Property Rental/Sale"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "20",
+        "l0_name": "Utilities",
+        "l1_data": [
+            {
+                "l1_code": "2001",
+                "l1_name": "Energy Producers",
+                "l2_data": [
+                    {
+                        "l2_code": "200101",
+                        "l2_name": "Energy Producers"
+                    },
+                    {
+                        "l2_code": "200102",
+                        "l2_name": "Hydro Energy"
+                    },
+                    {
+                        "l2_code": "200103",
+                        "l2_name": "Wind Energy"
+                    },
+                    {
+                        "l2_code": "200104",
+                        "l2_name": "Geothermal Energy"
+                    },
+                    {
+                        "l2_code": "200105",
+                        "l2_name": "Biomass Energy"
+                    },
+                    {
+                        "l2_code": "200106",
+                        "l2_name": "Thermal Energy"
+                    },
+                    {
+                        "l2_code": "200107",
+                        "l2_name": "Green/ Biofuel Producers"
+                    },
+                    {
+                        "l2_code": "200108",
+                        "l2_name": "Nuclear Energy"
+                    },
+                    {
+                        "l2_code": "200109",
+                        "l2_name": "Solar Energy"
+                    },
+                    {
+                        "l2_code": "200110",
+                        "l2_name": "Renewable Energy"
+                    },
+                    {
+                        "l2_code": "200111",
+                        "l2_name": "Nuclear and Other Energy"
+                    },
+                    {
+                        "l2_code": "200112",
+                        "l2_name": "Thermal & renewable energy generation"
+                    },
+                    {
+                        "l2_code": "200113",
+                        "l2_name": "Energy Producers Services"
+                    },
+                    {
+                        "l2_code": "200114",
+                        "l2_name": "Diversified Energy"
+                    }
+                ]
+            },
+            {
+                "l1_code": "2002",
+                "l1_name": "Fuelling Station and Equipment",
+                "l2_data": [
+                    {
+                        "l2_code": "200201",
+                        "l2_name": "Ev Charging Stations"
+                    },
+                    {
+                        "l2_code": "200202",
+                        "l2_name": "Petroleum Station Infrastructure"
+                    },
+                    {
+                        "l2_code": "200203",
+                        "l2_name": "EV Charging Infrastructure Provider"
+                    },
+                    {
+                        "l2_code": "200204",
+                        "l2_name": "Hydrogen Fuelling Station Equipments/Operators"
+                    },
+                    {
+                        "l2_code": "200205",
+                        "l2_name": "Fuelling Stations Manufacturer/Operators"
+                    }
+                ]
+            },
+            {
+                "l1_code": "2003",
+                "l1_name": "Utilities",
+                "l2_data": [
+                    {
+                        "l2_code": "200301",
+                        "l2_name": "Water Infrastructure"
+                    },
+                    {
+                        "l2_code": "200302",
+                        "l2_name": "Electric Utility"
+                    },
+                    {
+                        "l2_code": "200303",
+                        "l2_name": "Electric Grids and Distribution Infrastructure"
+                    },
+                    {
+                        "l2_code": "200304",
+                        "l2_name": "Waste Management"
+                    },
+                    {
+                        "l2_code": "200305",
+                        "l2_name": "Water Utility"
+                    },
+                    {
+                        "l2_code": "200306",
+                        "l2_name": "Gas Distribution"
+                    },
+                    {
+                        "l2_code": "200307",
+                        "l2_name": "Steam and Heat Utilities"
+                    },
+                    {
+                        "l2_code": "200308",
+                        "l2_name": "Environment Friendly Solution"
+                    },
+                    {
+                        "l2_code": "200309",
+                        "l2_name": "Multi Utilities"
+                    },
+                    {
+                        "l2_code": "200310",
+                        "l2_name": "Energy management services"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "25",
+        "l0_name": "Energy",
+        "l1_data": [
+            {
+                "l1_code": "2501",
+                "l1_name": "Upstream Energy",
+                "l2_data": [
+                    {
+                        "l2_code": "250101",
+                        "l2_name": "Upstream Energy"
+                    },
+                    {
+                        "l2_code": "250102",
+                        "l2_name": "Oil and Gas Exploration"
+                    },
+                    {
+                        "l2_code": "250103",
+                        "l2_name": "Oil and Gas Infrastructure"
+                    },
+                    {
+                        "l2_code": "250104",
+                        "l2_name": "Oil and Gas Field Services"
+                    },
+                    {
+                        "l2_code": "250105",
+                        "l2_name": "Oil and Gas Geophysical Service"
+                    },
+                    {
+                        "l2_code": "250106",
+                        "l2_name": "Coal Mining"
+                    },
+                    {
+                        "l2_code": "250107",
+                        "l2_name": "Nuclear Fuel Mining"
+                    },
+                    {
+                        "l2_code": "250108",
+                        "l2_name": "Oil and Gas Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "2502",
+                "l1_name": "Midstream/Downstream Energy",
+                "l2_data": [
+                    {
+                        "l2_code": "250201",
+                        "l2_name": "Midstream/Downstream Energy"
+                    },
+                    {
+                        "l2_code": "250202",
+                        "l2_name": "Oil & Gas Storage and Pipeline Services"
+                    },
+                    {
+                        "l2_code": "250203",
+                        "l2_name": "Oil & Gas Storage and Tanker Services"
+                    },
+                    {
+                        "l2_code": "250204",
+                        "l2_name": "Refining/ Oil and Gas Products Distribution"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "30",
+        "l0_name": "Industrials",
+        "l1_data": [
+            {
+                "l1_code": "3001",
+                "l1_name": "Business/Professional Services and Products",
+                "l2_data": [
+                    {
+                        "l2_code": "300101",
+                        "l2_name": "Business/Professional Services and Products"
+                    },
+                    {
+                        "l2_code": "300102",
+                        "l2_name": "Business Consulting/ Auditing Services"
+                    },
+                    {
+                        "l2_code": "300103",
+                        "l2_name": "Testing/ Inspection and Certification Services"
+                    },
+                    {
+                        "l2_code": "300104",
+                        "l2_name": "Employment Services and Training"
+                    },
+                    {
+                        "l2_code": "300105",
+                        "l2_name": "Background Screening Service"
+                    },
+                    {
+                        "l2_code": "300106",
+                        "l2_name": "BPO and KPOs"
+                    },
+                    {
+                        "l2_code": "300107",
+                        "l2_name": "Legal Services"
+                    },
+                    {
+                        "l2_code": "300108",
+                        "l2_name": "Patent/Licensing Service"
+                    },
+                    {
+                        "l2_code": "300109",
+                        "l2_name": "Security Services"
+                    },
+                    {
+                        "l2_code": "300110",
+                        "l2_name": "Business Support Services"
+                    },
+                    {
+                        "l2_code": "300111",
+                        "l2_name": "Engineering Consultancy"
+                    },
+                    {
+                        "l2_code": "300112",
+                        "l2_name": "Tech Solution"
+                    },
+                    {
+                        "l2_code": "300113",
+                        "l2_name": "Market Research"
+                    },
+                    {
+                        "l2_code": "300114",
+                        "l2_name": "Healthcare Solutions"
+                    },
+                    {
+                        "l2_code": "300115",
+                        "l2_name": "Data/ Information Provider"
+                    },
+                    {
+                        "l2_code": "300116",
+                        "l2_name": "Event Management"
+                    },
+                    {
+                        "l2_code": "300117",
+                        "l2_name": "Contract Manufacturing"
+                    },
+                    {
+                        "l2_code": "300118",
+                        "l2_name": "Agri Support Business"
+                    },
+                    {
+                        "l2_code": "300119",
+                        "l2_name": "Maintenance and Repair Service"
+                    },
+                    {
+                        "l2_code": "300120",
+                        "l2_name": "Disaster Management and Rescue Services"
+                    },
+                    {
+                        "l2_code": "300121",
+                        "l2_name": "Lead/ Information Provider"
+                    },
+                    {
+                        "l2_code": "300122",
+                        "l2_name": "Taxation services"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3002",
+                "l1_name": "Defence and Military",
+                "l2_data": [
+                    {
+                        "l2_code": "300201",
+                        "l2_name": "Defence and Military"
+                    },
+                    {
+                        "l2_code": "300202",
+                        "l2_name": "Ground Defence"
+                    },
+                    {
+                        "l2_code": "300203",
+                        "l2_name": "Aerospace and Defence Technology"
+                    },
+                    {
+                        "l2_code": "300204",
+                        "l2_name": "Aerospace and Defence Components"
+                    },
+                    {
+                        "l2_code": "300205",
+                        "l2_name": "Firearms and Ammunition"
+                    },
+                    {
+                        "l2_code": "300206",
+                        "l2_name": "Defence Aircraft Manufacturer"
+                    },
+                    {
+                        "l2_code": "300207",
+                        "l2_name": "Military Grade Apparels"
+                    },
+                    {
+                        "l2_code": "300208",
+                        "l2_name": "Naval Defence"
+                    },
+                    {
+                        "l2_code": "300209",
+                        "l2_name": "Defence Products and Systems"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3003",
+                "l1_name": "Diverse/Multiple Business",
+                "l2_data": [
+                    {
+                        "l2_code": "300301",
+                        "l2_name": "Industrial Diversified Business"
+                    },
+                    {
+                        "l2_code": "300302",
+                        "l2_name": "Consumer and Industrial Diversified Business"
+                    },
+                    {
+                        "l2_code": "300303",
+                        "l2_name": "Finance and Non-Finance Business"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3004",
+                "l1_name": "Electrical Equipment",
+                "l2_data": [
+                    {
+                        "l2_code": "300401",
+                        "l2_name": "Electrical Equipment and Components"
+                    },
+                    {
+                        "l2_code": "300402",
+                        "l2_name": "Wires and Cables"
+                    },
+                    {
+                        "l2_code": "300403",
+                        "l2_name": "Electrical Power Transmission Equipment"
+                    },
+                    {
+                        "l2_code": "300404",
+                        "l2_name": "Batteries and Power Equipment"
+                    },
+                    {
+                        "l2_code": "300405",
+                        "l2_name": "Li-Ion Batteries"
+                    },
+                    {
+                        "l2_code": "300406",
+                        "l2_name": "Power Generators and Motors"
+                    },
+                    {
+                        "l2_code": "300407",
+                        "l2_name": "Electrical Products and Components Distributor"
+                    },
+                    {
+                        "l2_code": "300408",
+                        "l2_name": "Electronic Component Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3005",
+                "l1_name": "Energy Equipment",
+                "l2_data": [
+                    {
+                        "l2_code": "300501",
+                        "l2_name": "Thermal Power Plant Equipment"
+                    },
+                    {
+                        "l2_code": "300502",
+                        "l2_name": "Nuclear Power Plant Equipment"
+                    },
+                    {
+                        "l2_code": "300503",
+                        "l2_name": "Energy Equipment"
+                    },
+                    {
+                        "l2_code": "300504",
+                        "l2_name": "Wind Turbine generators/ Parts"
+                    },
+                    {
+                        "l2_code": "300505",
+                        "l2_name": "Hydropower equipment"
+                    },
+                    {
+                        "l2_code": "300506",
+                        "l2_name": "Hydrogen Equipments"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3006",
+                "l1_name": "Industrial Machinery",
+                "l2_data": [
+                    {
+                        "l2_code": "300601",
+                        "l2_name": "Industry Machinery/ Parts and Solution"
+                    },
+                    {
+                        "l2_code": "300602",
+                        "l2_name": "Elevator & Escalator Manufacturer"
+                    },
+                    {
+                        "l2_code": "300603",
+                        "l2_name": "Industrial Robot"
+                    },
+                    {
+                        "l2_code": "300604",
+                        "l2_name": "Autonomous System"
+                    },
+                    {
+                        "l2_code": "300605",
+                        "l2_name": "Oil and Gas Equipment Manufacturer"
+                    },
+                    {
+                        "l2_code": "300606",
+                        "l2_name": "Testing & Measuring Equipment"
+                    },
+                    {
+                        "l2_code": "300607",
+                        "l2_name": "Plumbing and Water Pump"
+                    },
+                    {
+                        "l2_code": "300608",
+                        "l2_name": "Hydraulic & Fluid Pump and Actuator"
+                    },
+                    {
+                        "l2_code": "300609",
+                        "l2_name": "Industrial Process Furnace and Oven"
+                    },
+                    {
+                        "l2_code": "300610",
+                        "l2_name": "Vending Machine"
+                    },
+                    {
+                        "l2_code": "300611",
+                        "l2_name": "Industrial Mould"
+                    },
+                    {
+                        "l2_code": "300612",
+                        "l2_name": "Machine Tools and Hardware"
+                    },
+                    {
+                        "l2_code": "300613",
+                        "l2_name": "Industrial Wearable and Safety Solution"
+                    },
+                    {
+                        "l2_code": "300614",
+                        "l2_name": "Heating/ Ventilating and Air Conditioning Solution"
+                    },
+                    {
+                        "l2_code": "300615",
+                        "l2_name": "Industrial Kitchen Equipment"
+                    },
+                    {
+                        "l2_code": "300616",
+                        "l2_name": "Liquid/ Air and Gas Compressor/Equipment/Solution"
+                    },
+                    {
+                        "l2_code": "300617",
+                        "l2_name": "Bearing and Power Transmission Product"
+                    },
+                    {
+                        "l2_code": "300618",
+                        "l2_name": "Welding Machine and Related Product"
+                    },
+                    {
+                        "l2_code": "300619",
+                        "l2_name": "Mining Tools and Equipment"
+                    },
+                    {
+                        "l2_code": "300620",
+                        "l2_name": "Equipment Leasing"
+                    },
+                    {
+                        "l2_code": "300621",
+                        "l2_name": "Industrial Wearable (Iot)"
+                    },
+                    {
+                        "l2_code": "300622",
+                        "l2_name": "Farming Solution"
+                    },
+                    {
+                        "l2_code": "300623",
+                        "l2_name": "Industrial and Commercial Electronic Goods"
+                    },
+                    {
+                        "l2_code": "300624",
+                        "l2_name": "Industrial Product/ Material"
+                    },
+                    {
+                        "l2_code": "300625",
+                        "l2_name": "Residential and Commercial Electronic Goods"
+                    },
+                    {
+                        "l2_code": "300626",
+                        "l2_name": "Industrial Technology/IoT Solution"
+                    },
+                    {
+                        "l2_code": "300627",
+                        "l2_name": "Industrial casting & molding machine"
+                    },
+                    {
+                        "l2_code": "300628",
+                        "l2_name": "Industrial Machinery and Parts Distributor"
+                    },
+                    {
+                        "l2_code": "300629",
+                        "l2_name": "Industrial Product Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3007",
+                "l1_name": "Infrastructure Development and Related Services",
+                "l2_data": [
+                    {
+                        "l2_code": "300701",
+                        "l2_name": "Infrastructure Development and Related Services"
+                    },
+                    {
+                        "l2_code": "300702",
+                        "l2_name": "Construction Services"
+                    },
+                    {
+                        "l2_code": "300703",
+                        "l2_name": "Energy Infrastructure Provider"
+                    },
+                    {
+                        "l2_code": "300704",
+                        "l2_name": "Road and Related Infrastructure Operators"
+                    },
+                    {
+                        "l2_code": "300705",
+                        "l2_name": "Home Builder"
+                    },
+                    {
+                        "l2_code": "300706",
+                        "l2_name": "Speciality Contractors"
+                    },
+                    {
+                        "l2_code": "300707",
+                        "l2_name": "Railway Infrastructure and Maintenance Services"
+                    },
+                    {
+                        "l2_code": "300708",
+                        "l2_name": "Property Management Services"
+                    },
+                    {
+                        "l2_code": "300709",
+                        "l2_name": "Infrastructure Architectural Design and Solutions"
+                    },
+                    {
+                        "l2_code": "300710",
+                        "l2_name": "Industrial and Construction Vehicle Leasing"
+                    },
+                    {
+                        "l2_code": "300711",
+                        "l2_name": "Port and Road Operators"
+                    },
+                    {
+                        "l2_code": "300712",
+                        "l2_name": "Building Construction"
+                    },
+                    {
+                        "l2_code": "300713",
+                        "l2_name": "Public infrastructure"
+                    },
+                    {
+                        "l2_code": "300714",
+                        "l2_name": "Civil Engineering"
+                    },
+                    {
+                        "l2_code": "300715",
+                        "l2_name": "Plant & factory construction"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3008",
+                "l1_name": "Royalty",
+                "l2_data": [
+                    {
+                        "l2_code": "300801",
+                        "l2_name": "Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3009",
+                "l1_name": "Supply Chain and Related Equipment Manufacturers",
+                "l2_data": [
+                    {
+                        "l2_code": "300901",
+                        "l2_name": "Supply chain Providers"
+                    },
+                    {
+                        "l2_code": "300902",
+                        "l2_name": "Logistics Service Provider"
+                    },
+                    {
+                        "l2_code": "300903",
+                        "l2_name": "Express Courier Services"
+                    },
+                    {
+                        "l2_code": "300904",
+                        "l2_name": "Supply Chain Management"
+                    },
+                    {
+                        "l2_code": "300905",
+                        "l2_name": "Containers and Packaging Products Makers"
+                    },
+                    {
+                        "l2_code": "300906",
+                        "l2_name": "Pressure Vessel and Storage Tanks Manufacturer"
+                    },
+                    {
+                        "l2_code": "300907",
+                        "l2_name": "Port Management"
+                    },
+                    {
+                        "l2_code": "300908",
+                        "l2_name": "Transportation Support System"
+                    },
+                    {
+                        "l2_code": "300909",
+                        "l2_name": "Supply chain related equipment"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3010",
+                "l1_name": "Transportation Vehicles and Related Parts Manufacturer",
+                "l2_data": [
+                    {
+                        "l2_code": "301001",
+                        "l2_name": "Transportation Vehicles and Related Parts Manufacturer"
+                    },
+                    {
+                        "l2_code": "301002",
+                        "l2_name": "Locomotive and Related Parts Manufacturer"
+                    },
+                    {
+                        "l2_code": "301003",
+                        "l2_name": "Train and Metro Coach Manufacturer"
+                    },
+                    {
+                        "l2_code": "301004",
+                        "l2_name": "Rail Part Manufacturers"
+                    },
+                    {
+                        "l2_code": "301005",
+                        "l2_name": "Passenger and Cargo Aircraft Manufacturer"
+                    },
+                    {
+                        "l2_code": "301006",
+                        "l2_name": "Aircraft Parts Manufacturer"
+                    },
+                    {
+                        "l2_code": "301007",
+                        "l2_name": "Jet Engine Manufacturer"
+                    },
+                    {
+                        "l2_code": "301008",
+                        "l2_name": "Aircraft Parts /Maintenance Service Provider"
+                    },
+                    {
+                        "l2_code": "301009",
+                        "l2_name": "Ships and Boats Manufacturer"
+                    },
+                    {
+                        "l2_code": "301010",
+                        "l2_name": "Ships and Boats Parts Manufacturer"
+                    },
+                    {
+                        "l2_code": "301011",
+                        "l2_name": "Ships and Boats Parts/ Maintenance Service Provider"
+                    },
+                    {
+                        "l2_code": "301012",
+                        "l2_name": "Passenger and Defence Aircraft"
+                    },
+                    {
+                        "l2_code": "301013",
+                        "l2_name": "Ships & Boats and Parts Manufacturers/ Retail"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3011",
+                "l1_name": "Transportation/ Aviation and Space Travel Related Services",
+                "l2_data": [
+                    {
+                        "l2_code": "301101",
+                        "l2_name": "Transportation/ Aviation and Space Travel Related Services"
+                    },
+                    {
+                        "l2_code": "301102",
+                        "l2_name": "Airline Passenger Operators"
+                    },
+                    {
+                        "l2_code": "301103",
+                        "l2_name": "Airline Cargo Operators"
+                    },
+                    {
+                        "l2_code": "301104",
+                        "l2_name": "Aircraft Leasing Services"
+                    },
+                    {
+                        "l2_code": "301105",
+                        "l2_name": "Airport Operation and Complimentary Services"
+                    },
+                    {
+                        "l2_code": "301106",
+                        "l2_name": "Satellite Operators and Equipment"
+                    },
+                    {
+                        "l2_code": "301107",
+                        "l2_name": "Space Flight Services"
+                    },
+                    {
+                        "l2_code": "301108",
+                        "l2_name": "Railway Operators"
+                    },
+                    {
+                        "l2_code": "301109",
+                        "l2_name": "Railway Leasing"
+                    },
+                    {
+                        "l2_code": "301110",
+                        "l2_name": "Rail Freight"
+                    },
+                    {
+                        "l2_code": "301111",
+                        "l2_name": "Road Transportation Operators"
+                    },
+                    {
+                        "l2_code": "301112",
+                        "l2_name": "Road Cargo"
+                    },
+                    {
+                        "l2_code": "301113",
+                        "l2_name": "Ship and Vessel Leasing"
+                    },
+                    {
+                        "l2_code": "301114",
+                        "l2_name": "Intermodal Cargo Services"
+                    },
+                    {
+                        "l2_code": "301115",
+                        "l2_name": "Water Freight"
+                    },
+                    {
+                        "l2_code": "301116",
+                        "l2_name": "Fleet Management Services"
+                    },
+                    {
+                        "l2_code": "301117",
+                        "l2_name": "Navigation Devices and Services"
+                    },
+                    {
+                        "l2_code": "301118",
+                        "l2_name": "Water Transportation Service"
+                    },
+                    {
+                        "l2_code": "301119",
+                        "l2_name": "Passenger and Cargo Airline Operators"
+                    },
+                    {
+                        "l2_code": "301120",
+                        "l2_name": "Passenger Transportation Services"
+                    },
+                    {
+                        "l2_code": "301121",
+                        "l2_name": "Passenger and Cargo Transportation Service"
+                    },
+                    {
+                        "l2_code": "301122",
+                        "l2_name": "Port/Airport Operation & Complimentary Services"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "35",
+        "l0_name": "Health Care",
+        "l1_data": [
+            {
+                "l1_code": "3501",
+                "l1_name": "Healthcare Services/Products",
+                "l2_data": [
+                    {
+                        "l2_code": "350101",
+                        "l2_name": "Healthcare Services/Products"
+                    },
+                    {
+                        "l2_code": "350102",
+                        "l2_name": "Hospitals and Nursing Homes"
+                    },
+                    {
+                        "l2_code": "350103",
+                        "l2_name": "Fertility Centres"
+                    },
+                    {
+                        "l2_code": "350104",
+                        "l2_name": "Aging Population Focused Health Care Services"
+                    },
+                    {
+                        "l2_code": "350105",
+                        "l2_name": "Cancer Immuno-Oncology Therapy"
+                    },
+                    {
+                        "l2_code": "350106",
+                        "l2_name": "Regenerative Medicine/ Stem Cell and Gene Therapy"
+                    },
+                    {
+                        "l2_code": "350107",
+                        "l2_name": "Immunotherapy"
+                    },
+                    {
+                        "l2_code": "350108",
+                        "l2_name": "Dermatology"
+                    },
+                    {
+                        "l2_code": "350109",
+                        "l2_name": "Home Medical Care Services"
+                    },
+                    {
+                        "l2_code": "350110",
+                        "l2_name": "Diagnostics Services"
+                    },
+                    {
+                        "l2_code": "350111",
+                        "l2_name": "Digital Healthcare"
+                    },
+                    {
+                        "l2_code": "350112",
+                        "l2_name": "Diagnostic and Lab Products"
+                    },
+                    {
+                        "l2_code": "350113",
+                        "l2_name": "Optical Care"
+                    },
+                    {
+                        "l2_code": "350114",
+                        "l2_name": "Healthcare Supplies"
+                    },
+                    {
+                        "l2_code": "350115",
+                        "l2_name": "Healthcare Apparels Manufacturers"
+                    },
+                    {
+                        "l2_code": "350116",
+                        "l2_name": "Healthcare Product and Pharmaceuticals"
+                    },
+                    {
+                        "l2_code": "350117",
+                        "l2_name": "Sterlization and Disinfection products/ services"
+                    },
+                    {
+                        "l2_code": "350118",
+                        "l2_name": "Oral and Dental care"
+                    },
+                    {
+                        "l2_code": "350119",
+                        "l2_name": "Healthcare cold storage solutions"
+                    },
+                    {
+                        "l2_code": "350120",
+                        "l2_name": "Kidney care therapy"
+                    },
+                    {
+                        "l2_code": "350121",
+                        "l2_name": "Non-surgical equipment"
+                    },
+                    {
+                        "l2_code": "350122",
+                        "l2_name": "Healthcare Therapy"
+                    },
+                    {
+                        "l2_code": "350123",
+                        "l2_name": "Surgical Products"
+                    },
+                    {
+                        "l2_code": "350124",
+                        "l2_name": "Healthcare Product Distributor"
+                    },
+                    {
+                        "l2_code": "350125",
+                        "l2_name": "Healthcare Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3502",
+                "l1_name": "Pharmaceuticals",
+                "l2_data": [
+                    {
+                        "l2_code": "350201",
+                        "l2_name": "Pharmaceuticals"
+                    },
+                    {
+                        "l2_code": "350202",
+                        "l2_name": "Rare/Orphan Drug"
+                    },
+                    {
+                        "l2_code": "350203",
+                        "l2_name": "Generic Medicines"
+                    },
+                    {
+                        "l2_code": "350204",
+                        "l2_name": "Cancer Novel Target"
+                    },
+                    {
+                        "l2_code": "350205",
+                        "l2_name": "Central Nervous System Treatment and Drugs"
+                    },
+                    {
+                        "l2_code": "350206",
+                        "l2_name": "Cannabis and Industrial Hemp"
+                    },
+                    {
+                        "l2_code": "350207",
+                        "l2_name": "Infection and Inflammation Drugs"
+                    },
+                    {
+                        "l2_code": "350208",
+                        "l2_name": "Traditional Medicine"
+                    },
+                    {
+                        "l2_code": "350209",
+                        "l2_name": "Third Party Drug Manufacturing"
+                    },
+                    {
+                        "l2_code": "350210",
+                        "l2_name": "Vaccine Manufacturer"
+                    },
+                    {
+                        "l2_code": "350211",
+                        "l2_name": "Drug Raw Material Manufacturer"
+                    },
+                    {
+                        "l2_code": "350212",
+                        "l2_name": "Medical Research and Development"
+                    },
+                    {
+                        "l2_code": "350213",
+                        "l2_name": "Pharmacy"
+                    },
+                    {
+                        "l2_code": "350214",
+                        "l2_name": "Nutritional Supplements"
+                    },
+                    {
+                        "l2_code": "350215",
+                        "l2_name": "Cancer and Other Drugs"
+                    },
+                    {
+                        "l2_code": "350216",
+                        "l2_name": "Pharmaceutical and Nutritional Supplements"
+                    },
+                    {
+                        "l2_code": "350217",
+                        "l2_name": "Gastrointestinal/Metabolism medicines"
+                    },
+                    {
+                        "l2_code": "350218",
+                        "l2_name": "Diabetes"
+                    },
+                    {
+                        "l2_code": "350219",
+                        "l2_name": "Cardiovascular"
+                    },
+                    {
+                        "l2_code": "350220",
+                        "l2_name": "Autoimmune"
+                    },
+                    {
+                        "l2_code": "350221",
+                        "l2_name": "Pharmaceutical Products Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3503",
+                "l1_name": "Healthcare Engineering",
+                "l2_data": [
+                    {
+                        "l2_code": "350301",
+                        "l2_name": "Biological Engineering"
+                    },
+                    {
+                        "l2_code": "350302",
+                        "l2_name": "Healthcare Analytics"
+                    },
+                    {
+                        "l2_code": "350303",
+                        "l2_name": "Neuroscience"
+                    },
+                    {
+                        "l2_code": "350304",
+                        "l2_name": "Robotics For Healthcare"
+                    },
+                    {
+                        "l2_code": "350305",
+                        "l2_name": "Med Tech"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3504",
+                "l1_name": "Healthcare Devices",
+                "l2_data": [
+                    {
+                        "l2_code": "350401",
+                        "l2_name": "Speciality Medical Devices"
+                    },
+                    {
+                        "l2_code": "350402",
+                        "l2_name": "Monitoring and Testing Devices"
+                    },
+                    {
+                        "l2_code": "350403",
+                        "l2_name": "3D and Extended Reality Solutions"
+                    },
+                    {
+                        "l2_code": "350404",
+                        "l2_name": "Digital Imaging Devices"
+                    },
+                    {
+                        "l2_code": "350405",
+                        "l2_name": "Healthcare Device and Supplies"
+                    },
+                    {
+                        "l2_code": "350406",
+                        "l2_name": "Diversified Healthcare Devices"
+                    },
+                    {
+                        "l2_code": "350407",
+                        "l2_name": "Medical Device/Equipment Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "3505",
+                "l1_name": "Animal Healthcare",
+                "l2_data": [
+                    {
+                        "l2_code": "350501",
+                        "l2_name": "Animal Healthcare"
+                    },
+                    {
+                        "l2_code": "350502",
+                        "l2_name": "Animal Feed Producers"
+                    },
+                    {
+                        "l2_code": "350503",
+                        "l2_name": "Veterinary Drugs and Treatment"
+                    },
+                    {
+                        "l2_code": "350504",
+                        "l2_name": "Pet Stores and Petcare Grooming"
+                    },
+                    {
+                        "l2_code": "350505",
+                        "l2_name": "Animal Genetics"
+                    },
+                    {
+                        "l2_code": "350506",
+                        "l2_name": "Animal Diagnostic product and Devices"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "40",
+        "l0_name": "Consumer Discretionary",
+        "l1_data": [
+            {
+                "l1_code": "4001",
+                "l1_name": "Automobile and Related Parts Retail",
+                "l2_data": [
+                    {
+                        "l2_code": "400101",
+                        "l2_name": "Automobile and Related Parts Retail"
+                    },
+                    {
+                        "l2_code": "400102",
+                        "l2_name": "Consumer Vehicle Retail"
+                    },
+                    {
+                        "l2_code": "400103",
+                        "l2_name": "Commercial Vehicle Retail"
+                    },
+                    {
+                        "l2_code": "400104",
+                        "l2_name": "Industrial and Construction Vehicle Retail"
+                    },
+                    {
+                        "l2_code": "400105",
+                        "l2_name": "Preowned Cars Retailing"
+                    },
+                    {
+                        "l2_code": "400106",
+                        "l2_name": "Automobile Servicing"
+                    },
+                    {
+                        "l2_code": "400107",
+                        "l2_name": "Automobile Parts Retail"
+                    },
+                    {
+                        "l2_code": "400108",
+                        "l2_name": "Consumer and Commercial Vehicle Retail"
+                    },
+                    {
+                        "l2_code": "400109",
+                        "l2_name": "Automobile parts and servicing"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4002",
+                "l1_name": "Consumer Discretionary Distributor",
+                "l2_data": [
+                    {
+                        "l2_code": "400201",
+                        "l2_name": "Consumer Electronic Products Distributor"
+                    },
+                    {
+                        "l2_code": "400202",
+                        "l2_name": "Automobile Distributor"
+                    },
+                    {
+                        "l2_code": "400203",
+                        "l2_name": "Automobile Parts Distributor"
+                    },
+                    {
+                        "l2_code": "400204",
+                        "l2_name": "Consumer Goods Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4003",
+                "l1_name": "Consumer Goods Retail",
+                "l2_data": [
+                    {
+                        "l2_code": "400301",
+                        "l2_name": "Consumer Goods Retail"
+                    },
+                    {
+                        "l2_code": "400302",
+                        "l2_name": "Apparels Retail"
+                    },
+                    {
+                        "l2_code": "400303",
+                        "l2_name": "Baby Gear and Nursery Retail"
+                    },
+                    {
+                        "l2_code": "400304",
+                        "l2_name": "Footwear Retail"
+                    },
+                    {
+                        "l2_code": "400305",
+                        "l2_name": "Jewellery Store"
+                    },
+                    {
+                        "l2_code": "400306",
+                        "l2_name": "Textile Retail"
+                    },
+                    {
+                        "l2_code": "400307",
+                        "l2_name": "Fashion and Accessories Retail Store"
+                    },
+                    {
+                        "l2_code": "400308",
+                        "l2_name": "Eyewear Store"
+                    },
+                    {
+                        "l2_code": "400309",
+                        "l2_name": "Home Improvement Store"
+                    },
+                    {
+                        "l2_code": "400310",
+                        "l2_name": "Consumer Electronics Retail"
+                    },
+                    {
+                        "l2_code": "400311",
+                        "l2_name": "Super Market"
+                    },
+                    {
+                        "l2_code": "400312",
+                        "l2_name": "Departmental and Convenience Store"
+                    },
+                    {
+                        "l2_code": "400313",
+                        "l2_name": "Decor and Furnishing Products Retail"
+                    },
+                    {
+                        "l2_code": "400314",
+                        "l2_name": "Personal Care and Grooming Retail"
+                    },
+                    {
+                        "l2_code": "400315",
+                        "l2_name": "Office Supplies"
+                    },
+                    {
+                        "l2_code": "400316",
+                        "l2_name": "Discount Store"
+                    },
+                    {
+                        "l2_code": "400317",
+                        "l2_name": "Internet Retail Store"
+                    },
+                    {
+                        "l2_code": "400318",
+                        "l2_name": "Cash & Carry"
+                    },
+                    {
+                        "l2_code": "400319",
+                        "l2_name": "Casual wear Retail"
+                    },
+                    {
+                        "l2_code": "400320",
+                        "l2_name": "Women's wear retail"
+                    },
+                    {
+                        "l2_code": "400321",
+                        "l2_name": "Kid's wear retail"
+                    },
+                    {
+                        "l2_code": "400322",
+                        "l2_name": "Men's wear retail"
+                    },
+                    {
+                        "l2_code": "400323",
+                        "l2_name": "Intimate wear retail store"
+                    },
+                    {
+                        "l2_code": "400324",
+                        "l2_name": "Toys and games retail"
+                    },
+                    {
+                        "l2_code": "400325",
+                        "l2_name": "Merchandise Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4004",
+                "l1_name": "Diversified Consumer Services",
+                "l2_data": [
+                    {
+                        "l2_code": "400401",
+                        "l2_name": "Diversified Consumer Services"
+                    },
+                    {
+                        "l2_code": "400402",
+                        "l2_name": "Spa and Salon"
+                    },
+                    {
+                        "l2_code": "400403",
+                        "l2_name": "Fitness and Wellness Services"
+                    },
+                    {
+                        "l2_code": "400404",
+                        "l2_name": "Funeral Services"
+                    },
+                    {
+                        "l2_code": "400405",
+                        "l2_name": "Laundry and Drycleaning Services"
+                    },
+                    {
+                        "l2_code": "400406",
+                        "l2_name": "Automotive Subscription"
+                    },
+                    {
+                        "l2_code": "400407",
+                        "l2_name": "Apparel and Accessories Subscription"
+                    },
+                    {
+                        "l2_code": "400408",
+                        "l2_name": "Auction Houses"
+                    },
+                    {
+                        "l2_code": "400409",
+                        "l2_name": "Teleshopping"
+                    },
+                    {
+                        "l2_code": "400410",
+                        "l2_name": "Pawnbroker"
+                    },
+                    {
+                        "l2_code": "400411",
+                        "l2_name": "Driving Schools"
+                    },
+                    {
+                        "l2_code": "400412",
+                        "l2_name": "Parking Facilities Operation"
+                    },
+                    {
+                        "l2_code": "400413",
+                        "l2_name": "Photography Services"
+                    },
+                    {
+                        "l2_code": "400414",
+                        "l2_name": "Rental & Leasing Services/ Products"
+                    },
+                    {
+                        "l2_code": "400415",
+                        "l2_name": "Franchise Royalty"
+                    },
+                    {
+                        "l2_code": "400416",
+                        "l2_name": "Consumer Diversified Business"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4005",
+                "l1_name": "Education Services",
+                "l2_data": [
+                    {
+                        "l2_code": "400501",
+                        "l2_name": "Education Services"
+                    },
+                    {
+                        "l2_code": "400502",
+                        "l2_name": "Early Childhood Education"
+                    },
+                    {
+                        "l2_code": "400503",
+                        "l2_name": "Secondary and Higher Education"
+                    },
+                    {
+                        "l2_code": "400504",
+                        "l2_name": "Professional Education"
+                    },
+                    {
+                        "l2_code": "400505",
+                        "l2_name": "Ed-Tech Platforms"
+                    },
+                    {
+                        "l2_code": "400506",
+                        "l2_name": "Education Support Services"
+                    },
+                    {
+                        "l2_code": "400507",
+                        "l2_name": "Education Preparation Centres"
+                    },
+                    {
+                        "l2_code": "400508",
+                        "l2_name": "Schools"
+                    },
+                    {
+                        "l2_code": "400509",
+                        "l2_name": "Special Education/Care Services"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4006",
+                "l1_name": "Hospitality Services",
+                "l2_data": [
+                    {
+                        "l2_code": "400601",
+                        "l2_name": "Hospitality Services"
+                    },
+                    {
+                        "l2_code": "400602",
+                        "l2_name": "Travel and Booking Services"
+                    },
+                    {
+                        "l2_code": "400603",
+                        "l2_name": "Tourism"
+                    },
+                    {
+                        "l2_code": "400604",
+                        "l2_name": "Cruise Ship Service Providers"
+                    },
+                    {
+                        "l2_code": "400605",
+                        "l2_name": "Full-Service Restaurants"
+                    },
+                    {
+                        "l2_code": "400606",
+                        "l2_name": "Quick Service Restaurants"
+                    },
+                    {
+                        "l2_code": "400607",
+                        "l2_name": "Food Catering"
+                    },
+                    {
+                        "l2_code": "400608",
+                        "l2_name": "Cloud Kitchen"
+                    },
+                    {
+                        "l2_code": "400609",
+                        "l2_name": "Hotels / Resorts and Leisure"
+                    },
+                    {
+                        "l2_code": "400610",
+                        "l2_name": "Dormitory Operator"
+                    },
+                    {
+                        "l2_code": "400611",
+                        "l2_name": "Vacation Ownership Operators"
+                    },
+                    {
+                        "l2_code": "400612",
+                        "l2_name": "Hospitality and Leisure Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4007",
+                "l1_name": "Household Discretionary",
+                "l2_data": [
+                    {
+                        "l2_code": "400701",
+                        "l2_name": "Household Consumable"
+                    },
+                    {
+                        "l2_code": "400702",
+                        "l2_name": "Stationery Products Manufacturers"
+                    },
+                    {
+                        "l2_code": "400703",
+                        "l2_name": "Dining and Food Storage"
+                    },
+                    {
+                        "l2_code": "400704",
+                        "l2_name": "Daily Use Household Products"
+                    },
+                    {
+                        "l2_code": "400705",
+                        "l2_name": "Kitchen and Household Appliances"
+                    },
+                    {
+                        "l2_code": "400706",
+                        "l2_name": "Decor and Furnishing Products Manufacturer"
+                    },
+                    {
+                        "l2_code": "400707",
+                        "l2_name": "Personal Care and Grooming"
+                    },
+                    {
+                        "l2_code": "400708",
+                        "l2_name": "Sanitization Products and Services"
+                    },
+                    {
+                        "l2_code": "400709",
+                        "l2_name": "Personal and Baby Care Products"
+                    },
+                    {
+                        "l2_code": "400710",
+                        "l2_name": "Home Solutions"
+                    },
+                    {
+                        "l2_code": "400711",
+                        "l2_name": "Fmcg"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4008",
+                "l1_name": "Leisure and Entertainment",
+                "l2_data": [
+                    {
+                        "l2_code": "400801",
+                        "l2_name": "Leisure and Entertainment"
+                    },
+                    {
+                        "l2_code": "400802",
+                        "l2_name": "Casino and Gambling"
+                    },
+                    {
+                        "l2_code": "400803",
+                        "l2_name": "Other Gambling"
+                    },
+                    {
+                        "l2_code": "400804",
+                        "l2_name": "Online Gambling"
+                    },
+                    {
+                        "l2_code": "400805",
+                        "l2_name": "Amusement Centres and Theme Parks"
+                    },
+                    {
+                        "l2_code": "400806",
+                        "l2_name": "Gaming and Entertainment Arenas"
+                    },
+                    {
+                        "l2_code": "400807",
+                        "l2_name": "Movie Theatres"
+                    },
+                    {
+                        "l2_code": "400808",
+                        "l2_name": "Concerts and Live Entertainment"
+                    },
+                    {
+                        "l2_code": "400809",
+                        "l2_name": "Adventure Sports Services"
+                    },
+                    {
+                        "l2_code": "400810",
+                        "l2_name": "Golf Course Operators"
+                    },
+                    {
+                        "l2_code": "400811",
+                        "l2_name": "Sports Teams & Clubs"
+                    },
+                    {
+                        "l2_code": "400812",
+                        "l2_name": "Ticket Booking Services"
+                    },
+                    {
+                        "l2_code": "400813",
+                        "l2_name": "Musical Instruments"
+                    },
+                    {
+                        "l2_code": "400814",
+                        "l2_name": "Toys and Games"
+                    },
+                    {
+                        "l2_code": "400815",
+                        "l2_name": "Casino and Gambling Gaming Equipment"
+                    },
+                    {
+                        "l2_code": "400816",
+                        "l2_name": "General Gaming Products and Services"
+                    },
+                    {
+                        "l2_code": "400817",
+                        "l2_name": "Esports"
+                    },
+                    {
+                        "l2_code": "400818",
+                        "l2_name": "Lottery games"
+                    },
+                    {
+                        "l2_code": "400819",
+                        "l2_name": "Parimutuel games"
+                    },
+                    {
+                        "l2_code": "400820",
+                        "l2_name": "Entertainment service"
+                    },
+                    {
+                        "l2_code": "400821",
+                        "l2_name": "Sports and Entertainment Stadium"
+                    },
+                    {
+                        "l2_code": "400822",
+                        "l2_name": "Karaoke"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4009",
+                "l1_name": "Motor vehicle and Parts Manufacturers",
+                "l2_data": [
+                    {
+                        "l2_code": "400901",
+                        "l2_name": "Motor Vehicle and Parts Manufacturers"
+                    },
+                    {
+                        "l2_code": "400902",
+                        "l2_name": "Passenger Car"
+                    },
+                    {
+                        "l2_code": "400903",
+                        "l2_name": "Green Vehicle"
+                    },
+                    {
+                        "l2_code": "400904",
+                        "l2_name": "Two-Wheeler"
+                    },
+                    {
+                        "l2_code": "400905",
+                        "l2_name": "Commercial Vehicle"
+                    },
+                    {
+                        "l2_code": "400906",
+                        "l2_name": "Recreational and Adventure Sports Vehicle"
+                    },
+                    {
+                        "l2_code": "400907",
+                        "l2_name": "Autonomous Vehicle and Drone Manufacturer"
+                    },
+                    {
+                        "l2_code": "400908",
+                        "l2_name": "Industrial and Construction Vehicle Manufacturer"
+                    },
+                    {
+                        "l2_code": "400909",
+                        "l2_name": "Motor Vehicle Oem Manufacturer"
+                    },
+                    {
+                        "l2_code": "400910",
+                        "l2_name": "Motor Vehicle Parts and Accessories Manufacturer"
+                    },
+                    {
+                        "l2_code": "400911",
+                        "l2_name": "EV Powertrains"
+                    },
+                    {
+                        "l2_code": "400912",
+                        "l2_name": "EV Parts & Accessories"
+                    },
+                    {
+                        "l2_code": "400913",
+                        "l2_name": "Tyre Manufacturer"
+                    },
+                    {
+                        "l2_code": "400914",
+                        "l2_name": "Farm Machinery and Equipment Manufacturer"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4010",
+                "l1_name": "Online Consumer Services",
+                "l2_data": [
+                    {
+                        "l2_code": "401001",
+                        "l2_name": "Online Match Making Platform"
+                    },
+                    {
+                        "l2_code": "401002",
+                        "l2_name": "Online Cab Services"
+                    },
+                    {
+                        "l2_code": "401003",
+                        "l2_name": "Online Food Delivery"
+                    },
+                    {
+                        "l2_code": "401004",
+                        "l2_name": "Online Media Streaming Platform"
+                    },
+                    {
+                        "l2_code": "401005",
+                        "l2_name": "Online Real Estate Services"
+                    },
+                    {
+                        "l2_code": "401006",
+                        "l2_name": "Social Networking Platform"
+                    },
+                    {
+                        "l2_code": "401007",
+                        "l2_name": "E-Commerce Platform"
+                    },
+                    {
+                        "l2_code": "401008",
+                        "l2_name": "Information Provider Sites"
+                    },
+                    {
+                        "l2_code": "401009",
+                        "l2_name": "Online automobile platform"
+                    },
+                    {
+                        "l2_code": "401010",
+                        "l2_name": "In application services"
+                    },
+                    {
+                        "l2_code": "401011",
+                        "l2_name": "Online agriculture platform"
+                    },
+                    {
+                        "l2_code": "401012",
+                        "l2_name": "Online Supermarket"
+                    },
+                    {
+                        "l2_code": "401013",
+                        "l2_name": "Online fitness platform"
+                    },
+                    {
+                        "l2_code": "401014",
+                        "l2_name": "Diversified Online Consumer Services"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4011",
+                "l1_name": "Sports and Recreation",
+                "l2_data": [
+                    {
+                        "l2_code": "401101",
+                        "l2_name": "Sports and Recreation"
+                    },
+                    {
+                        "l2_code": "401102",
+                        "l2_name": "Athletic Goods and Accessories"
+                    },
+                    {
+                        "l2_code": "401103",
+                        "l2_name": "Outdoor Recreation Products"
+                    },
+                    {
+                        "l2_code": "401104",
+                        "l2_name": "Sports Apparels"
+                    },
+                    {
+                        "l2_code": "401105",
+                        "l2_name": "Sports Footwear"
+                    },
+                    {
+                        "l2_code": "401106",
+                        "l2_name": "Sports and Recreation Retail"
+                    },
+                    {
+                        "l2_code": "401107",
+                        "l2_name": "Sports Apparel/ Footwear & Accessories"
+                    },
+                    {
+                        "l2_code": "401108",
+                        "l2_name": "Bicycle and Related Parts"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4012",
+                "l1_name": "Textile/ Apparel and Fashion Accessories",
+                "l2_data": [
+                    {
+                        "l2_code": "401201",
+                        "l2_name": "Apparels"
+                    },
+                    {
+                        "l2_code": "401202",
+                        "l2_name": "Handbags/ Backpacks and Luggage"
+                    },
+                    {
+                        "l2_code": "401203",
+                        "l2_name": "Footwear"
+                    },
+                    {
+                        "l2_code": "401204",
+                        "l2_name": "Watches"
+                    },
+                    {
+                        "l2_code": "401205",
+                        "l2_name": "Fashion, Lifestyle, and Accessories"
+                    },
+                    {
+                        "l2_code": "401206",
+                        "l2_name": "Textile and Fibre"
+                    },
+                    {
+                        "l2_code": "401207",
+                        "l2_name": "Synthetic Fiber"
+                    },
+                    {
+                        "l2_code": "401208",
+                        "l2_name": "Baby Gear and Nursery"
+                    },
+                    {
+                        "l2_code": "401209",
+                        "l2_name": "Fashion and Lifestyle Distributor"
+                    },
+                    {
+                        "l2_code": "401210",
+                        "l2_name": "Casual Wear"
+                    },
+                    {
+                        "l2_code": "401211",
+                        "l2_name": "Intimates & activewear"
+                    },
+                    {
+                        "l2_code": "401212",
+                        "l2_name": "Men's wear"
+                    },
+                    {
+                        "l2_code": "401213",
+                        "l2_name": "Formal wear"
+                    },
+                    {
+                        "l2_code": "401214",
+                        "l2_name": "Women's wear"
+                    },
+                    {
+                        "l2_code": "401215",
+                        "l2_name": "Kid's wear"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "45",
+        "l0_name": "Consumer Staples",
+        "l1_data": [
+            {
+                "l1_code": "4501",
+                "l1_name": "Food Products",
+                "l2_data": [
+                    {
+                        "l2_code": "450101",
+                        "l2_name": "Food Products"
+                    },
+                    {
+                        "l2_code": "450102",
+                        "l2_name": "Processed Packaged Food Products"
+                    },
+                    {
+                        "l2_code": "450103",
+                        "l2_name": "Unprocessed Packaged Food Products"
+                    },
+                    {
+                        "l2_code": "450104",
+                        "l2_name": "Meat Processing"
+                    },
+                    {
+                        "l2_code": "450105",
+                        "l2_name": "Dairy Products"
+                    },
+                    {
+                        "l2_code": "450106",
+                        "l2_name": "Food and Beverage Retail"
+                    },
+                    {
+                        "l2_code": "450107",
+                        "l2_name": "Food Oil Producers"
+                    },
+                    {
+                        "l2_code": "450108",
+                        "l2_name": "Food Additives/ Preservatives and Colours"
+                    },
+                    {
+                        "l2_code": "450109",
+                        "l2_name": "Food Distribution"
+                    },
+                    {
+                        "l2_code": "450110",
+                        "l2_name": "Food and Beverages"
+                    },
+                    {
+                        "l2_code": "450111",
+                        "l2_name": "Food and Dairy Product"
+                    },
+                    {
+                        "l2_code": "450112",
+                        "l2_name": "Food and Nutrition"
+                    },
+                    {
+                        "l2_code": "450113",
+                        "l2_name": "Condiments"
+                    },
+                    {
+                        "l2_code": "450114",
+                        "l2_name": "Processed Food and Condiments"
+                    },
+                    {
+                        "l2_code": "450115",
+                        "l2_name": "Food and Alcoholic Beverages"
+                    },
+                    {
+                        "l2_code": "450116",
+                        "l2_name": "Processed and Unprocessed Packaged Food"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4502",
+                "l1_name": "Beverages",
+                "l2_data": [
+                    {
+                        "l2_code": "450201",
+                        "l2_name": "Beverages"
+                    },
+                    {
+                        "l2_code": "450202",
+                        "l2_name": "Alcoholic Beverage"
+                    },
+                    {
+                        "l2_code": "450203",
+                        "l2_name": "Non-Alcoholic Beverage"
+                    },
+                    {
+                        "l2_code": "450204",
+                        "l2_name": "Alcohol Retail"
+                    },
+                    {
+                        "l2_code": "450205",
+                        "l2_name": "Alcohol Distribution"
+                    },
+                    {
+                        "l2_code": "450206",
+                        "l2_name": "Mixed Beverage"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4503",
+                "l1_name": "Non-Edible Crop Producer",
+                "l2_data": [
+                    {
+                        "l2_code": "450301",
+                        "l2_name": "Industrial Crop producer"
+                    },
+                    {
+                        "l2_code": "450302",
+                        "l2_name": "Flower and Ornamental Crop Farming"
+                    },
+                    {
+                        "l2_code": "450303",
+                        "l2_name": "Rubber Farming"
+                    },
+                    {
+                        "l2_code": "450304",
+                        "l2_name": "Cotton Farming"
+                    },
+                    {
+                        "l2_code": "450305",
+                        "l2_name": "Bamboo Farming"
+                    },
+                    {
+                        "l2_code": "450306",
+                        "l2_name": "Jute Farming"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4504",
+                "l1_name": "Agriculture",
+                "l2_data": [
+                    {
+                        "l2_code": "450401",
+                        "l2_name": "Farming"
+                    },
+                    {
+                        "l2_code": "450402",
+                        "l2_name": "Grain and Rice Farming"
+                    },
+                    {
+                        "l2_code": "450403",
+                        "l2_name": "Fruit Farming"
+                    },
+                    {
+                        "l2_code": "450404",
+                        "l2_name": "Nuts Farming"
+                    },
+                    {
+                        "l2_code": "450405",
+                        "l2_name": "Vegetable Farming"
+                    },
+                    {
+                        "l2_code": "450406",
+                        "l2_name": "Tea Farming"
+                    },
+                    {
+                        "l2_code": "450407",
+                        "l2_name": "Coffee Farming"
+                    },
+                    {
+                        "l2_code": "450408",
+                        "l2_name": "Oilseed Farming"
+                    },
+                    {
+                        "l2_code": "450409",
+                        "l2_name": "Sugarcane Farming"
+                    },
+                    {
+                        "l2_code": "450410",
+                        "l2_name": "Seed Manufacturing"
+                    },
+                    {
+                        "l2_code": "450411",
+                        "l2_name": "Agriculture Milling"
+                    },
+                    {
+                        "l2_code": "450412",
+                        "l2_name": "Animal Husbandry"
+                    },
+                    {
+                        "l2_code": "450413",
+                        "l2_name": "Animal Husbandry and Meat Processing"
+                    },
+                    {
+                        "l2_code": "450414",
+                        "l2_name": "Edible and Non-Edible Farming"
+                    },
+                    {
+                        "l2_code": "450415",
+                        "l2_name": "Agro Waste Based Product"
+                    },
+                    {
+                        "l2_code": "450416",
+                        "l2_name": "Forestation and Related Product"
+                    },
+                    {
+                        "l2_code": "450417",
+                        "l2_name": "Horticulture"
+                    },
+                    {
+                        "l2_code": "450418",
+                        "l2_name": "Crop Farming"
+                    },
+                    {
+                        "l2_code": "450419",
+                        "l2_name": "Fruit and Vegetables Farming"
+                    },
+                    {
+                        "l2_code": "450420",
+                        "l2_name": "Pulses Farming"
+                    },
+                    {
+                        "l2_code": "450421",
+                        "l2_name": "Agriculture and Farm Machinery Distributor"
+                    },
+                    {
+                        "l2_code": "450422",
+                        "l2_name": "Agriculture Goods Distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "4505",
+                "l1_name": "Tobacco",
+                "l2_data": [
+                    {
+                        "l2_code": "450501",
+                        "l2_name": "Tobacco and Cigarette Product"
+                    },
+                    {
+                        "l2_code": "450502",
+                        "l2_name": "Tobacco and Cigarette Product Retail"
+                    },
+                    {
+                        "l2_code": "450503",
+                        "l2_name": "Tobacco Farming"
+                    },
+                    {
+                        "l2_code": "450504",
+                        "l2_name": "Tobacco and Other Farming"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "50",
+        "l0_name": "Communication Services",
+        "l1_data": [
+            {
+                "l1_code": "5001",
+                "l1_name": "Communication Service Provider",
+                "l2_data": [
+                    {
+                        "l2_code": "500101",
+                        "l2_name": "Telecommunication Service Provider"
+                    },
+                    {
+                        "l2_code": "500102",
+                        "l2_name": "Broadband and Internet Service Provider"
+                    },
+                    {
+                        "l2_code": "500103",
+                        "l2_name": "DTH and Cable Service Provider"
+                    },
+                    {
+                        "l2_code": "500104",
+                        "l2_name": "Telecommunication Infrastructure Provider"
+                    },
+                    {
+                        "l2_code": "500105",
+                        "l2_name": "Sale of Telecom Equipment"
+                    },
+                    {
+                        "l2_code": "500106",
+                        "l2_name": "Information and Communication Technology"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5002",
+                "l1_name": "Media Broadcasting and Advertisement",
+                "l2_data": [
+                    {
+                        "l2_code": "500201",
+                        "l2_name": "Media Broadcasting and Advertisement"
+                    },
+                    {
+                        "l2_code": "500202",
+                        "l2_name": "Media Broadcasting"
+                    },
+                    {
+                        "l2_code": "500203",
+                        "l2_name": "Digital Ad Space"
+                    },
+                    {
+                        "l2_code": "500204",
+                        "l2_name": "Advertising & Promotion"
+                    },
+                    {
+                        "l2_code": "500205",
+                        "l2_name": "Entertainment Production and Distribution House"
+                    },
+                    {
+                        "l2_code": "500206",
+                        "l2_name": "Pr and Marketing Agencies"
+                    },
+                    {
+                        "l2_code": "500207",
+                        "l2_name": "Omnichannel Advertisements"
+                    },
+                    {
+                        "l2_code": "500208",
+                        "l2_name": "Outdoor Advertising"
+                    },
+                    {
+                        "l2_code": "500209",
+                        "l2_name": "Digital Marketing"
+                    },
+                    {
+                        "l2_code": "500210",
+                        "l2_name": "Advertising Space"
+                    },
+                    {
+                        "l2_code": "500211",
+                        "l2_name": "Media Royalty"
+                    },
+                    {
+                        "l2_code": "500212",
+                        "l2_name": "Media and Telecom"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5003",
+                "l1_name": "Publishing",
+                "l2_data": [
+                    {
+                        "l2_code": "500301",
+                        "l2_name": "General Publishing"
+                    },
+                    {
+                        "l2_code": "500302",
+                        "l2_name": "Newspaper and Magazine Publisher"
+                    },
+                    {
+                        "l2_code": "500303",
+                        "l2_name": "Educational and Other Publisher"
+                    },
+                    {
+                        "l2_code": "500304",
+                        "l2_name": "Printing Services"
+                    },
+                    {
+                        "l2_code": "500305",
+                        "l2_name": "Online Publishing Services"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5004",
+                "l1_name": "Telecommunication & Network Hardware and Software",
+                "l2_data": [
+                    {
+                        "l2_code": "500401",
+                        "l2_name": "Telecommunication Hardware and Software"
+                    },
+                    {
+                        "l2_code": "500402",
+                        "l2_name": "Telecommunication Equipment Provider"
+                    },
+                    {
+                        "l2_code": "500403",
+                        "l2_name": "Network Testing & Validation Equipment and Software"
+                    },
+                    {
+                        "l2_code": "500404",
+                        "l2_name": "Hardware Device and System"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "55",
+        "l0_name": "Information Technology",
+        "l1_data": [
+            {
+                "l1_code": "5501",
+                "l1_name": "IT Services",
+                "l2_data": [
+                    {
+                        "l2_code": "550101",
+                        "l2_name": "IT Services"
+                    },
+                    {
+                        "l2_code": "550102",
+                        "l2_name": "IT Consulting Services"
+                    },
+                    {
+                        "l2_code": "550103",
+                        "l2_name": "Cybersecurity Services"
+                    },
+                    {
+                        "l2_code": "550104",
+                        "l2_name": "Infrastructure as a Service (IaaS)"
+                    },
+                    {
+                        "l2_code": "550105",
+                        "l2_name": "Platform as a Service (PaaS)"
+                    },
+                    {
+                        "l2_code": "550106",
+                        "l2_name": "Software as a Service (SaaS)"
+                    },
+                    {
+                        "l2_code": "550107",
+                        "l2_name": "DbaaS (Database as a Service)"
+                    },
+                    {
+                        "l2_code": "550108",
+                        "l2_name": "Cloud Service"
+                    },
+                    {
+                        "l2_code": "550109",
+                        "l2_name": "Digital Distribution Service"
+                    },
+                    {
+                        "l2_code": "550110",
+                        "l2_name": "Data Centre"
+                    },
+                    {
+                        "l2_code": "550111",
+                        "l2_name": "Tech Royalty"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5502",
+                "l1_name": "Industry Specific Software",
+                "l2_data": [
+                    {
+                        "l2_code": "550201",
+                        "l2_name": "Enterprise Software Solutions"
+                    },
+                    {
+                        "l2_code": "550202",
+                        "l2_name": "Finance Software Solutions"
+                    },
+                    {
+                        "l2_code": "550203",
+                        "l2_name": "HR Software Solutions"
+                    },
+                    {
+                        "l2_code": "550204",
+                        "l2_name": "Healthcare Software Solutions"
+                    },
+                    {
+                        "l2_code": "550205",
+                        "l2_name": "Supply Chain Software Solutions"
+                    },
+                    {
+                        "l2_code": "550206",
+                        "l2_name": "Industry Specific Software Solutions"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5503",
+                "l1_name": "Emerging Technologies",
+                "l2_data": [
+                    {
+                        "l2_code": "550301",
+                        "l2_name": "Emerging Technologies"
+                    },
+                    {
+                        "l2_code": "550302",
+                        "l2_name": "Machine Learning and Artificial Intelligence Services"
+                    },
+                    {
+                        "l2_code": "550303",
+                        "l2_name": "Extended Reality"
+                    },
+                    {
+                        "l2_code": "550304",
+                        "l2_name": "Blockchain Technology"
+                    },
+                    {
+                        "l2_code": "550305",
+                        "l2_name": "Quantum Computing"
+                    },
+                    {
+                        "l2_code": "550306",
+                        "l2_name": "Lidar Technology Providers"
+                    },
+                    {
+                        "l2_code": "550307",
+                        "l2_name": "ADAS Technology"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5504",
+                "l1_name": "Software",
+                "l2_data": [
+                    {
+                        "l2_code": "550401",
+                        "l2_name": "Hardware and Software Distributor"
+                    },
+                    {
+                        "l2_code": "550402",
+                        "l2_name": "Software"
+                    },
+                    {
+                        "l2_code": "550403",
+                        "l2_name": "Software Developer"
+                    },
+                    {
+                        "l2_code": "550404",
+                        "l2_name": "Cybersecurity"
+                    },
+                    {
+                        "l2_code": "550405",
+                        "l2_name": "Workplace Virtualization"
+                    },
+                    {
+                        "l2_code": "550406",
+                        "l2_name": "Collaboration Platforms"
+                    },
+                    {
+                        "l2_code": "550407",
+                        "l2_name": "Data and Analytics"
+                    },
+                    {
+                        "l2_code": "550408",
+                        "l2_name": "Gaming Software"
+                    },
+                    {
+                        "l2_code": "550409",
+                        "l2_name": "Website/Apps Developer and Hosting Services"
+                    },
+                    {
+                        "l2_code": "550410",
+                        "l2_name": "System Software"
+                    },
+                    {
+                        "l2_code": "550411",
+                        "l2_name": "Ad Management Tools"
+                    },
+                    {
+                        "l2_code": "550412",
+                        "l2_name": "Game Developer"
+                    },
+                    {
+                        "l2_code": "550413",
+                        "l2_name": "Software and Hardware"
+                    },
+                    {
+                        "l2_code": "550414",
+                        "l2_name": "Multiple Softwares"
+                    },
+                    {
+                        "l2_code": "550415",
+                        "l2_name": "Biometric Softwares"
+                    },
+                    {
+                        "l2_code": "550416",
+                        "l2_name": "Designing Software"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5505",
+                "l1_name": "Semiconductor Products",
+                "l2_data": [
+                    {
+                        "l2_code": "550501",
+                        "l2_name": "Semiconductor Products Distribution"
+                    },
+                    {
+                        "l2_code": "550502",
+                        "l2_name": "Semiconductor Products"
+                    },
+                    {
+                        "l2_code": "550503",
+                        "l2_name": "Semiconductor Technology"
+                    },
+                    {
+                        "l2_code": "550504",
+                        "l2_name": "Semiconductor Testing/ Equipment/ Packaging & Supply"
+                    },
+                    {
+                        "l2_code": "550505",
+                        "l2_name": "Integrated Circuits (IC)"
+                    },
+                    {
+                        "l2_code": "550506",
+                        "l2_name": "Semi-Conductors Components"
+                    },
+                    {
+                        "l2_code": "550507",
+                        "l2_name": "Solar Cells & Panels Manufacturer and Supplier"
+                    },
+                    {
+                        "l2_code": "550508",
+                        "l2_name": "Electronic Components"
+                    },
+                    {
+                        "l2_code": "550509",
+                        "l2_name": "Electronic Material"
+                    },
+                    {
+                        "l2_code": "550510",
+                        "l2_name": "Electronic Equipment/Component and Material"
+                    },
+                    {
+                        "l2_code": "550511",
+                        "l2_name": "AI/ Data Center Integrated Circuits"
+                    },
+                    {
+                        "l2_code": "550512",
+                        "l2_name": "Graphics Integrated Circuits"
+                    },
+                    {
+                        "l2_code": "550513",
+                        "l2_name": "Semiconductor manufacturing equipment"
+                    },
+                    {
+                        "l2_code": "550514",
+                        "l2_name": "Transistor and Capacitor"
+                    },
+                    {
+                        "l2_code": "550515",
+                        "l2_name": "Sensors"
+                    },
+                    {
+                        "l2_code": "550516",
+                        "l2_name": "Connectors"
+                    },
+                    {
+                        "l2_code": "550517",
+                        "l2_name": "Audio Components"
+                    },
+                    {
+                        "l2_code": "550518",
+                        "l2_name": "Display device"
+                    },
+                    {
+                        "l2_code": "550519",
+                        "l2_name": "Resistor"
+                    },
+                    {
+                        "l2_code": "550520",
+                        "l2_name": "Optics/ Laser devices"
+                    },
+                    {
+                        "l2_code": "550521",
+                        "l2_name": "Modules"
+                    },
+                    {
+                        "l2_code": "550522",
+                        "l2_name": "Inductor"
+                    },
+                    {
+                        "l2_code": "550523",
+                        "l2_name": "Optical fibre cables"
+                    },
+                    {
+                        "l2_code": "550524",
+                        "l2_name": "Power Supplies"
+                    }
+                ]
+            },
+            {
+                "l1_code": "5506",
+                "l1_name": "Technology Consumer Goods Manufacturer",
+                "l2_data": [
+                    {
+                        "l2_code": "550601",
+                        "l2_name": "Consumer Iot"
+                    },
+                    {
+                        "l2_code": "550602",
+                        "l2_name": "Conventional Light Manufacturers"
+                    },
+                    {
+                        "l2_code": "550603",
+                        "l2_name": "Energy Efficient Advanced Products and Components"
+                    },
+                    {
+                        "l2_code": "550604",
+                        "l2_name": "Security Solutions"
+                    },
+                    {
+                        "l2_code": "550605",
+                        "l2_name": "Consumer Electronic Goods Manufacturers"
+                    },
+                    {
+                        "l2_code": "550606",
+                        "l2_name": "Computer Manufacturers"
+                    },
+                    {
+                        "l2_code": "550607",
+                        "l2_name": "Mobile Phone Manufacturers"
+                    },
+                    {
+                        "l2_code": "550608",
+                        "l2_name": "Automatic Identification System"
+                    },
+                    {
+                        "l2_code": "550609",
+                        "l2_name": "Audio Solutions"
+                    },
+                    {
+                        "l2_code": "550610",
+                        "l2_name": "Multiple Technology Consumer Goods"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "60",
+        "l0_name": "Materials",
+        "l1_data": [
+            {
+                "l1_code": "6001",
+                "l1_name": "Chemical/ Plastic/ Rubber/ Gas and Paper Producers",
+                "l2_data": [
+                    {
+                        "l2_code": "600101",
+                        "l2_name": "Chemical/ Plastic/ Rubber/ Gas and Paper Producers"
+                    },
+                    {
+                        "l2_code": "600102",
+                        "l2_name": "Resin and Polymer"
+                    },
+                    {
+                        "l2_code": "600103",
+                        "l2_name": "Carbon and Other Fibers"
+                    },
+                    {
+                        "l2_code": "600104",
+                        "l2_name": "Agrochemical"
+                    },
+                    {
+                        "l2_code": "600105",
+                        "l2_name": "Additives Manufacturing"
+                    },
+                    {
+                        "l2_code": "600106",
+                        "l2_name": "Specialty Or Performance Chemicals Manufacturers"
+                    },
+                    {
+                        "l2_code": "600107",
+                        "l2_name": "Industrial Gas Manufacturers"
+                    },
+                    {
+                        "l2_code": "600108",
+                        "l2_name": "Pulp and Paper Manufacturers"
+                    },
+                    {
+                        "l2_code": "600109",
+                        "l2_name": "Industrial and Mining Explosives Manufacturers"
+                    },
+                    {
+                        "l2_code": "600110",
+                        "l2_name": "Membrane and Catalyst"
+                    },
+                    {
+                        "l2_code": "600111",
+                        "l2_name": "Petrochemical Products"
+                    },
+                    {
+                        "l2_code": "600112",
+                        "l2_name": "Pulp; Paper and Packaging"
+                    },
+                    {
+                        "l2_code": "600113",
+                        "l2_name": "Speciality Chemical and Resin Polymer"
+                    },
+                    {
+                        "l2_code": "600114",
+                        "l2_name": "Petrochemical and Resin Polymer"
+                    },
+                    {
+                        "l2_code": "600115",
+                        "l2_name": "Biochemical"
+                    },
+                    {
+                        "l2_code": "600116",
+                        "l2_name": "Rubber Product"
+                    },
+                    {
+                        "l2_code": "600117",
+                        "l2_name": "Plastic Product"
+                    },
+                    {
+                        "l2_code": "600118",
+                        "l2_name": "Alcohol and Ethanol"
+                    },
+                    {
+                        "l2_code": "600119",
+                        "l2_name": "Agri Seeds and Chemical"
+                    },
+                    {
+                        "l2_code": "600120",
+                        "l2_name": "Speciality chemical and additive manufacturing"
+                    },
+                    {
+                        "l2_code": "600121",
+                        "l2_name": "Product Packaging Solution"
+                    }
+                ]
+            },
+            {
+                "l1_code": "6002",
+                "l1_name": "Construction and Building Material",
+                "l2_data": [
+                    {
+                        "l2_code": "600201",
+                        "l2_name": "Construction and Building Material"
+                    },
+                    {
+                        "l2_code": "600202",
+                        "l2_name": "Cement and Allied Products"
+                    },
+                    {
+                        "l2_code": "600203",
+                        "l2_name": "Asphalt"
+                    },
+                    {
+                        "l2_code": "600204",
+                        "l2_name": "Coating/ Adhesive and Paint Manufacturers"
+                    },
+                    {
+                        "l2_code": "600205",
+                        "l2_name": "Brick Manufacturer"
+                    },
+                    {
+                        "l2_code": "600206",
+                        "l2_name": "Tiles and Sanitary"
+                    },
+                    {
+                        "l2_code": "600207",
+                        "l2_name": "Glass Manufacturer"
+                    },
+                    {
+                        "l2_code": "600208",
+                        "l2_name": "Floor and Rooftop Paving Material"
+                    },
+                    {
+                        "l2_code": "600209",
+                        "l2_name": "Window/Door/Kitchen Cabinet"
+                    },
+                    {
+                        "l2_code": "600210",
+                        "l2_name": "Gardening Products"
+                    },
+                    {
+                        "l2_code": "600211",
+                        "l2_name": "Prefabricated Building"
+                    },
+                    {
+                        "l2_code": "600212",
+                        "l2_name": "Pipes and Fittings"
+                    },
+                    {
+                        "l2_code": "600213",
+                        "l2_name": "Timber and Wood Products"
+                    },
+                    {
+                        "l2_code": "600214",
+                        "l2_name": "Hardware and Building Material Retail"
+                    },
+                    {
+                        "l2_code": "600215",
+                        "l2_name": "Insulation and Related Products"
+                    },
+                    {
+                        "l2_code": "600216",
+                        "l2_name": "Architectural Hardware"
+                    },
+                    {
+                        "l2_code": "600217",
+                        "l2_name": "Pool Equipment/ Materials and Related Services"
+                    },
+                    {
+                        "l2_code": "600218",
+                        "l2_name": "Real Estate and Construction Material"
+                    }
+                ]
+            },
+            {
+                "l1_code": "6003",
+                "l1_name": "Material Distributor",
+                "l2_data": [
+                    {
+                        "l2_code": "600301",
+                        "l2_name": "Coal and Coal Products Distributor"
+                    },
+                    {
+                        "l2_code": "600302",
+                        "l2_name": "Construction and Building Material Distributor"
+                    },
+                    {
+                        "l2_code": "600303",
+                        "l2_name": "Precious Metal Distributor"
+                    },
+                    {
+                        "l2_code": "600304",
+                        "l2_name": "Base Metal and Alloy Distributor"
+                    },
+                    {
+                        "l2_code": "600305",
+                        "l2_name": "Chemical Products Distributor"
+                    },
+                    {
+                        "l2_code": "600306",
+                        "l2_name": "Commodity Distributor"
+                    },
+                    {
+                        "l2_code": "600307",
+                        "l2_name": "Metal Distributor"
+                    },
+                    {
+                        "l2_code": "600308",
+                        "l2_name": "Diversified product distributor"
+                    },
+                    {
+                        "l2_code": "600309",
+                        "l2_name": "Paper products distributor"
+                    }
+                ]
+            },
+            {
+                "l1_code": "6004",
+                "l1_name": "Metal and Mineral Product Manufacturing",
+                "l2_data": [
+                    {
+                        "l2_code": "600401",
+                        "l2_name": "Metal and Mineral Product Manufacturing"
+                    },
+                    {
+                        "l2_code": "600402",
+                        "l2_name": "Iron and Steel Products"
+                    },
+                    {
+                        "l2_code": "600403",
+                        "l2_name": "Aluminium Products"
+                    },
+                    {
+                        "l2_code": "600404",
+                        "l2_name": "Metal Products"
+                    },
+                    {
+                        "l2_code": "600405",
+                        "l2_name": "Metal Processing"
+                    },
+                    {
+                        "l2_code": "600406",
+                        "l2_name": "3-D Printing Service"
+                    },
+                    {
+                        "l2_code": "600407",
+                        "l2_name": "Coal/Coke Products"
+                    },
+                    {
+                        "l2_code": "600408",
+                        "l2_name": "Resource Recovery"
+                    },
+                    {
+                        "l2_code": "600409",
+                        "l2_name": "Metal and Compound Manufacturer"
+                    },
+                    {
+                        "l2_code": "600410",
+                        "l2_name": "Mineral Product"
+                    }
+                ]
+            },
+            {
+                "l1_code": "6005",
+                "l1_name": "Non-Energy Natural Material Mining",
+                "l2_data": [
+                    {
+                        "l2_code": "600501",
+                        "l2_name": "Non-Energy Natural Material Mining"
+                    },
+                    {
+                        "l2_code": "600502",
+                        "l2_name": "Gold Mining"
+                    },
+                    {
+                        "l2_code": "600503",
+                        "l2_name": "Silver Mining"
+                    },
+                    {
+                        "l2_code": "600504",
+                        "l2_name": "Platinum Group Mining"
+                    },
+                    {
+                        "l2_code": "600505",
+                        "l2_name": "Copper Mining"
+                    },
+                    {
+                        "l2_code": "600506",
+                        "l2_name": "Aluminium Mining"
+                    },
+                    {
+                        "l2_code": "600507",
+                        "l2_name": "Lithium Mining"
+                    },
+                    {
+                        "l2_code": "600508",
+                        "l2_name": "Iron Ore Mining"
+                    },
+                    {
+                        "l2_code": "600509",
+                        "l2_name": "Nickel Mining"
+                    },
+                    {
+                        "l2_code": "600510",
+                        "l2_name": "Zinc Mining"
+                    },
+                    {
+                        "l2_code": "600511",
+                        "l2_name": "Magnesium Mining"
+                    },
+                    {
+                        "l2_code": "600512",
+                        "l2_name": "Molybdenum Mining"
+                    },
+                    {
+                        "l2_code": "600513",
+                        "l2_name": "Lead Mining"
+                    },
+                    {
+                        "l2_code": "600514",
+                        "l2_name": "Phosphorus Mining"
+                    },
+                    {
+                        "l2_code": "600515",
+                        "l2_name": "Diamond and Gemstone Mining"
+                    },
+                    {
+                        "l2_code": "600516",
+                        "l2_name": "Sand Mining"
+                    },
+                    {
+                        "l2_code": "600517",
+                        "l2_name": "Limestone Mining"
+                    },
+                    {
+                        "l2_code": "600518",
+                        "l2_name": "Precious Metal Mining"
+                    },
+                    {
+                        "l2_code": "600519",
+                        "l2_name": "Base Metal Mining"
+                    },
+                    {
+                        "l2_code": "600520",
+                        "l2_name": "Precious and Base Metal Mining"
+                    },
+                    {
+                        "l2_code": "600521",
+                        "l2_name": "Mining field services"
+                    },
+                    {
+                        "l2_code": "600522",
+                        "l2_name": "Manganese Mining"
+                    },
+                    {
+                        "l2_code": "600523",
+                        "l2_name": "Metal/ Non-metal Mining"
+                    },
+                    {
+                        "l2_code": "600524",
+                        "l2_name": "Cobalt Mining"
+                    },
+                    {
+                        "l2_code": "600525",
+                        "l2_name": "Mining Royalty"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "l0_code": "65",
+        "l0_name": "Miscellanous & Others",
+        "l1_data": [
+            {
+                "l1_code": "6501",
+                "l1_name": "Others",
+                "l2_data": [
+                    {
+                        "l2_code": "650101",
+                        "l2_name": "Others"
+                    },
+                    {
+                        "l2_code": "650102",
+                        "l2_name": "Other Unallocated/ Eliminated Revenue"
+                    }
+                ]
+            }
+        ]
+    }
+]
