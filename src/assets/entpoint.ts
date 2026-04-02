@@ -9,6 +9,10 @@ export const REFRESH_TOKEN_API = authBaseURL + "/refresh_access_token/";
 export const OTP_API = authBaseURL + "/auth/password/forgot/";
 export const NEW_PASSWORD_API = authBaseURL + "/auth/password/confirm-forgot/";
 
+// OTP Login
+export const SEND_OTP_API = authBaseURL + "/auth/send-otp/";
+export const VERIFY_OTP_API = authBaseURL + "/auth/verify-otp/";
+
 // User Management
 export const GET_ALL_USERS = authBaseURL + "/users/";
 export const GET_USER = authBaseURL + "/users/email/"; // + userEmail

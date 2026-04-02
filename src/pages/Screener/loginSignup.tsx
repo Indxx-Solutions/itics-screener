@@ -90,7 +90,7 @@ const LoginSignup: React.FC = () => {
       // This prevents any false-positive triggers after logout.
       messageApi.success("Login successful!");
       setDoorState("open");
-      sessionStorage.setItem("AccessToken", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwidXNlcl9pZCI6MSwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzc1MjEwODA0LCJpYXQiOjE3NzUxMjQ0MDR9.2jR0YT-mt-Oebq2wRtB2P9wJQs-ts1HXQGwyqjCAkwk")
+      sessionStorage.setItem("AccessToken", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwidXNlcl9pZCI6MiwiZW1haWwiOiJhc2hlb3JhbkBpbmR4eC5jb20iLCJleHAiOjE3NzUyMTg0NTYsImlhdCI6MTc3NTEzMjA1Nn0.gW-dQd_A_9oPXDf_xqed1lQvtC3Vhb8wJ0gIZy-cgdU")
       setTimeout(() => navigate("/screener", { replace: true }), 800);
     } catch (error: any) {
       const statusCode = error.response?.status;
