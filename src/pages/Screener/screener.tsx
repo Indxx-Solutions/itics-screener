@@ -4,30 +4,31 @@ import { Pagination } from 'antd';
 import TAX_DATA_JSON from './../../static data/output.json';
 import { BaseUrl } from '../../assets/entpoint';
 import { postMethodApi, getMethodApi } from '../../utils/commonAxios';
+import './../../App.css';
 import { clientSideLogout } from '../../utils/session';
 
 const TAX_DATA: any[] = TAX_DATA_JSON;
 
 const SCR_COUNTRIES = [
-  'United States', 'United Kingdom', 'China', 'Japan', 'India', 'Germany', 'France', 'Canada', 'Australia', 'South Korea', 
-  'Switzerland', 'Netherlands', 'Sweden', 'Singapore', 'Hong Kong', 'Italy', 'Spain', 'Brazil', 'Russia', 'Saudi Arabia', 
-  'United Arab Emirates', 'South Africa', 'Mexico', 'Indonesia', 'Thailand', 'Malaysia', 'Taiwan', 'Israel', 'Denmark', 
-  'Norway', 'Finland', 'Belgium', 'Austria', 'New Zealand', 'Poland', 'Turkey', 'Argentina', 'Afghanistan', 'Albania', 
-  'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Armenia', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 
-  'Barbados', 'Belarus', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brunei', 'Bulgaria', 
-  'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Central African Republic', 'Chad', 'Chile', 'Colombia', 
-  'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Djibouti', 'Dominica', 'Dominican Republic', 
-  'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Gabon', 
-  'Gambia', 'Georgia', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 
-  'Hungary', 'Iceland', 'Iran', 'Iraq', 'Ireland', 'Jamaica', 'Jersey', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 
-  'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 
-  'Madagascar', 'Malawi', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Micronesia', 'Moldova', 
-  'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Nicaragua', 'Niger', 
-  'Nigeria', 'North Korea', 'North Macedonia', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 
-  'Philippines', 'Portugal', 'Qatar', 'Romania', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 
-  'Samoa', 'San Marino', 'Sao Tome and Principe', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Slovakia', 'Slovenia', 
-  'Solomon Islands', 'Somalia', 'South Sudan', 'Sri Lanka', 'Sudan', 'Suriname', 'Syria', 'Tajikistan', 'Tanzania', 'Timor-Leste', 
-  'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'Uruguay', 'Uzbekistan', 
+  'United States', 'United Kingdom', 'China', 'Japan', 'India', 'Germany', 'France', 'Canada', 'Australia', 'South Korea',
+  'Switzerland', 'Netherlands', 'Sweden', 'Singapore', 'Hong Kong', 'Italy', 'Spain', 'Brazil', 'Russia', 'Saudi Arabia',
+  'United Arab Emirates', 'South Africa', 'Mexico', 'Indonesia', 'Thailand', 'Malaysia', 'Taiwan', 'Israel', 'Denmark',
+  'Norway', 'Finland', 'Belgium', 'Austria', 'New Zealand', 'Poland', 'Turkey', 'Argentina', 'Afghanistan', 'Albania',
+  'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Armenia', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh',
+  'Barbados', 'Belarus', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brunei', 'Bulgaria',
+  'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Central African Republic', 'Chad', 'Chile', 'Colombia',
+  'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Djibouti', 'Dominica', 'Dominican Republic',
+  'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Gabon',
+  'Gambia', 'Georgia', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras',
+  'Hungary', 'Iceland', 'Iran', 'Iraq', 'Ireland', 'Jamaica', 'Jersey', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait',
+  'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg',
+  'Madagascar', 'Malawi', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Micronesia', 'Moldova',
+  'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Nicaragua', 'Niger',
+  'Nigeria', 'North Korea', 'North Macedonia', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru',
+  'Philippines', 'Portugal', 'Qatar', 'Romania', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines',
+  'Samoa', 'San Marino', 'Sao Tome and Principe', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Slovakia', 'Slovenia',
+  'Solomon Islands', 'Somalia', 'South Sudan', 'Sri Lanka', 'Sudan', 'Suriname', 'Syria', 'Tajikistan', 'Tanzania', 'Timor-Leste',
+  'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'Uruguay', 'Uzbekistan',
   'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'
 ];
 
@@ -43,7 +44,7 @@ const Screener = () => {
   const [selectedYear, setSelectedYear] = useState<number>(2023);
   const [taxSearch, setTaxSearch] = useState<string>('');
   const [coSearch, setCoSearch] = useState<string>('');
-  
+
   const [results, setResults] = useState<any[]>([]);
   const [totalCount, setTotalCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
@@ -56,7 +57,7 @@ const Screener = () => {
   const [selL1, setSelL1] = useState<Set<string>>(new Set());
   const [selL2, setSelL2] = useState<Set<string>>(new Set());
   const [taxExpanded, setTaxExpanded] = useState({ l0: new Set<string>(), l1: new Set<string>() });
-  
+
   const [selCountry, setSelCountry] = useState<Set<string>>(new Set());
   const [selCls, setSelCls] = useState<Set<string>>(new Set());
 
@@ -81,9 +82,9 @@ const Screener = () => {
     const newL0 = new Set(selL0);
     const newL1 = new Set(selL1);
     const newL2 = new Set(selL2);
-    
+
     if (checked) newL0.add(l0c); else newL0.delete(l0c);
-    
+
     const d0 = taxMap[l0c];
     if (d0) {
       Object.keys(d0.l1s).forEach(l1c => {
@@ -93,7 +94,7 @@ const Screener = () => {
         });
       });
     }
-    
+
     setSelL0(newL0); setSelL1(newL1); setSelL2(newL2);
   };
 
@@ -103,7 +104,7 @@ const Screener = () => {
     const newL2 = new Set(selL2);
 
     if (checked) newL1.add(l1c); else newL1.delete(l1c);
-    
+
     const d1 = taxMap[l0c]?.l1s[l1c];
     if (d1) {
       d1.l2s.forEach((_name: any, l2c: string) => {
@@ -146,10 +147,10 @@ const Screener = () => {
         country: [...selCountry],
         revenue_class: [...selCls].map(c => c.toLowerCase().replace(' ', '_'))
       };
-      
+
       const res = await postMethodApi(`${BaseUrl}/api/v1/company-top-themes/?page=${page}`, payload);
       const data = res.data;
-      
+
       if (data && data.results) {
         setResults(data.results);
         setTotalCount(data.count || 0);
@@ -168,14 +169,23 @@ const Screener = () => {
     }
   };
 
-  const fetchInternalTable = async (rowKey: string, coId: number) => {
-    if (!coId) return;
+  const fetchInternalTable = async (rowKey: string, co: any) => {
+    const params: any = { year: selectedYear };
+    if (co.company_id || co.id) params.company_id = co.company_id || co.id;
+    else if (co.isin) params.isin = co.isin;
+
+    console.log('Fetching internal table for:', { rowKey, params });
+    if (!params.company_id && !params.isin) {
+      console.warn('Skipping fetch: No valid ID or ISIN found in data.');
+      return;
+    }
     try {
-      const res = await getMethodApi(`${BaseUrl}/api/classifications/`, { company_id: coId, year: selectedYear });
+      const res = await getMethodApi(`${BaseUrl}/api/classifications/`, params);
       const data = res.data;
-      setExpandedRowData(prev => ({ ...prev, [rowKey]: Array.isArray(data) ? data : [] }));
+      console.log('Nested Data Received:', data);
+      setExpandedRowData(prev => ({ ...prev, [rowKey]: Array.isArray(data) ? data : (data.results || []) }));
     } catch (e) {
-      console.error(e);
+      console.error('Fetch Internal Table Error:', e);
     }
   };
 
@@ -187,16 +197,16 @@ const Screener = () => {
   };
 
   const handleRowClick = (co: any) => {
-    const rowKey = co.isin || co.id || co.company_id || String(Math.random());
-    const numericId = co.company_id || co.id;
-    
+    const rowKey = co.isin || co.company_id || co.id || co.company_name; // Use stable fields
+
+    if (!expandedRows.has(rowKey)) {
+      fetchInternalTable(rowKey, co);
+    }
+
     setExpandedRows(prev => {
       const n = new Set(prev);
-      if (n.has(rowKey)) n.delete(rowKey); 
-      else { 
-        n.add(rowKey); 
-        fetchInternalTable(rowKey, numericId); 
-      }
+      if (n.has(rowKey)) n.delete(rowKey);
+      else n.add(rowKey);
       return n;
     });
   };
@@ -225,7 +235,7 @@ const Screener = () => {
     });
   }, [coSearch, selCountry]);
 
-  const l0Keys = Object.keys(taxMap).sort((a,b) => taxMap[a].n.localeCompare(taxMap[b].n));
+  const l0Keys = Object.keys(taxMap).sort((a, b) => taxMap[a].n.localeCompare(taxMap[b].n));
 
   return (
     <div className="scr-wrap">
@@ -236,7 +246,7 @@ const Screener = () => {
           </span>
           <button onClick={resetAll} style={{ fontSize: '11px', color: 'var(--blue)', background: 'none', border: 'none', cursor: 'pointer' }}>Reset All</button>
         </div>
-        
+
         <div style={{ marginBottom: '16px' }}>
           <label className="scr-flbl">Year</label>
           <select className="scr-sel" value={selectedYear} onChange={e => setSelectedYear(parseInt(e.target.value))}>
@@ -252,9 +262,13 @@ const Screener = () => {
           <div className="scr-ms" style={{ maxHeight: '260px', marginTop: '8px' }}>
             {l0Keys.map(l0c => {
               const l0d = taxMap[l0c];
-              const l1Keys = Object.keys(l0d.l1s).sort((a,b) => l0d.l1s[a].n.localeCompare(l0d.l1s[b].n));
+              const l1Keys = Object.keys(l0d.l1s).sort((a, b) => l0d.l1s[a].n.localeCompare(l0d.l1s[b].n));
               const l0All = l1Keys.every(l => selL1.has(l));
-              const l0Some = !l0All && l1Keys.some(l => selL1.has(l));
+              const l0Some = !l0All && l1Keys.some(l1c => {
+                if (selL1.has(l1c)) return true;
+                const l1d = l0d.l1s[l1c];
+                return [...l1d.l2s.keys()].some(l2c => selL2.has(l2c));
+              });
               const l0Open = taxSearch ? true : taxExpanded.l0.has(l0c);
               if (taxSearch && !l0d.n.toLowerCase().includes(taxSearch.toLowerCase()) && !l1Keys.some(l1 => l0d.l1s[l1].n.toLowerCase().includes(taxSearch.toLowerCase()))) return null;
 
@@ -318,13 +332,13 @@ const Screener = () => {
       <div className="scr-rp">
         <div className="scr-rhd">
           <div style={{ fontSize: '16px' }}><strong>{totalCount}</strong> companies found</div>
-          <button 
+          <button
             onClick={() => clientSideLogout(true)}
-            style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: '6px', 
-              background: '#3b7eff', 
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: '#3b7eff',
               border: '1px solid #3b7eff',
               padding: '6px 12px',
               borderRadius: '6px',
@@ -340,12 +354,12 @@ const Screener = () => {
 
         <div className="scr-chips">
           {[...selL1].map(c => {
-             // Find name for the code
-             let name = c;
-             for (const l0 of Object.values(taxMap) as any[]) {
-               if (l0.l1s[c]) { name = l0.l1s[c].n; break; }
-             }
-             return <span key={c} className="scr-chip">{name} <X size={10} onClick={() => removeChipL1(c)} /></span>;
+            // Find name for the code
+            let name = c;
+            for (const l0 of Object.values(taxMap) as any[]) {
+              if (l0.l1s[c]) { name = l0.l1s[c].n; break; }
+            }
+            return <span key={c} className="scr-chip">{name} <X size={10} onClick={() => removeChipL1(c)} /></span>;
           })}
         </div>
 
@@ -354,11 +368,11 @@ const Screener = () => {
             <div className="scr-tbl-wrap">
               <table className="scr-tbl">
                 <thead>
-                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>MCAP</th><th>TOP THEME</th><th>REV %</th><th>CLASS</th></tr>
+                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>SECTOR</th><th>THEME</th><th>SUB-THEME</th><th>REV %</th><th>CLASS</th></tr>
                 </thead>
                 <tbody>
-                  {results.length === 0 ? <tr><td colSpan={7} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => {
-                    const rowKey = co.isin || co.id || co.company_id || String(Math.random());
+                  {results.length === 0 ? <tr><td colSpan={8} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => {
+                    const rowKey = co.isin || co.company_id || co.id || co.company_name;
                     const isExpanded = expandedRows.has(rowKey);
                     return (
                       <React.Fragment key={rowKey}>
@@ -369,15 +383,16 @@ const Screener = () => {
                             <div style={{ fontSize: '10px', color: 'var(--txt3)', marginTop: '2px' }}>{co.isin}</div>
                           </td>
                           <td>{co.country_name || co.country || '-'}</td>
-                          <td>{co.mcap || '-'}</td>
-                          <td><span className="scr-top-theme">{co.top_theme || '-'}</span></td>
+                          <td>{co.sector_name || '-'}</td>
+                          <td><span className="scr-top-theme">{co.level1_name || '-'}</span></td>
+                          <td><span className="scr-top-theme">{co.level2_name || '-'}</span></td>
                           <td style={{ minWidth: '120px' }}>
                             <div style={{ fontWeight: 600 }}>{co.revenue_percentage || '0'}%</div>
                             {co.revenue_percentage !== undefined && (
                               <div style={{ width: '90px', height: '3px', background: 'rgba(255,255,255,0.1)', borderRadius: '2px', marginTop: '4px' }}>
-                                <div style={{ 
-                                  width: `${Math.min(100, Math.max(0, co.revenue_percentage))}%`, 
-                                  height: '100%', 
+                                <div style={{
+                                  width: `${Math.min(100, Math.max(0, co.revenue_percentage))}%`,
+                                  height: '100%',
                                   borderRadius: '2px',
                                   background: co.revenue_percentage >= 66 ? '#0fb8a3' : co.revenue_percentage >= 33 ? '#f59e0b' : '#3b7eff'
                                 }} />
@@ -392,24 +407,28 @@ const Screener = () => {
                         </tr>
                         {isExpanded && (
                           <tr className="scr-expanded">
-                            <td colSpan={7} style={{ padding: '0 0 16px 40px' }}>
+                            <td colSpan={8} style={{ padding: '0 0 16px 40px' }}>
                               <div className="scr-nested" style={{ background: 'var(--bg2)', borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)' }}>
                                 <table className="scr-nested-tbl" style={{ width: '100%', borderCollapse: 'collapse' }}>
                                   <thead style={{ background: 'var(--bg3)' }}>
                                     <tr>
-                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>SEGMENT NAME</th>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>SECTOR NAME</th>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>THEME</th>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>SUB-THEME</th>
                                       <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>REVENUE %</th>
                                       <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>CLASSIFICATION</th>
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    {expandedRowData[rowKey]?.length ? expandedRowData[rowKey].map((s:any, i:number) => (
+                                    {expandedRowData[rowKey]?.length ? expandedRowData[rowKey].map((s: any, i: number) => (
                                       <tr key={i} style={{ borderTop: '1px solid var(--border)' }}>
-                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.segment_name}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.sector_name || '-'}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.level1_name || '-'}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.level2_name || '-'}</td>
                                         <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_percentage}%</td>
-                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_class}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_class || '-'}</td>
                                       </tr>
-                                    )) : <tr><td colSpan={3} style={{ padding: '20px', textAlign: 'center' }}>No classification data available.</td></tr>}
+                                    )) : <tr><td colSpan={5} style={{ padding: '20px', textAlign: 'center' }}>No classification data available.</td></tr>}
                                   </tbody>
                                 </table>
                               </div>
@@ -424,12 +443,12 @@ const Screener = () => {
             </div>
           )}
 
-          <div className="scr-pagination-bar" style={{ 
-            padding: '12px 16px', 
-            borderTop: '1px solid var(--border)', 
+          <div className="scr-pagination-bar" style={{
+            padding: '12px 16px',
+            borderTop: '1px solid var(--border)',
             background: 'var(--bg1)',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'flex-end',
             alignItems: 'center'
           }}>
             <Pagination

@@ -1,4 +1,4 @@
-const authBaseURL = import.meta.env.VITE_API_ENDPOINT;
+const authBaseURL = 'http://127.0.0.1:8000/api/v1';
 
 export const BaseUrl = "http://15.206.224.193:8000";
 

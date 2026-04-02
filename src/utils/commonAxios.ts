@@ -36,30 +36,10 @@ const getHeaders = (overrides: { [key: string]: any } = {}) => {
 };
 
 // ============================================
-// LOGOUT HELPER
+// LOGOUT HELPER (disabled during dev bypass)
 // ============================================
 const forceLogout = async (reason: string = "Session expired") => {
-  console.warn(`⚠️ FORCE LOGOUT TRIGGERED: ${reason}`);
-
-  // Clear storage immediately
-  try {
-    sessionStorage.clear();
-    localStorage.clear();
-  } catch (e) {
-    console.warn("Error clearing storage", e);
-  }
-
-  // Reset zustand store
-  try {
-    const authStore = useAuthStore.getState();
-    authStore.setSpinning(false);
-    authStore.clearError();
-  } catch (e) {
-    console.warn("Error resetting auth store", e);
-  }
-
-  // Redirect to login
-  globalThis.location.href = "/login";
+  console.warn(`⚠️ FORCE LOGOUT (no redirect — dev bypass): ${reason}`);
 };
 
 // ============================================

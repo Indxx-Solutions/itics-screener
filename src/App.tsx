@@ -9,18 +9,18 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Default route is Login, but redirect if already authenticated */}
-        <Route 
-          path="/" 
-          element={isAuthenticated ? <Navigate to="/screener" replace /> : <LoginSignup />} 
+        <Route
+          path="/"
+          element={isAuthenticated ? <Navigate to="/screener" replace /> : <LoginSignup />}
         />
-        
+
         {/* Alias for login */}
         <Route path="/login" element={<LoginSignup />} />
-        
+
         {/* Screener route after login */}
         <Route path="/screener" element={<Screener />} />
-        
-        {/* Fallback to login or screener based on auth */}
+
+        {/* Fallback */}
         <Route path="*" element={<Navigate to={isAuthenticated ? "/screener" : "/"} replace />} />
       </Routes>
     </BrowserRouter>

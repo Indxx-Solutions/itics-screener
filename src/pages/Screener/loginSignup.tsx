@@ -82,20 +82,23 @@ const LoginSignup: React.FC = () => {
 
   const onFinish = async (formData: any) => {
     const { email, password } = formData;
+    // sessionStorage.setItem("AccessToken", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwidXNlcl9pZCI6MSwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzc1MjEwODA0LCJpYXQiOjE3NzUxMjQ0MDR9.2jR0YT-mt-Oebq2wRtB2P9wJQs-ts1HXQGwyqjCAkwk")
+    sessionStorage.setItem("isAuthenticated", "true")
     try {
       await login(email, password);
       // ✅ Success is handled HERE — not via a token watcher.
       // This prevents any false-positive triggers after logout.
       messageApi.success("Login successful!");
       setDoorState("open");
+      sessionStorage.setItem("AccessToken", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwidXNlcl9pZCI6MSwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzc1MjEwODA0LCJpYXQiOjE3NzUxMjQ0MDR9.2jR0YT-mt-Oebq2wRtB2P9wJQs-ts1HXQGwyqjCAkwk")
       setTimeout(() => navigate("/screener", { replace: true }), 800);
     } catch (error: any) {
       const statusCode = error.response?.status;
       setErrorMessage(
         error.response?.data?.message ||
-          error.response?.data?.error ||
-          error.message ||
-          `Login failed${statusCode ? ` (${statusCode})` : ""}`,
+        error.response?.data?.error ||
+        error.message ||
+        `Login failed${statusCode ? ` (${statusCode})` : ""}`,
       );
       setShowErrorModal(true);
     }
@@ -139,8 +142,8 @@ const LoginSignup: React.FC = () => {
     } catch (error: any) {
       setErrorMessage(
         error.response?.data?.message ||
-          error.message ||
-          "An error occurred while sending OTP.",
+        error.message ||
+        "An error occurred while sending OTP.",
       );
       setShowErrorModal(true);
     } finally {
@@ -234,7 +237,7 @@ const LoginSignup: React.FC = () => {
       <div className="lc_left lc_door_panel_left">
         {/* ── Card ─────────────────────────────────── */}
         <div className="lc_card">
-          <div style={{padding: '20px 40px 0px 40px'}}>
+          <div style={{ padding: '20px 40px 0px 40px' }}>
             {/* Card header: logo + powered by */}
             <div className="lc_card_header">
               <img src={icalLogo} alt="ICAL" className="lc_card_logo" />

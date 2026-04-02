@@ -2551,3 +2551,10 @@ th.sortable.desc .sort-ico {
   padding: 3px 8px;
   border-radius: 4px;
 }
+
+.custom-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}

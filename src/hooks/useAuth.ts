@@ -10,7 +10,7 @@ export const useAuth = () => {
   const isAnalyst = useAuthStore((state) => state.isAnalyst);
   const authError = useAuthStore((state) => state.authError);
   const isSpinning = useAuthStore((state) => state.isSpinning);
-  
+
   const login = useAuthStore((state) => state.login);
   const otp = useAuthStore((state) => state.otp);
   const setnewpassword = useAuthStore((state) => state.setnewpassword);
