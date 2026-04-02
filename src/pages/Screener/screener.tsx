@@ -1,7 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
-import { Check, X, ListTree, Wrench } from 'lucide-react';
-import { COMPANIES, GOLDEN, CLSDATA } from './filterData';
-import TAX_DATA_JSON from '../../../static data/output.json';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import { Check, X, ListTree, Wrench, Download, FileSpreadsheet, LogOut } from 'lucide-react';
+import TAX_DATA_JSON from './../../static data/output.json';
+import { BaseUrl } from '../../assets/entpoint';
+import { postMethodApi, getMethodApi } from '../../utils/commonAxios';
+import { clientSideLogout } from '../../utils/session';
 
 const TAX_DATA: any[] = TAX_DATA_JSON;
 
@@ -37,121 +39,142 @@ const Checkbox = ({ checked, indeterminate, onChange, ...props }: any) => {
 };
 
 const Screener = () => {
-  const [selectedYear, setSelectedYear] = useState<number>(2025);
+  const [selectedYear, setSelectedYear] = useState<number>(2023);
   const [taxSearch, setTaxSearch] = useState<string>('');
   const [coSearch, setCoSearch] = useState<string>('');
   
+  const [results, setResults] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [expandedRowData, setExpandedRowData] = useState<Record<number, any[]>>({});
+  const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
+  const [exportMenuOpen, setExportMenuOpen] = useState(false);
+
   const [selL0, setSelL0] = useState<Set<string>>(new Set());
   const [selL1, setSelL1] = useState<Set<string>>(new Set());
   const [selL2, setSelL2] = useState<Set<string>>(new Set());
   const [taxExpanded, setTaxExpanded] = useState({ l0: new Set<string>(), l1: new Set<string>() });
   
   const [selCountry, setSelCountry] = useState<Set<string>>(new Set());
-  const [mcapMin, setMcapMin] = useState<number | ''>('');
-  const [mcapMax, setMcapMax] = useState<number | ''>('');
   const [selCls, setSelCls] = useState<Set<string>>(new Set());
-  const [minPct, setMinPct] = useState<number | ''>('');
 
-  // Compute Taxonomy Map from nested TAX_DATA and supplement with actual data
+  // Compute Taxonomy Map from nested TAX_DATA
   const taxMap = useMemo(() => {
     const map: any = {};
-    
-    // 1. Initialize from nested JSON (Taxonomy)
     TAX_DATA.forEach((l0: any) => {
       const l0c = String(l0.l0_code);
       if (!map[l0c]) map[l0c] = { n: l0.l0_name, l1s: {} };
       l0.l1_data?.forEach((l1: any) => {
         const l1c = String(l1.l1_code);
-        if (!map[l0c].l1s[l1c]) map[l0c].l1s[l1c] = { n: l1.l1_name, l2s: new Set() };
+        if (!map[l0c].l1s[l1c]) map[l0c].l1s[l1c] = { n: l1.l1_name, l2s: new Map() };
         l1.l2_data?.forEach((l2: any) => {
-          map[l0c].l1s[l1c].l2s.add(JSON.stringify({ c: String(l2.l2_code), n: l2.l2_name }));
+          map[l0c].l1s[l1c].l2s.set(String(l2.l2_code), l2.l2_name);
         });
-      });
-    });
-
-    // 2. Add from GOLDEN, mapping each segment theme to its NATIVE parent sector
-    GOLDEN.filter(g => !g.invalidated).forEach(g => {
-      const cls = CLSDATA[g.coId]?.[selectedYear];
-      if (!cls) return;
-
-      cls.segments.forEach((s: any) => {
-        const l1c = String(s.l1);
-        // Derive L0 from the first 2 digits of the theme code (e.g., 25 from 2501)
-        const l0c = l1c.length >= 2 ? l1c.substring(0, 2) : String(cls.l0);
-        
-        if (!map[l0c]) map[l0c] = { n: s.l0n || g.l0Name || l0c, l1s: {} };
-        if (!map[l0c].l1s[l1c]) map[l0c].l1s[l1c] = { n: s.l1n || l1c, l2s: new Set() };
-        
-        const l2c = String(s.l2);
-        map[l0c].l1s[l1c].l2s.add(JSON.stringify({ c: l2c, n: s.l2n || l2c }));
       });
     });
     return map;
-  }, [selectedYear]);
-
+  }, []);
 
   const handleTaxL0 = (l0c: string, checked: boolean) => {
-    setSelL0(prev => {
-      const n = new Set(prev);
-      if (checked) n.add(l0c); else n.delete(l0c);
-      return n;
-    });
-    setSelL1(prev => {
-      const next = new Set(prev);
-      if (taxMap[l0c]) {
-        Object.keys(taxMap[l0c].l1s).forEach(l1c => {
-          if (checked) next.add(l1c); else next.delete(l1c);
+    const newL0 = new Set(selL0);
+    const newL1 = new Set(selL1);
+    const newL2 = new Set(selL2);
+    
+    if (checked) newL0.add(l0c); else newL0.delete(l0c);
+    
+    const d0 = taxMap[l0c];
+    if (d0) {
+      Object.keys(d0.l1s).forEach(l1c => {
+        if (checked) newL1.add(l1c); else newL1.delete(l1c);
+        d0.l1s[l1c].l2s.forEach((_name: any, l2c: string) => {
+          if (checked) newL2.add(l2c); else newL2.delete(l2c);
         });
-      }
-      return next;
-    });
-    setSelL2(prev => {
-      const next = new Set(prev);
-      if (taxMap[l0c]) {
-        Object.values(taxMap[l0c].l1s).forEach((l1d: any) => {
-          [...l1d.l2s].map((j: string) => JSON.parse(j).c).forEach(l2c => {
-            if (checked) next.add(l2c); else next.delete(l2c);
-          });
-        });
-      }
-      return next;
-    });
+      });
+    }
+    
+    setSelL0(newL0); setSelL1(newL1); setSelL2(newL2);
   };
 
   const handleTaxL1 = (l1c: string, l0c: string, checked: boolean) => {
-    setSelL1(prev => { const n = new Set(prev); if (checked) n.add(l1c); else n.delete(l1c); return n; });
-    setSelL2(prev => {
-      const n = new Set(prev);
-      if (taxMap[l0c]?.l1s[l1c]) {
-        [...taxMap[l0c].l1s[l1c].l2s].map((j: string) => JSON.parse(j).c).forEach(l2c => {
-          if (checked) n.add(l2c); else n.delete(l2c);
-        });
-      }
-      return n;
-    });
-    setSelL0(prev => {
-      const n = new Set(prev);
-      if (!checked) n.delete(l0c);
-      else if (taxMap[l0c] && Object.keys(taxMap[l0c].l1s).every(l1 => l1 === l1c || selL1.has(l1))) n.add(l0c);
-      return n;
-    });
+    const newL0 = new Set(selL0);
+    const newL1 = new Set(selL1);
+    const newL2 = new Set(selL2);
+
+    if (checked) newL1.add(l1c); else newL1.delete(l1c);
+    
+    const d1 = taxMap[l0c]?.l1s[l1c];
+    if (d1) {
+      d1.l2s.forEach((_name: any, l2c: string) => {
+        if (checked) newL2.add(l2c); else newL2.delete(l2c);
+      });
+    }
+
+    // Update parent
+    if (!checked) newL0.delete(l0c);
+    else if (taxMap[l0c] && Object.keys(taxMap[l0c].l1s).every(l => newL1.has(l))) newL0.add(l0c);
+
+    setSelL0(newL0); setSelL1(newL1); setSelL2(newL2);
   };
 
   const handleTaxL2 = (l2c: string, l1c: string, l0c: string, checked: boolean) => {
-    setSelL2(prev => { const n = new Set(prev); if (checked) n.add(l2c); else n.delete(l2c); return n; });
-    setSelL1(prev => {
+    const newL0 = new Set(selL0);
+    const newL1 = new Set(selL1);
+    const newL2 = new Set(selL2);
+
+    if (checked) newL2.add(l2c); else newL2.delete(l2c);
+
+    // Update theme
+    if (!checked) newL1.delete(l1c);
+    else if (taxMap[l0c]?.l1s[l1c] && [...taxMap[l0c].l1s[l1c].l2s.keys()].every(l => newL2.has(l))) newL1.add(l1c);
+
+    // Update sector
+    if (!checked) newL0.delete(l0c);
+    else if (taxMap[l0c] && Object.keys(taxMap[l0c].l1s).every(l => newL1.has(l))) newL0.add(l0c);
+
+    setSelL0(newL0); setSelL1(newL1); setSelL2(newL2);
+  };
+
+  const fetchMainTable = async () => {
+    setLoading(true);
+    try {
+      const payload = {
+        year: String(selectedYear),
+        level1_code: [...selL1],
+        level2_code: [...selL2],
+        country: [...selCountry],
+        revenue_class: [...selCls].map(c => c.toLowerCase().replace(' ', '_'))
+      };
+      const res = await postMethodApi(`${BaseUrl}/api/v1/company-top-themes/`, payload);
+      const data = res.data;
+      setResults(Array.isArray(data) ? data : []);
+    } catch (e) {
+      console.error(e);
+      setResults([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchInternalTable = async (coId: number) => {
+    try {
+      const res = await getMethodApi(`${BaseUrl}/api/classifications/`, { company_id: coId, year: selectedYear });
+      const data = res.data;
+      setExpandedRowData(prev => ({ ...prev, [coId]: Array.isArray(data) ? data : [] }));
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => { fetchMainTable(); }, [selectedYear, selL1, selL2, selCountry, selCls]);
+
+  const resetAll = () => {
+    setSelL0(new Set()); setSelL1(new Set()); setSelL2(new Set());
+    setSelCountry(new Set()); setSelCls(new Set());
+  };
+
+  const handleRowClick = (coId: number) => {
+    setExpandedRows(prev => {
       const n = new Set(prev);
-      if (!checked) n.delete(l1c);
-      else if (taxMap[l0c]?.l1s[l1c]) {
-        const allL2 = [...taxMap[l0c].l1s[l1c].l2s].map((j: string) => JSON.parse(j).c);
-        if (allL2.every(c => c === l2c || selL2.has(c))) n.add(l1c);
-      }
-      return n;
-    });
-    setSelL0(prev => {
-      const n = new Set(prev);
-      if (!checked) n.delete(l0c);
-      else if (taxMap[l0c] && Object.keys(taxMap[l0c].l1s).every(l1 => l1 === l1c || selL1.has(l1))) n.add(l0c);
+      if (n.has(coId)) n.delete(coId); else { n.add(coId); fetchInternalTable(coId); }
       return n;
     });
   };
@@ -165,154 +188,107 @@ const Screener = () => {
   };
 
   const removeChipL1 = (l1c: string) => {
-    for (const l0c of Object.keys(taxMap)) {
-      if (taxMap[l0c].l1s[l1c]) { handleTaxL1(l1c, l0c, false); return; }
-    }
+    for (const l0c of Object.keys(taxMap)) if (taxMap[l0c].l1s[l1c]) { handleTaxL1(l1c, l0c, false); return; }
   };
 
-  const removeChipL2 = (l2c: string) => {
-    for (const l0c of Object.keys(taxMap)) {
-      for (const l1c of Object.keys(taxMap[l0c].l1s)) {
-        const l2s = [...taxMap[l0c].l1s[l1c].l2s].map((j: string) => JSON.parse(j).c);
-        if (l2s.includes(l2c)) { handleTaxL2(l2c, l1c, l0c, false); return; }
-      }
-    }
-  };
-
-  const resetAll = () => {
-    setSelL0(new Set()); setSelL1(new Set()); setSelL2(new Set());
-    setSelCountry(new Set()); setSelCls(new Set());
-    setTaxExpanded({ l0: new Set(), l1: new Set() });
-    setSelectedYear(2025); setMinPct(''); setTaxSearch(''); setCoSearch('');
-    setMcapMin(''); setMcapMax('');
-  };
+  const exportData = useCallback((_type: string, _fmt: string) => {
+    alert('Export functionality is being updated for API data.');
+    setExportMenuOpen(false);
+  }, []);
 
   const CountryList = useMemo(() => {
     const q = coSearch.toLowerCase();
-    const inData = new Set(GOLDEN.filter(g => !g.invalidated).map(g => {
-      const co = COMPANIES.find(c => c.id === g.coId);
-      return co ? co.country : '';
-    }).filter(Boolean));
-    const all = [...SCR_COUNTRIES];
-    inData.forEach(c => { if (!all.includes(c)) all.push(c); });
-    return all.filter(c => !q || c.toLowerCase().includes(q)).map(c => {
-      const hasData = inData.has(c);
+    return SCR_COUNTRIES.filter(c => !q || c.toLowerCase().includes(q)).map(c => {
       const isSel = selCountry.has(c);
       return (
-        <div key={c} className={`scr-opt ${isSel ? 'on' : ''}`} onClick={() => setSelCountry(p => { const n = new Set(p); if(n.has(c)) n.delete(c); else n.add(c); return n; })} style={{ opacity: !hasData ? 0.45 : 1 }}>
-          <span className="scr-ck">{isSel ? <Check size={12} strokeWidth={3} /> : ''}</span>
-          {c}
-          {!hasData && <span style={{ fontSize: '8px', color: 'var(--txt4)', marginLeft: '2px' }}>—</span>}
+        <div key={c} className={`scr-opt ${isSel ? 'on' : ''}`} onClick={() => setSelCountry(p => { const n = new Set(p); if (n.has(c)) n.delete(c); else n.add(c); return n; })}>
+          <span className="scr-ck">{isSel ? <Check size={12} strokeWidth={3} /> : ''}</span>{c}
         </div>
       );
     });
   }, [coSearch, selCountry]);
 
-  const l0Keys = Object.keys(taxMap).sort((a, b) => taxMap[a].n.localeCompare(taxMap[b].n));
+  const l0Keys = Object.keys(taxMap).sort((a,b) => taxMap[a].n.localeCompare(taxMap[b].n));
 
   return (
     <div className="scr-wrap">
-      {/* Sidebar Panel */}
       <div className="scr-fp">
         <div className="scr-fhd">
           <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.8px', textTransform: 'uppercase', color: 'var(--txt3)', display: 'flex', alignItems: 'center', gap: 4 }}>
             <Wrench size={12} /> FILTERS
           </span>
-          <button onClick={resetAll} style={{ fontSize: '11px', color: 'var(--blue)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'var(--font)' }}>Reset All</button>
+          <button onClick={resetAll} style={{ fontSize: '11px', color: 'var(--blue)', background: 'none', border: 'none', cursor: 'pointer' }}>Reset All</button>
         </div>
         
-        <div>
+        <div style={{ marginBottom: '16px' }}>
           <label className="scr-flbl">Year</label>
-          <select className="scr-sel" value={selectedYear} onChange={e => setSelectedYear(parseInt(e.target.value, 10))}>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
+          <select className="scr-sel" value={selectedYear} onChange={e => setSelectedYear(parseInt(e.target.value))}>
+            {[2025, 2024, 2023, 2022, 2021, 2020].map(y => <option key={y} value={y}>{y}</option>)}
           </select>
         </div>
 
-        <div>
+        <div style={{ marginBottom: '16px' }}>
           <label className="scr-flbl">Sector / Theme / Sub-Theme</label>
-          <input type="text" className="scr-finp" placeholder="Search sectors, themes, sub-themes..." value={taxSearch} onChange={e => setTaxSearch(e.target.value)} style={{ marginBottom: '4px' }} />
-          <div className="scr-ms" style={{ maxHeight: '260px', padding: 0 }}>
+          <div className="scr-inp-wrap">
+            <input type="text" className="scr-finp" placeholder="Search..." value={taxSearch} onChange={e => setTaxSearch(e.target.value)} />
+          </div>
+          <div className="scr-ms" style={{ maxHeight: '260px', marginTop: '8px' }}>
             {l0Keys.map(l0c => {
               const l0d = taxMap[l0c];
-              const l1Keys = Object.keys(l0d.l1s).sort((a, b) => l0d.l1s[a].n.localeCompare(l0d.l1s[b].n));
-              const l0Match = !taxSearch || l0d.n.toLowerCase().includes(taxSearch.toLowerCase());
-              const visL1 = l1Keys.filter(l1c => {
-                if (!taxSearch || l0Match) return true;
-                if (l0d.l1s[l1c].n.toLowerCase().includes(taxSearch.toLowerCase())) return true;
-                return [...l0d.l1s[l1c].l2s].some((j: string) => JSON.parse(j).n.toLowerCase().includes(taxSearch.toLowerCase()));
-              });
-              if (taxSearch && !l0Match && visL1.length === 0) return null;
-
-              const allL2inL0 = l1Keys.flatMap(l1c => [...l0d.l1s[l1c].l2s].map((j: string) => JSON.parse(j).c));
-              const l0All = l1Keys.every(l1c => selL1.has(l1c)) && allL2inL0.every(l2c => selL2.has(l2c));
-              const l0Some = !l0All && (selL0.has(l0c) || l1Keys.some(l1c => selL1.has(l1c)) || allL2inL0.some(l2c => selL2.has(l2c)));
+              const l1Keys = Object.keys(l0d.l1s).sort((a,b) => l0d.l1s[a].n.localeCompare(l0d.l1s[b].n));
+              const l0All = l1Keys.every(l => selL1.has(l));
+              const l0Some = !l0All && l1Keys.some(l => selL1.has(l));
               const l0Open = taxSearch ? true : taxExpanded.l0.has(l0c);
+              if (taxSearch && !l0d.n.toLowerCase().includes(taxSearch.toLowerCase()) && !l1Keys.some(l1 => l0d.l1s[l1].n.toLowerCase().includes(taxSearch.toLowerCase()))) return null;
 
               return (
-                <div className="tax-tree-node" key={l0c}>
+                <div key={l0c} className="tax-tree-node">
                   <div className="tax-tree-row tax-l0-row" onClick={() => toggleTaxNode('l0', l0c)}>
                     <span className={`tax-tree-toggle ${l0Open ? 'open' : ''}`}>►</span>
-                    <Checkbox className="tax-tree-cb" checked={l0All} indeterminate={l0Some} onChange={(e: any) => handleTaxL0(l0c, e.target.checked)} onClick={(e: any) => e.stopPropagation()} />
-                    <span className="tax-tree-label l0-label">{l0d.n} <span style={{ fontSize: '9px', color: 'var(--txt3)', fontFamily: 'var(--mono)', marginLeft: '4px', opacity: 0.7 }}>{l0c}</span></span>
-                    <span className="tax-tree-count">{l1Keys.length}</span>
+                    <Checkbox checked={l0All} indeterminate={l0Some} onChange={(e: any) => handleTaxL0(l0c, e.target.checked)} onClick={(e: any) => e.stopPropagation()} />
+                    <span className="tax-tree-label">{l0d.n}</span>
                   </div>
-                  <div className={`tax-tree-children ${l0Open ? 'open' : ''}`}>
-                    {visL1.map(l1c => {
+                  {l0Open && <div className="tax-tree-children open">
+                    {l1Keys.map(l1c => {
                       const l1d = l0d.l1s[l1c];
-                      const l2Arr = [...l1d.l2s].map((j: string) => JSON.parse(j)).sort((a: any, b: any) => a.n.localeCompare(b.n));
-                      const l1Match = !taxSearch || l0Match || l1d.n.toLowerCase().includes(taxSearch.toLowerCase());
-                      const visL2 = l2Arr.filter((l2: any) => (!taxSearch || l0Match || l1Match) ? true : l2.n.toLowerCase().includes(taxSearch.toLowerCase()));
-                      const l1All = selL1.has(l1c) || (l2Arr.length > 0 && l2Arr.every((l2: any) => selL2.has(l2.c)));
-                      const l1Some = !l1All && l2Arr.some((l2: any) => selL2.has(l2.c));
+                      const l2Keys = [...l1d.l2s.keys()];
+                      const l1All = selL1.has(l1c);
+                      const l1Some = !l1All && l2Keys.some(l => selL2.has(l));
                       const l1Open = taxSearch ? true : taxExpanded.l1.has(l1c);
-
                       return (
-                        <div className="tax-tree-node" key={l1c}>
+                        <div key={l1c} className="tax-tree-node">
                           <div className="tax-tree-row tax-l1-row" onClick={() => toggleTaxNode('l1', l1c)}>
-                            <span className={`tax-tree-toggle ${l2Arr.length===0 ? 'leaf' : ''} ${l1Open ? 'open' : ''}`}>{l2Arr.length > 0 ? '►' : <span style={{width: 12}}></span>}</span>
-                            <Checkbox className="tax-tree-cb" checked={l1All} indeterminate={l1Some} onChange={(e: any) => handleTaxL1(l1c, l0c, e.target.checked)} onClick={(e: any) => e.stopPropagation()} />
-                            <span className="tax-tree-label l1-label">{l1d.n} <span style={{ fontSize: '9px', color: 'var(--txt3)', fontFamily: 'var(--mono)', marginLeft: '4px', opacity: 0.7 }}>{l1c}</span></span>
-                            <span className="tax-tree-count">{l2Arr.length}</span>
+                            <span className={`tax-tree-toggle ${l1Open ? 'open' : ''}`}>{l2Keys.length > 0 ? '►' : ''}</span>
+                            <Checkbox checked={l1All} indeterminate={l1Some} onChange={(e: any) => handleTaxL1(l1c, l0c, e.target.checked)} onClick={(e: any) => e.stopPropagation()} />
+                            <span className="tax-tree-label">{l1d.n}</span>
                           </div>
-                          <div className={`tax-tree-children ${l1Open ? 'open' : ''}`}>
-                            {visL2.map((l2: any) => (
-                              <div className="tax-tree-row tax-l2-row" key={l2.c}>
-                                <span className="tax-tree-toggle leaf" style={{width: 12}}></span>
-                                <Checkbox className="tax-tree-cb" checked={selL2.has(l2.c)} onChange={(e: any) => handleTaxL2(l2.c, l1c, l0c, e.target.checked)} onClick={(e: any) => e.stopPropagation()} />
-                                <span className="tax-tree-label l2-label">{l2.n} <span style={{ fontSize: '9px', color: 'var(--txt3)', fontFamily: 'var(--mono)', marginLeft: '4px', opacity: 0.7 }}>{l2.c}</span></span>
+                          {l1Open && <div className="tax-tree-children open">
+                            {l2Keys.map(l2c => (
+                              <div key={l2c} className="tax-tree-row tax-l2-row">
+                                <Checkbox checked={selL2.has(l2c)} onChange={(e: any) => handleTaxL2(l2c, l1c, l0c, e.target.checked)} />
+                                <span className="tax-tree-label">{l1d.l2s.get(l2c)}</span>
                               </div>
                             ))}
-                          </div>
+                          </div>}
                         </div>
                       );
                     })}
-                  </div>
+                  </div>}
                 </div>
               );
             })}
           </div>
         </div>
 
-        <div>
+        <div style={{ marginBottom: '16px' }}>
           <label className="scr-flbl">Country</label>
-          <input type="text" className="scr-finp" placeholder="Search countries..." value={coSearch} onChange={e => setCoSearch(e.target.value)} />
-          <div className="scr-ms" style={{ marginTop: '4px', maxHeight: '140px' }}>{CountryList}</div>
-        </div>
-
-        <div>
-           <label className="scr-flbl">MCap (Bn USD)</label>
-           <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-             <input type="number" className="scr-finp" placeholder="Min" min="0" value={mcapMin} onChange={e => setMcapMin(e.target.value ? parseFloat(e.target.value) : '')} style={{ width: '50%', flex: 1 }} />
-             <span style={{ color: 'var(--txt3)', fontSize: '12px' }}>&mdash;</span>
-             <input type="number" className="scr-finp" placeholder="Max" min="0" value={mcapMax} onChange={e => setMcapMax(e.target.value ? parseFloat(e.target.value) : '')} style={{ width: '50%', flex: 1 }} />
-           </div>
+          <input type="text" className="scr-finp" value={coSearch} onChange={e => setCoSearch(e.target.value)} />
+          <div className="scr-ms" style={{ maxHeight: '140px', marginTop: '8px' }}>{CountryList}</div>
         </div>
 
         <div>
           <label className="scr-flbl">Revenue Class</label>
-          <div className="scr-ms">
+          <div className="scr-ms" style={{ marginTop: '8px' }}>
             {['Pure Play', 'Quasi', 'Marginal'].map(c => (
               <div key={c} className={`scr-opt ${selCls.has(c) ? 'on' : ''}`} onClick={() => setSelCls(p => { const n = new Set(p); if (n.has(c)) n.delete(c); else n.add(c); return n; })}>
                 <span className="scr-ck">{selCls.has(c) ? <Check size={12} strokeWidth={3} /> : ''}</span>{c}
@@ -320,54 +296,89 @@ const Screener = () => {
             ))}
           </div>
         </div>
-
-        <div>
-          <label className="scr-flbl">Min Revenue %</label>
-          <input type="number" className="scr-finp" placeholder="0" min="0" max="100" value={minPct} onChange={e => setMinPct(e.target.value ? parseFloat(e.target.value) : '')} style={{ width: '100%' }} />
-        </div>
       </div>
 
-      {/* Main Panel */}
       <div className="scr-rp">
         <div className="scr-rhd">
-          <div style={{ fontSize: '13px', color: 'var(--txt2)' }}>Golden Copy Screening</div>
+          <div style={{ fontSize: '16px' }}><strong>{results.length}</strong> companies found</div>
+          <button 
+            onClick={() => clientSideLogout(true)}
+            style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '6px', 
+              background: '#3b7eff', 
+              border: '1px solid #3b7eff',
+              padding: '6px 12px',
+              borderRadius: '6px',
+              fontSize: '13px',
+              fontWeight: 500,
+              cursor: 'pointer',
+              color: '#f3f3f3ff'
+            }}
+          >
+            <LogOut size={14} /> Logout
+          </button>
         </div>
 
-        {/* Filter Chips Layer */}
-        {(selL0.size > 0 || selL1.size > 0 || selL2.size > 0 || selCountry.size > 0 || selCls.size > 0) && (
-          <div className="scr-chips">
-            {[...selL0].map(c => <span className="scr-chip" key={`0-${c}`}>{taxMap[c]?.n || c} <span className="scr-chip-x" onClick={() => handleTaxL0(c, false)}><X size={10} strokeWidth={3} /></span></span>)}
-            {[...selL1].map(c => { 
-                let n = c;
-                for(const l0 of Object.values(taxMap) as any[]) { if(l0.l1s[c]) { n = l0.l1s[c].n; break; } }
-                return <span className="scr-chip" key={`1-${c}`}>{n} <span className="scr-chip-x" onClick={() => removeChipL1(c)}><X size={10} strokeWidth={3} /></span></span>; 
-            })}
-            {[...selL2].map(c => { 
-                let n = c;
-                for(const l0 of Object.values(taxMap) as any[]) { 
-                    for(const l1 of Object.values(l0.l1s) as any[]) {
-                        const l2d = [...l1.l2s].map(j => JSON.parse(j));
-                        const l2m = l2d.find((x:any) => x.c === c);
-                        if(l2m) { n = l2m.n; break; }
-                    }
-                }
-                return <span className="scr-chip" key={`2-${c}`}>{n} <span className="scr-chip-x" onClick={() => removeChipL2(c)}><X size={10} strokeWidth={3} /></span></span>; 
-            })}
-            {[...selCountry].map(c => <span className="scr-chip" key={`c-${c}`}>{c} <span className="scr-chip-x" onClick={() => setSelCountry(p => { const n = new Set(p); n.delete(c); return n; })}><X size={10} strokeWidth={3} /></span></span>)}
-            {[...selCls].map(c => <span className="scr-chip" key={`cls-${c}`}>{c} <span className="scr-chip-x" onClick={() => setSelCls(p => { const n = new Set(p); n.delete(c); return n; })}><X size={10} strokeWidth={3} /></span></span>)}
+        <div className="scr-chips">
+          {[...selL1].map(c => {
+             // Find name for the code
+             let name = c;
+             for (const l0 of Object.values(taxMap) as any[]) {
+               if (l0.l1s[c]) { name = l0.l1s[c].n; break; }
+             }
+             return <span key={c} className="scr-chip">{name} <X size={10} onClick={() => removeChipL1(c)} /></span>;
+          })}
+        </div>
+
+        {loading ? <div className="scr-loading">Loading...</div> : (
+          <div className="scr-tbl-wrap">
+            <table className="scr-tbl">
+              <thead>
+                <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>MCAP</th><th>SECTOR</th><th>TOP THEME</th><th>REV %</th><th>CLASS</th></tr>
+              </thead>
+              <tbody>
+                {results.length === 0 ? <tr><td colSpan={8} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => (
+                  <React.Fragment key={co.id || co.company_id}>
+                    <tr onClick={() => handleRowClick(co.id || co.company_id)}>
+                      <td>{expandedRows.has(co.id || co.company_id) ? '▼' : '►'}</td>
+                      <td>{co.company_name}</td>
+                      <td>{co.country}</td>
+                      <td>{co.mcap || '-'}</td>
+                      <td>{co.l0_name || co.sector}</td>
+                      <td>{co.top_theme}</td>
+                      <td>{co.revenue_pct}%</td>
+                      <td>{co.classification}</td>
+                    </tr>
+                    {expandedRows.has(co.id || co.company_id) && (
+                      <tr className="scr-expanded">
+                        <td colSpan={8}>
+                          <div className="scr-nested">
+                            <table className="scr-nested-tbl">
+                              <thead>
+                                <tr><th>Segment Name</th><th>Revenue %</th><th>Classification</th></tr>
+                              </thead>
+                              <tbody>
+                                {expandedRowData[co.id || co.company_id]?.length ? expandedRowData[co.id || co.company_id].map((s:any, i:number) => (
+                                  <tr key={i}>
+                                    <td>{s.segment_name}</td>
+                                    <td>{s.revenue_pct}%</td>
+                                    <td>{s.classification}</td>
+                                  </tr>
+                                )) : <tr><td colSpan={3}>Loading classification data...</td></tr>}
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    )}
+                  </React.Fragment>
+                ))}
+              </tbody>
+            </table>
           </div>
         )}
-
-        <div className="scr-empty-state" style={{ 
-          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 20px', color: 'var(--txt3)', 
-          background: 'var(--bg2)', borderRadius: '12px', border: '1px dashed var(--brdr)', marginTop: '24px' 
-        }}>
-          <ListTree size={48} strokeWidth={1} style={{ marginBottom: '16px', opacity: 0.5 }} />
-          <div style={{ fontSize: '16px', fontWeight: 600, color: 'var(--txt2)' }}>Data Integration in Progress</div>
-          <p style={{ fontSize: '13px', textAlign: 'center', maxWidth: '300px', marginTop: '8px' }}>
-            The screening results table is being connected to the new ITICS taxonomy API. Use the filters on the left to explore the taxonomy structure.
-          </p>
-        </div>
       </div>
     </div>
   );

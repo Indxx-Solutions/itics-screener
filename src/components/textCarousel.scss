@@ -1,0 +1,43 @@
+.carousel-container{
+    padding-right: 20px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  // padding-bottom: 60px;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.carousel-text {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-text.animate {
+  animation: fadeInOut 3s ease-in-out;
+}
+
+
