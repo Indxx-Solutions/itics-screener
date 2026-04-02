@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Check, X, Wrench, LogOut } from 'lucide-react';
+import { Pagination } from 'antd';
 import TAX_DATA_JSON from './../../static data/output.json';
 import { BaseUrl } from '../../assets/entpoint';
 import { postMethodApi, getMethodApi } from '../../utils/commonAxios';
@@ -44,9 +45,12 @@ const Screener = () => {
   const [coSearch, setCoSearch] = useState<string>('');
   
   const [results, setResults] = useState<any[]>([]);
+  const [totalCount, setTotalCount] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize] = useState(20);
   const [loading, setLoading] = useState(false);
-  const [expandedRowData, setExpandedRowData] = useState<Record<number, any[]>>({});
-  const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
+  const [expandedRowData, setExpandedRowData] = useState<Record<string, any[]>>({});
+  const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set());
 
   const [selL0, setSelL0] = useState<Set<string>>(new Set());
   const [selL1, setSelL1] = useState<Set<string>>(new Set());
@@ -132,48 +136,67 @@ const Screener = () => {
     setSelL0(newL0); setSelL1(newL1); setSelL2(newL2);
   };
 
-  const fetchMainTable = async () => {
+  const fetchMainTable = async (page: number = 1) => {
     setLoading(true);
     try {
-      const payload = {
+      const payload: any = {
         year: String(selectedYear),
         level1_code: [...selL1],
         level2_code: [...selL2],
         country: [...selCountry],
         revenue_class: [...selCls].map(c => c.toLowerCase().replace(' ', '_'))
       };
-      const res = await postMethodApi(`${BaseUrl}/api/v1/company-top-themes/`, payload);
+      
+      const res = await postMethodApi(`${BaseUrl}/api/v1/company-top-themes/?page=${page}`, payload);
       const data = res.data;
-      setResults(Array.isArray(data) ? data : []);
+      
+      if (data && data.results) {
+        setResults(data.results);
+        setTotalCount(data.count || 0);
+        setCurrentPage(page);
+      } else {
+        setResults(Array.isArray(data) ? data : []);
+        setTotalCount(Array.isArray(data) ? data.length : 0);
+        setCurrentPage(1);
+      }
     } catch (e) {
       console.error(e);
       setResults([]);
+      setTotalCount(0);
     } finally {
       setLoading(false);
     }
   };
 
-  const fetchInternalTable = async (coId: number) => {
+  const fetchInternalTable = async (rowKey: string, coId: number) => {
+    if (!coId) return;
     try {
       const res = await getMethodApi(`${BaseUrl}/api/classifications/`, { company_id: coId, year: selectedYear });
       const data = res.data;
-      setExpandedRowData(prev => ({ ...prev, [coId]: Array.isArray(data) ? data : [] }));
+      setExpandedRowData(prev => ({ ...prev, [rowKey]: Array.isArray(data) ? data : [] }));
     } catch (e) {
       console.error(e);
     }
   };
 
-  useEffect(() => { fetchMainTable(); }, [selectedYear, selL1, selL2, selCountry, selCls]);
+  useEffect(() => { fetchMainTable(1); }, [selectedYear, selL1, selL2, selCountry, selCls]);
 
   const resetAll = () => {
     setSelL0(new Set()); setSelL1(new Set()); setSelL2(new Set());
     setSelCountry(new Set()); setSelCls(new Set());
   };
 
-  const handleRowClick = (coId: number) => {
+  const handleRowClick = (co: any) => {
+    const rowKey = co.isin || co.id || co.company_id || String(Math.random());
+    const numericId = co.company_id || co.id;
+    
     setExpandedRows(prev => {
       const n = new Set(prev);
-      if (n.has(coId)) n.delete(coId); else { n.add(coId); fetchInternalTable(coId); }
+      if (n.has(rowKey)) n.delete(rowKey); 
+      else { 
+        n.add(rowKey); 
+        fetchInternalTable(rowKey, numericId); 
+      }
       return n;
     });
   };
@@ -294,7 +317,7 @@ const Screener = () => {
 
       <div className="scr-rp">
         <div className="scr-rhd">
-          <div style={{ fontSize: '16px' }}><strong>{results.length}</strong> companies found</div>
+          <div style={{ fontSize: '16px' }}><strong>{totalCount}</strong> companies found</div>
           <button 
             onClick={() => clientSideLogout(true)}
             style={{ 
@@ -326,53 +349,100 @@ const Screener = () => {
           })}
         </div>
 
-        {loading ? <div className="scr-loading">Loading...</div> : (
-          <div className="scr-tbl-wrap">
-            <table className="scr-tbl">
-              <thead>
-                <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>MCAP</th><th>SECTOR</th><th>TOP THEME</th><th>REV %</th><th>CLASS</th></tr>
-              </thead>
-              <tbody>
-                {results.length === 0 ? <tr><td colSpan={8} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => (
-                  <React.Fragment key={co.id || co.company_id}>
-                    <tr onClick={() => handleRowClick(co.id || co.company_id)}>
-                      <td>{expandedRows.has(co.id || co.company_id) ? '▼' : '►'}</td>
-                      <td>{co.company_name}</td>
-                      <td>{co.country}</td>
-                      <td>{co.mcap || '-'}</td>
-                      <td>{co.l0_name || co.sector}</td>
-                      <td>{co.top_theme}</td>
-                      <td>{co.revenue_pct}%</td>
-                      <td>{co.classification}</td>
-                    </tr>
-                    {expandedRows.has(co.id || co.company_id) && (
-                      <tr className="scr-expanded">
-                        <td colSpan={8}>
-                          <div className="scr-nested">
-                            <table className="scr-nested-tbl">
-                              <thead>
-                                <tr><th>Segment Name</th><th>Revenue %</th><th>Classification</th></tr>
-                              </thead>
-                              <tbody>
-                                {expandedRowData[co.id || co.company_id]?.length ? expandedRowData[co.id || co.company_id].map((s:any, i:number) => (
-                                  <tr key={i}>
-                                    <td>{s.segment_name}</td>
-                                    <td>{s.revenue_pct}%</td>
-                                    <td>{s.classification}</td>
-                                  </tr>
-                                )) : <tr><td colSpan={3}>Loading classification data...</td></tr>}
-                              </tbody>
-                            </table>
-                          </div>
-                        </td>
-                      </tr>
-                    )}
-                  </React.Fragment>
-                ))}
-              </tbody>
-            </table>
+        <div className="scr-tbl-container" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+          {loading ? <div className="scr-loading" style={{ padding: '40px', textAlign: 'center', color: 'var(--txt3)' }}>Loading...</div> : (
+            <div className="scr-tbl-wrap">
+              <table className="scr-tbl">
+                <thead>
+                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>MCAP</th><th>TOP THEME</th><th>REV %</th><th>CLASS</th></tr>
+                </thead>
+                <tbody>
+                  {results.length === 0 ? <tr><td colSpan={7} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => {
+                    const rowKey = co.isin || co.id || co.company_id || String(Math.random());
+                    const isExpanded = expandedRows.has(rowKey);
+                    return (
+                      <React.Fragment key={rowKey}>
+                        <tr onClick={() => handleRowClick(co)}>
+                          <td style={{ color: 'var(--txt3)', fontSize: '10px' }}>{isExpanded ? '▼' : '►'}</td>
+                          <td>
+                            <div style={{ fontWeight: 600, color: 'var(--txt)' }}>{co.company_name}</div>
+                            <div style={{ fontSize: '10px', color: 'var(--txt3)', marginTop: '2px' }}>{co.isin}</div>
+                          </td>
+                          <td>{co.country_name || co.country || '-'}</td>
+                          <td>{co.mcap || '-'}</td>
+                          <td><span className="scr-top-theme">{co.top_theme || '-'}</span></td>
+                          <td style={{ minWidth: '120px' }}>
+                            <div style={{ fontWeight: 600 }}>{co.revenue_percentage || '0'}%</div>
+                            {co.revenue_percentage !== undefined && (
+                              <div style={{ width: '90px', height: '3px', background: 'rgba(255,255,255,0.1)', borderRadius: '2px', marginTop: '4px' }}>
+                                <div style={{ 
+                                  width: `${Math.min(100, Math.max(0, co.revenue_percentage))}%`, 
+                                  height: '100%', 
+                                  borderRadius: '2px',
+                                  background: co.revenue_percentage >= 66 ? '#0fb8a3' : co.revenue_percentage >= 33 ? '#f59e0b' : '#3b7eff'
+                                }} />
+                              </div>
+                            )}
+                          </td>
+                          <td>
+                            <span className={`badge ${co.revenue_class?.toLowerCase() === 'pure play' ? 'bw-gc' : co.revenue_class?.toLowerCase() === 'quasi' ? 'bw-committee' : 'bw-analyst'}`}>
+                              {co.revenue_class || '-'}
+                            </span>
+                          </td>
+                        </tr>
+                        {isExpanded && (
+                          <tr className="scr-expanded">
+                            <td colSpan={7} style={{ padding: '0 0 16px 40px' }}>
+                              <div className="scr-nested" style={{ background: 'var(--bg2)', borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)' }}>
+                                <table className="scr-nested-tbl" style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                  <thead style={{ background: 'var(--bg3)' }}>
+                                    <tr>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>SEGMENT NAME</th>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>REVENUE %</th>
+                                      <th style={{ padding: '8px 12px', fontSize: '10px', color: 'var(--txt3)' }}>CLASSIFICATION</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {expandedRowData[rowKey]?.length ? expandedRowData[rowKey].map((s:any, i:number) => (
+                                      <tr key={i} style={{ borderTop: '1px solid var(--border)' }}>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.segment_name}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_percentage}%</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_class}</td>
+                                      </tr>
+                                    )) : <tr><td colSpan={3} style={{ padding: '20px', textAlign: 'center' }}>No classification data available.</td></tr>}
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                      </React.Fragment>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          <div className="scr-pagination-bar" style={{ 
+            padding: '12px 16px', 
+            borderTop: '1px solid var(--border)', 
+            background: 'var(--bg1)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <Pagination
+              current={currentPage}
+              total={totalCount}
+              pageSize={pageSize}
+              onChange={(page) => fetchMainTable(page)}
+              showSizeChanger={false}
+              size="small"
+              className="custom-pagination"
+            />
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

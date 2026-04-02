@@ -1990,7 +1990,7 @@ th.sortable.desc .sort-ico {
 .scr-wrap {
   display: grid;
   grid-template-columns: 272px 1fr;
-  height: calc(100vh - var(--topbar-h));
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -2090,7 +2090,7 @@ th.sortable.desc .sort-ico {
   padding: 6px 10px;
   cursor: pointer;
   font-size: 12px;
-  color: var(--txt2);
+  color: var(--txt);
   transition: background .12s;
 }
 

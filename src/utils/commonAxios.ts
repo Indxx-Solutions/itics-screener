@@ -16,29 +16,20 @@ interface StandardizedError {
 // ============================================
 // Helpers
 // ============================================
-const getTenantId = (): string | null => {
-  return sessionStorage.getItem("TenantID");
-};
 
 const getAccessToken = (): string | null => {
   return sessionStorage.getItem("AccessToken");
 };
 
 const getHeaders = (overrides: { [key: string]: any } = {}) => {
-  const tenantId = getTenantId();
   const accessToken = getAccessToken();
 
   const baseHeaders: { [key: string]: any } = {
-    "X-Tool-Id": "1",
     ...overrides,
   };
 
   if (accessToken) {
     baseHeaders.Authorization = `Bearer ${accessToken}`;
-  }
-
-  if (tenantId) {
-    baseHeaders["X-TENANT-ID"] = tenantId;
   }
 
   return baseHeaders;
@@ -101,7 +92,6 @@ const refreshAccessToken = async (): Promise<string> => {
   }
 
   try {
-    const tenantId = getTenantId();
 
     console.log("🔄 Attempting to refresh access token...");
 
@@ -114,8 +104,7 @@ const refreshAccessToken = async (): Promise<string> => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-Tool-Id": "1",
-          ...(tenantId ? { "X-TENANT-ID": tenantId } : {}),
+
         },
       },
     );
