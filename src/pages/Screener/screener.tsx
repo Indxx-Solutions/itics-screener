@@ -4,8 +4,8 @@ import { Pagination } from 'antd';
 import TAX_DATA_JSON from './../../static data/output.json';
 import { BaseUrl } from '../../assets/entpoint';
 import { postMethodApi, getMethodApi } from '../../utils/commonAxios';
+import { useAuth } from '../../hooks/useAuth';
 import './../../App.css';
-import { clientSideLogout } from '../../utils/session';
 
 const TAX_DATA: any[] = TAX_DATA_JSON;
 
@@ -41,6 +41,7 @@ const Checkbox = ({ checked, indeterminate, onChange, ...props }: any) => {
 };
 
 const Screener = () => {
+  const { logout } = useAuth();
   const [selectedYear, setSelectedYear] = useState<number>(2023);
   const [taxSearch, setTaxSearch] = useState<string>('');
   const [coSearch, setCoSearch] = useState<string>('');
@@ -333,7 +334,7 @@ const Screener = () => {
         <div className="scr-rhd">
           <div style={{ fontSize: '16px' }}><strong>{totalCount}</strong> companies found</div>
           <button
-            onClick={() => clientSideLogout(true)}
+            onClick={() => logout()}
             style={{
               display: 'flex',
               alignItems: 'center',

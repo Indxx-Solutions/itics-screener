@@ -1,6 +1,5 @@
-import { REFRESH_TOKEN_API } from "./../assets/entpoint";
 import axios, { type AxiosResponse, type AxiosRequestConfig } from "axios";
-import { useAuthStore } from "../stores/authStore";
+import { clientSideLogout } from "./session";
 
 interface ApiParams {
   [key: string]: any;
@@ -18,7 +17,7 @@ interface StandardizedError {
 // ============================================
 
 const getAccessToken = (): string | null => {
-  return sessionStorage.getItem("AccessToken");
+  return localStorage.getItem("AccessToken") || sessionStorage.getItem("AccessToken");
 };
 
 const getHeaders = (overrides: { [key: string]: any } = {}) => {
@@ -38,101 +37,11 @@ const getHeaders = (overrides: { [key: string]: any } = {}) => {
 // ============================================
 // LOGOUT HELPER (disabled during dev bypass)
 // ============================================
-const forceLogout = async (reason: string = "Session expired") => {
-  console.warn(`⚠️ FORCE LOGOUT (no redirect — dev bypass): ${reason}`);
+const forceLogout = (reason: string = "Session expired") => {
+  console.warn(`⚠️ FORCE LOGOUT: ${reason}`);
+  clientSideLogout(true);
 };
 
-// ============================================
-// TOKEN REFRESH MECHANISM
-// ============================================
-let isRefreshing = false;
-let failedQueue: Array<{
-  resolve: (value?: any) => void;
-  reject: (reason?: any) => void;
-}> = [];
-
-const processQueue = (error: any, token: string | null = null) => {
-  failedQueue.forEach((prom) => {
-    if (error) {
-      prom.reject(error);
-    } else {
-      prom.resolve(token);
-    }
-  });
-  failedQueue = [];
-};
-
-const refreshAccessToken = async (): Promise<string> => {
-  const refreshToken = sessionStorage.getItem("RefreshToken");
-
-  if (!refreshToken) {
-    console.warn("❌ No refresh token available");
-    await forceLogout("No refresh token available");
-    throw new Error("No refresh token available");
-  }
-
-  try {
-
-    console.log("🔄 Attempting to refresh access token...");
-
-    const response = await axios.post(
-      REFRESH_TOKEN_API,
-      {
-        refresh_token: refreshToken,
-        email: sessionStorage.getItem("email"),
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-
-        },
-      },
-    );
-
-    // Check if response is successful (200-299)
-    if (response.status >= 200 && response.status < 300) {
-      const newAccessToken =
-        response.data.access_token ?? response.data.accessToken;
-      const newRefreshToken =
-        response.data.refresh_token ?? response.data.refreshToken;
-
-      if (!newAccessToken) {
-        console.warn(
-          "❌ Refresh API succeeded but no access token in response",
-        );
-        await forceLogout("Invalid refresh response");
-        throw new Error("Refresh did not return access token");
-      }
-
-      sessionStorage.setItem("AccessToken", newAccessToken);
-      if (newRefreshToken) {
-        sessionStorage.setItem("RefreshToken", newRefreshToken);
-      }
-
-      console.log("✅ Token refreshed successfully");
-      return newAccessToken;
-    } else {
-      // If refresh API returns non-200 status, logout immediately
-      console.warn(
-        `❌ Refresh API returned non-200 status: ${response.status}`,
-      );
-      await forceLogout(`Token refresh failed (status: ${response.status})`);
-      throw new Error(`Refresh failed with status: ${response.status}`);
-    }
-  } catch (err: any) {
-    console.error("❌ Refresh token failed:", {
-      status: err?.response?.status,
-      data: err?.response?.data,
-      message: err?.message,
-    });
-
-    // ANY refresh failure means the session is invalid - logout immediately
-    const statusCode = err?.response?.status || "network error";
-    await forceLogout(`Token refresh failed (${statusCode})`);
-
-    throw err;
-  }
-};
 
 // ============================================
 // CENTRALIZED ERROR HANDLER
@@ -178,7 +87,6 @@ const handleApiError = (error: any): StandardizedError => {
 // ============================================
 const makeRequest = async (
   config: AxiosRequestConfig,
-  retryAttempt = 0,
 ): Promise<AxiosResponse> => {
   try {
     config.headers = {
@@ -194,53 +102,8 @@ const makeRequest = async (
     // Handle 401 - Unauthorized (token expired)
     if (status === 401) {
       console.warn("⚠️ Received 401 - Token expired");
-
-      // Only attempt refresh once
-      if (retryAttempt > 0) {
-        console.warn("❌ Already tried refreshing, logging out");
-        await forceLogout("Token refresh failed");
-        throw error;
-      }
-
-      // If already refreshing, queue this request
-      if (isRefreshing) {
-        console.log("⏳ Token refresh in progress, queuing request...");
-        return new Promise((resolve, reject) => {
-          failedQueue.push({ resolve, reject });
-        })
-          .then((token) => {
-            config.headers = {
-              ...getHeaders(config.headers as any),
-              Authorization: `Bearer ${token}`,
-            };
-            return makeRequest(config, retryAttempt + 1);
-          })
-          .catch((err) => {
-            throw err;
-          });
-      }
-
-      // Start refresh process
-      isRefreshing = true;
-
-      try {
-        const newToken = await refreshAccessToken();
-        processQueue(null, newToken);
-
-        // Retry the original request with new token
-        config.headers = {
-          ...getHeaders(config.headers as any),
-          Authorization: `Bearer ${newToken}`,
-        };
-
-        return await makeRequest(config, retryAttempt + 1);
-      } catch (refreshError: any) {
-        processQueue(refreshError, null);
-        // forceLogout already called in refreshAccessToken
-        throw refreshError;
-      } finally {
-        isRefreshing = false;
-      }
+      forceLogout("Token expired");
+      throw error;
     }
 
     // Handle 403 - Forbidden

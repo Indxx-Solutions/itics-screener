@@ -2,12 +2,12 @@ import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 import { subscribeWithSelector } from "zustand/middleware";
 import type { AuthState } from "./../interfaces/auth";
-import { LEVEL_1, LEVEL_2, LEVEL_3 } from "./../constants/constants";
 import { postMethodApi } from "../utils/commonAxios";
 import {
-  LOGOUT_API,
   NEW_PASSWORD_API,
   OTP_API,
+  SEND_OTP_API,
+  VERIFY_OTP_API,
 } from "./../assets/entpoint";
 import { clientSideLogout } from "./../utils/session";
 
@@ -31,6 +31,8 @@ interface AuthActions {
     otp: string,
     password: string,
   ) => Promise<void>;
+  sendLoginOtp: (email: string) => Promise<void>;
+  verifyLoginOtp: (email: string, otp: string) => Promise<void>;
   logout: () => Promise<void>;
   clearError: () => void;
   resetError: () => void;
@@ -55,7 +57,7 @@ export const useAuthStore = create<EnhancedAuthState & AuthActions>()(
       sessionExpiredMessage: "",
 
       // Login action
-      login: async (email: string, _password: string) => {
+      sendLoginOtp: async (email: string) => {
         set((state) => {
           state.loading = true;
           state.isSpinning = true;
@@ -64,63 +66,101 @@ export const useAuthStore = create<EnhancedAuthState & AuthActions>()(
         });
 
         try {
-          // Bypassing real authentication for development/testing
-          const mockData: any = {
-            access_token: "mock-access-token",
-            refresh_token: "mock-refresh-token",
-            tenant_id: "mock-tenant-id",
-            role: LEVEL_1, // Defaulting to Admin access
-            name: email.split("@")[0] || "User",
-            idToken: {
-              jwtToken: "mock-id-token",
-              payload: {
-                profile: "Admin",
-                name: email.split("@")[0] || "User",
-                email: email,
-              },
-            },
-            accessToken: {
-              jwtToken: "mock-access-token",
-            },
-          };
+          const response = await postMethodApi(SEND_OTP_API, { email });
 
-          const data = mockData;
-          const accesstoken = data.access_token;
-          const refreshtoken = data.refresh_token;
-          const tenentID = data.tenant_id;
-          const role = data.role;
-          const name = data.name;
-
-          // Store in sessionStorage
-          sessionStorage.setItem("role", role);
-          sessionStorage.setItem("email", email);
-          sessionStorage.setItem("AccessToken", accesstoken);
-          sessionStorage.setItem("TenantID", tenentID);
-          sessionStorage.setItem("RefreshToken", refreshtoken);
-          sessionStorage.setItem("name", name);
-          sessionStorage.setItem("isAuthenticated", "true");
-
-          // Update store state
-          set((state) => {
-            state.user = data;
-            state.token = accesstoken;
-            state.isAnalyst = role === LEVEL_3;
-            state.isQA = role === LEVEL_2;
-            state.isAdmin = role === LEVEL_1;
-            state.loading = false;
-            state.isSpinning = false;
-            state.error = null;
-            state.authError = null;
-          });
+          if (response.status === 200 || response.status === 201) {
+            set((state) => {
+              state.loading = false;
+              state.isSpinning = false;
+            });
+          } else {
+            throw new Error("Failed to send OTP. Please try again.");
+          }
         } catch (error: any) {
-          console.error("Error in mock login", error);
+          console.error("Error in sendLoginOtp", error);
+          const errorMessage =
+            error?.response?.data?.detail ||
+            error?.response?.data?.message ||
+            error?.message ||
+            "Failed to send OTP";
+
           set((state) => {
             state.loading = false;
             state.isSpinning = false;
-            state.error = "Login failed";
+            state.error = errorMessage;
+            state.authError = {
+              error: errorMessage,
+              code: error?.response?.status?.toString() || "SEND_OTP_ERROR",
+            };
           });
           throw error;
         }
+      },
+
+      verifyLoginOtp: async (email: string, otp: string) => {
+        set((state) => {
+          state.loading = true;
+          state.isSpinning = true;
+          state.error = null;
+          state.authError = null;
+        });
+
+        try {
+          const response = await postMethodApi(VERIFY_OTP_API, { email, otp });
+
+          if (response.status === 200 || response.status === 201) {
+            const data = response.data;
+            const accesstoken = data.access_token;
+            const user = data.user;
+
+            // Store in localStorage for 24h persistence
+            localStorage.setItem("email", email);
+            localStorage.setItem("AccessToken", accesstoken);
+            localStorage.setItem("isAuthenticated", "true");
+            localStorage.setItem("loginTimestamp", Date.now().toString());
+            if (user) {
+              localStorage.setItem("user_id", user.id.toString());
+              localStorage.setItem("username", user.username);
+            }
+
+            // Update store state
+            set((state) => {
+              state.user = user;
+              state.token = accesstoken;
+              state.isAdmin = true; // Defaulting for now, adjust based on user role if available
+              state.loading = false;
+              state.isSpinning = false;
+              state.error = null;
+              state.authError = null;
+            });
+          } else {
+            throw new Error("Invalid OTP. Please try again.");
+          }
+        } catch (error: any) {
+          console.error("Error in verifyLoginOtp", error);
+          const errorMessage =
+            error?.response?.data?.detail ||
+            error?.response?.data?.message ||
+            error?.message ||
+            "OTP verification failed";
+
+          set((state) => {
+            state.loading = false;
+            state.isSpinning = false;
+            state.error = errorMessage;
+            state.authError = {
+              error: errorMessage,
+              code: error?.response?.status?.toString() || "VERIFY_OTP_ERROR",
+            };
+          });
+          throw error;
+        }
+      },
+
+      // Keep login for backward compatibility
+      login: async () => {
+        // This is now effectively replaced by sendLoginOtp/verifyLoginOtp
+        console.warn("login() is deprecated. Use sendLoginOtp/verifyLoginOtp.");
       },
 
       // OTP - Only for forgot password (doesn't set token)
@@ -209,64 +249,10 @@ export const useAuthStore = create<EnhancedAuthState & AuthActions>()(
         }
       },
 
-      // Replace the existing logout implementation with this one inside useAuthStore
+      // Unified logout implementation
       logout: async () => {
-        try {
-          // Option A — send access token only (keeps current behavior)
-          // const accessToken = sessionStorage.getItem('AccessToken');
-          // const params: { [k: string]: any } = {};
-          // if (accessToken) params.access_token = accessToken;
-          // await postMethodApi(LOGOUT_API, params);
-
-          // Option B — send no token at all (use this if your backend expects an empty body)
-          await postMethodApi(LOGOUT_API, {
-            access_token: sessionStorage.getItem("AccessToken"),
-          });
-
-          // ALWAYS clear client session (localStorage + sessionStorage) and reset store
-          sessionStorage.clear();
-          localStorage.clear();
-        } catch (serverErr: any) {
-          // If server responded with 401 -> treat as refresh-token problem and go to login
-          const status = serverErr?.response?.status;
-          console.warn("Server logout failed:", serverErr);
-
-          try {
-            // still clear client storage
-            sessionStorage.clear();
-            localStorage.clear();
-          } catch (e) {
-            /* ignore */
-          }
-
-          if (status === 401) {
-            // Explicit redirect to login when server returns 401
-            // (This avoids relying on React Router inside the store.)
-            window.location.href = "/login";
-          }
-
-          // Continue to reset store state below (so client UI is cleaned up)
-        } finally {
-          // reset store and clear storage (clientSideLogout does both)
-          clientSideLogout(false); // pass false to not redirect twice if you prefer
-          // If you want to redirect here:
-          // clientSideLogout(true)
-        }
-
-        // Reset the zustand store state (always run)
-        set((state) => {
-          state.user = null;
-          state.token = null;
-          state.loading = false;
-          state.isSpinning = false;
-          state.error = null;
-          state.authError = null;
-          state.isAdmin = false;
-          state.isQA = false;
-          state.isAnalyst = false;
-          state.showSessionExpiredModal = false;
-          state.sessionExpiredMessage = "";
-        });
+        // Clear all storage and reset store via utility
+        clientSideLogout(true);
       },
 
       // Clear error

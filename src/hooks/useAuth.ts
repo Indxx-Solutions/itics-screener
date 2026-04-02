@@ -14,6 +14,8 @@ export const useAuth = () => {
   const login = useAuthStore((state) => state.login);
   const otp = useAuthStore((state) => state.otp);
   const setnewpassword = useAuthStore((state) => state.setnewpassword);
+  const sendLoginOtp = useAuthStore((state) => state.sendLoginOtp);
+  const verifyLoginOtp = useAuthStore((state) => state.verifyLoginOtp);
   const logout = useAuthStore((state) => state.logout);
   const clearError = useAuthStore((state) => state.clearError);
   const resetError = useAuthStore((state) => state.resetError);
@@ -33,6 +35,8 @@ export const useAuth = () => {
     login,
     otp,
     setnewpassword,
+    sendLoginOtp,
+    verifyLoginOtp,
     logout,
     clearError,
     resetError,

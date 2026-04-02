@@ -43,3 +43,18 @@ export const clientSideLogout = (redirect = true) => {
     }
   }
 }
+
+export const checkSessionExpiry = () => {
+  const loginTimestamp = localStorage.getItem("loginTimestamp");
+  const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
+
+  if (loginTimestamp && isAuthenticated) {
+    const hours = (Date.now() - parseInt(loginTimestamp)) / (1000 * 60 * 60);
+    if (hours >= 24) {
+      console.warn("Session expired (24h reached)");
+      clientSideLogout(true);
+      return true;
+    }
+  }
+  return false;
+};
