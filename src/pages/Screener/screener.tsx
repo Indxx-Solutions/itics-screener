@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Check, X, ListTree, Wrench, Download, FileSpreadsheet, LogOut } from 'lucide-react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { Check, X, Wrench, LogOut } from 'lucide-react';
 import TAX_DATA_JSON from './../../static data/output.json';
 import { BaseUrl } from '../../assets/entpoint';
 import { postMethodApi, getMethodApi } from '../../utils/commonAxios';
@@ -47,7 +47,6 @@ const Screener = () => {
   const [loading, setLoading] = useState(false);
   const [expandedRowData, setExpandedRowData] = useState<Record<number, any[]>>({});
   const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
-  const [exportMenuOpen, setExportMenuOpen] = useState(false);
 
   const [selL0, setSelL0] = useState<Set<string>>(new Set());
   const [selL1, setSelL1] = useState<Set<string>>(new Set());
@@ -190,11 +189,6 @@ const Screener = () => {
   const removeChipL1 = (l1c: string) => {
     for (const l0c of Object.keys(taxMap)) if (taxMap[l0c].l1s[l1c]) { handleTaxL1(l1c, l0c, false); return; }
   };
-
-  const exportData = useCallback((_type: string, _fmt: string) => {
-    alert('Export functionality is being updated for API data.');
-    setExportMenuOpen(false);
-  }, []);
 
   const CountryList = useMemo(() => {
     const q = coSearch.toLowerCase();
