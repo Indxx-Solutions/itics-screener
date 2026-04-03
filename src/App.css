@@ -2226,10 +2226,14 @@ th.sortable.desc .sort-ico {
 }
 
 .scr-tbl thead tr {
-  background: var(--bg3);
+  z-index: 10;
+}
+
+.scr-tbl > thead > tr > th {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 15;
+  background: var(--bg3);
 }
 
 .scr-tbl th {
@@ -2290,6 +2294,28 @@ th.sortable.desc .sort-ico {
   background: var(--bg3);
   text-align: left;
   border-bottom: 1px solid var(--border);
+}
+
+.scr-nested-tbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scr-nested-tbl th {
+  padding: 8px 12px;
+  font-size: 10px;
+  color: var(--txt3);
+  background: var(--bg3);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  z-index: 1; /* Ensure its lower than the main header */
+}
+
+.scr-nested-tbl td {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--txt2);
 }
 
 .scr-segtbl td {
@@ -2558,3 +2584,45 @@ th.sortable.desc .sort-ico {
   justify-content: flex-end;
   align-items: center;
 }
+
+/* ── SKELETON LOADER ────────────────────────────────────── */
+@keyframes scr-shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.scr-skeleton-row {
+  pointer-events: none;
+}
+
+.scr-skeleton-row td {
+  padding: 12px 12px !important;
+}
+
+.scr-skel {
+  border-radius: 4px;
+}
+
+.scr-skel-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg3) 0%,
+    var(--bg4) 40%,
+    var(--bg5) 50%,
+    var(--bg4) 60%,
+    var(--bg3) 100%
+  );
+  background-size: 800px 100%;
+  animation: scr-shimmer 1.6s ease-in-out infinite;
+}
+
+.scr-skeleton-row:nth-child(1) .scr-skel-shimmer { animation-delay: 0s; }
+.scr-skeleton-row:nth-child(2) .scr-skel-shimmer { animation-delay: 0.08s; }
+.scr-skeleton-row:nth-child(3) .scr-skel-shimmer { animation-delay: 0.16s; }
+.scr-skeleton-row:nth-child(4) .scr-skel-shimmer { animation-delay: 0.24s; }
+.scr-skeleton-row:nth-child(5) .scr-skel-shimmer { animation-delay: 0.32s; }
+.scr-skeleton-row:nth-child(6) .scr-skel-shimmer { animation-delay: 0.4s; }
+.scr-skeleton-row:nth-child(7) .scr-skel-shimmer { animation-delay: 0.48s; }
+.scr-skeleton-row:nth-child(8) .scr-skel-shimmer { animation-delay: 0.56s; }
+.scr-skeleton-row:nth-child(9) .scr-skel-shimmer { animation-delay: 0.64s; }
+.scr-skeleton-row:nth-child(10) .scr-skel-shimmer { animation-delay: 0.72s; }

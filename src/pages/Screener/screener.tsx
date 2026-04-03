@@ -198,16 +198,14 @@ const Screener = () => {
   };
 
   const handleRowClick = (co: any) => {
-    const rowKey = co.isin || co.company_id || co.id || co.company_name; // Use stable fields
-
-    if (!expandedRows.has(rowKey)) {
-      fetchInternalTable(rowKey, co);
-    }
+    const rowKey = co.isin || co.company_id || co.id || co.company_name;
 
     setExpandedRows(prev => {
-      const n = new Set(prev);
-      if (n.has(rowKey)) n.delete(rowKey);
-      else n.add(rowKey);
+      const n = new Set<string>();
+      if (!prev.has(rowKey)) {
+        n.add(rowKey);
+        fetchInternalTable(rowKey, co);
+      }
       return n;
     });
   };
@@ -271,7 +269,11 @@ const Screener = () => {
                 return [...l1d.l2s.keys()].some(l2c => selL2.has(l2c));
               });
               const l0Open = taxSearch ? true : taxExpanded.l0.has(l0c);
-              if (taxSearch && !l0d.n.toLowerCase().includes(taxSearch.toLowerCase()) && !l1Keys.some(l1 => l0d.l1s[l1].n.toLowerCase().includes(taxSearch.toLowerCase()))) return null;
+              const q = taxSearch.toLowerCase();
+              if (taxSearch && !l0d.n.toLowerCase().includes(q) && !l1Keys.some(l1 => {
+                if (l0d.l1s[l1].n.toLowerCase().includes(q)) return true;
+                return [...l0d.l1s[l1].l2s.values()].some((l2Name: string) => l2Name.toLowerCase().includes(q));
+              })) return null;
 
               return (
                 <div key={l0c} className="tax-tree-node">
@@ -365,11 +367,39 @@ const Screener = () => {
         </div>
 
         <div className="scr-tbl-container" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-          {loading ? <div className="scr-loading" style={{ padding: '40px', textAlign: 'center', color: 'var(--txt3)' }}>Loading...</div> : (
+          {loading ? (
             <div className="scr-tbl-wrap">
               <table className="scr-tbl">
                 <thead>
-                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>SECTOR</th><th>THEME</th><th>SUB-THEME</th><th>REV %</th><th>CLASS</th></tr>
+                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>SECTOR</th><th>THEME</th><th>SUB-THEME</th><th>REVENUE %</th><th>CLASSIFICATION</th></tr>
+                </thead>
+                <tbody>
+                  {Array.from({ length: 10 }).map((_, i) => (
+                    <tr key={i} className="scr-skeleton-row">
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: '10px', height: '10px', borderRadius: '2px' }} /></td>
+                      <td>
+                        <div className="scr-skel scr-skel-shimmer" style={{ width: `${60 + (i % 3) * 20}%`, height: '13px', marginBottom: '6px' }} />
+                        <div className="scr-skel scr-skel-shimmer" style={{ width: '45%', height: '9px' }} />
+                      </td>
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: `${50 + (i % 4) * 12}%`, height: '12px' }} /></td>
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: `${40 + (i % 3) * 18}%`, height: '12px' }} /></td>
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: `${55 + (i % 2) * 20}%`, height: '20px', borderRadius: '10px' }} /></td>
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: `${45 + (i % 3) * 15}%`, height: '20px', borderRadius: '10px' }} /></td>
+                      <td>
+                        <div className="scr-skel scr-skel-shimmer" style={{ width: '40px', height: '13px', marginBottom: '6px' }} />
+                        <div className="scr-skel scr-skel-shimmer" style={{ width: '90px', height: '3px', borderRadius: '2px' }} />
+                      </td>
+                      <td><div className="scr-skel scr-skel-shimmer" style={{ width: '70px', height: '22px', borderRadius: '12px' }} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <div className="scr-tbl-wrap">
+              <table className="scr-tbl">
+                <thead>
+                  <tr><th></th><th>COMPANY</th><th>COUNTRY</th><th>SECTOR</th><th>THEME</th><th>SUB-THEME</th><th>REVENUE %</th><th>CLASSIFICATION</th></tr>
                 </thead>
                 <tbody>
                   {results.length === 0 ? <tr><td colSpan={8} style={{ textAlign: 'center', padding: '40px', color: 'var(--txt3)' }}>No results found. Adjust filters to search.</td></tr> : results.map(co => {
@@ -408,7 +438,7 @@ const Screener = () => {
                         </tr>
                         {isExpanded && (
                           <tr className="scr-expanded">
-                            <td colSpan={8} style={{ padding: '0 0 16px 40px' }}>
+                            <td colSpan={8} style={{ padding: '16px' }}>
                               <div className="scr-nested" style={{ background: 'var(--bg2)', borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)' }}>
                                 <table className="scr-nested-tbl" style={{ width: '100%', borderCollapse: 'collapse' }}>
                                   <thead style={{ background: 'var(--bg3)' }}>
@@ -421,13 +451,29 @@ const Screener = () => {
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    {expandedRowData[rowKey]?.length ? expandedRowData[rowKey].map((s: any, i: number) => (
+                                    {expandedRowData[rowKey]?.length ? [...expandedRowData[rowKey]].sort((a: any, b: any) => (b.revenue_percentage || 0) - (a.revenue_percentage || 0)).map((s: any, i: number) => (
                                       <tr key={i} style={{ borderTop: '1px solid var(--border)' }}>
                                         <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.sector_name || '-'}</td>
                                         <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.level1_name || '-'}</td>
                                         <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.level2_name || '-'}</td>
-                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_percentage}%</td>
-                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>{s.revenue_class || '-'}</td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px', minWidth: '120px' }}>
+                                          <div style={{ fontWeight: 600 }}>{s.revenue_percentage || '0'}%</div>
+                                          {s.revenue_percentage !== undefined && (
+                                            <div style={{ width: '90px', height: '3px', background: 'rgba(255,255,255,0.1)', borderRadius: '2px', marginTop: '4px' }}>
+                                              <div style={{
+                                                width: `${Math.min(100, Math.max(0, s.revenue_percentage))}%`,
+                                                height: '100%',
+                                                borderRadius: '2px',
+                                                background: s.revenue_percentage >= 66 ? '#0fb8a3' : s.revenue_percentage >= 33 ? '#f59e0b' : '#3b7eff'
+                                              }} />
+                                            </div>
+                                          )}
+                                        </td>
+                                        <td style={{ padding: '8px 12px', fontSize: '12px' }}>
+                                          <span className={`badge ${s.revenue_class?.toLowerCase() === 'pure play' ? 'bw-gc' : s.revenue_class?.toLowerCase() === 'quasi' ? 'bw-committee' : 'bw-analyst'}`}>
+                                            {s.revenue_class || '-'}
+                                          </span>
+                                        </td>
                                       </tr>
                                     )) : <tr><td colSpan={5} style={{ padding: '20px', textAlign: 'center' }}>No classification data available.</td></tr>}
                                   </tbody>
