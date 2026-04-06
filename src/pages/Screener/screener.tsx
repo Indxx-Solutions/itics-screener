@@ -249,7 +249,7 @@ const Screener = () => {
         <div style={{ marginBottom: '16px' }}>
           <label className="scr-flbl">Year</label>
           <select className="scr-sel" value={selectedYear} onChange={e => setSelectedYear(parseInt(e.target.value))}>
-            {[2025, 2024, 2023, 2022, 2021, 2020].map(y => <option key={y} value={y}>{y}</option>)}
+            {[2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017].map(y => <option key={y} value={y}>{y}</option>)}
           </select>
         </div>
 

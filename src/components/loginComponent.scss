@@ -1,11 +1,6 @@
 @use "./variables.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-@font-face {
-  font-family: "DaikonRegular";
-  src: url("./Daikon-Light.ttf") format("truetype");
-}
-
 // ═══════════════════════════════════════════════════════════════
 // DOOR ANIMATION
 // "close" → both panels pre-placed OFF-SCREEN, then slide IN (entrance)
@@ -132,7 +127,7 @@
 // ─── Card title ─────────────────────────────────────────────────
 .lc_title {
   color: #fafafa;
-  font-family: "Daikon", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.2;
@@ -497,7 +492,7 @@
 }
 
 .lc_powered_text {
-  font-family: "Daikon", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 8px;
   font-weight: 400;
   color: #7a8499;
@@ -532,46 +527,12 @@
   }
 }
 
-@font-face {
-  font-family: "Daikon";
-  src: url("../font/DAIKON/Daikon-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Daikon";
-  src: url("../font/DAIKON/Daikon-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Daikon";
-  src: url("../font/DAIKON/Daikon-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Daikon";
-  src: url("../font/DAIKON/Daikon-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Daikon";
-  src: url("../font/DAIKON/Daikon-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Daikon", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1879,11 +1840,6 @@
   display: none !important;
 }
 
-@font-face {
-  font-family: "DaikonRegular";
-  src: url("./../font/DAIKON/Daikon-Light.ttf") format("truetype");
-}
-
 // scrolling text hidden
 .scrollingTextHidden {
   height: 34px;
@@ -2487,7 +2443,7 @@ textarea[name="commentInput"]:hover:not(:focus) {
 .multipleindexsubmissionsubmitbtn {
   padding: 2%;
   color: #fff;
-  font-family: Daikon;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;

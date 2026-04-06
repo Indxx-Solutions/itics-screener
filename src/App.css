@@ -2,8 +2,8 @@
    CSS VARIABLES + THEME
 ═══════════════════════════════════════════════════ */
 :root {
-  --font: 'Daikon', system-ui, sans-serif;
-  --mono: 'Daikon', 'Courier New', monospace;
+  --font: 'Inter', system-ui, sans-serif;
+  --mono: 'Inter', 'Courier New', monospace;
 
   /* Dark theme (default) */
   --bg: #0d0f14;
@@ -2625,4 +2625,4 @@ th.sortable.desc .sort-ico {
 .scr-skeleton-row:nth-child(7) .scr-skel-shimmer { animation-delay: 0.48s; }
 .scr-skeleton-row:nth-child(8) .scr-skel-shimmer { animation-delay: 0.56s; }
 .scr-skeleton-row:nth-child(9) .scr-skel-shimmer { animation-delay: 0.64s; }
-.scr-skeleton-row:nth-child(10) .scr-skel-shimmer { animation-delay: 0.72s; }
+.scr-skeleton-row:nth-child(10) .scr-skel-shimmer { animation-delay: 0.72s; }
